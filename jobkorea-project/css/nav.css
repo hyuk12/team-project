@@ -1,9 +1,8 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 1680px;
-    height: 154px;
+    position: relative;
+    zoom: 1;
+    width: 100%;
+    z-index: 2000;
    
   
     background-color: #fff;
@@ -44,7 +43,8 @@
     font-size: 0;
 }
 
-.nav-search-border {
+.nav-search{
+    display: flex;
     float: left;
     box-sizing: border-box;
     width: 410px;
@@ -68,15 +68,15 @@ input {
 .nav-search-borderBtn {
     width: 406px;
     height: 0;
-    position: absolute;
+    position: relative;
     top: 0px;
     left: 0px;
-    z-index: 1000;
-    display: block;
-    text-align: left;
+    /* z-index: 1000;
+    /* display: block;
+    text-align: left; */ 
 }
 
-.nav-search-btn  {
+.nav-search-borderBtn > .nav-search-btn  {
     
     overflow: hidden;
     float: left;
@@ -89,7 +89,7 @@ input {
     text-indent: -9999em;
     position: absolute;
     right: 0;
-    top: 0;
+    /* top: 0; */
     background: url(/images/search.png) 0 0 no-repeat;
 }
 
@@ -117,12 +117,18 @@ button {
     background: transparent;
     cursor: pointer;
     vertical-align: middle;
+    border: 0 none;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
 }
 
 
 
 .textjob {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 0;
     right: 0;
@@ -132,6 +138,8 @@ button {
     text-align: center;
     z-index: -1;
     color: #39f;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 
@@ -157,8 +165,7 @@ button {
 
 .nav-bar {
    
-    width: 1680px;
-    height: 52px;
+    height: 50px;
     border-top: 1px solid #ebeef3;
     border-bottom: 1px solid #3399ff;
     position: relative;
@@ -168,6 +175,99 @@ button {
 .nav-inner {
     width: 1260px;
     min-width: 1260px;
+    margin: 0px auto;
+}
+
+.category {
+  float: left;
+  height: 51px;
+  border-left: 1px solid #ebeef3;
+  border-right: 1px solid #ebeef3;
+  overflow: hidden;
+}
+
+.category-btn {
+    display: block;
+    width: 49px;
     height: 51px;
-    margin: 0px 210px;
+    position: relative;
+}
+
+.category-btn > i {
+    
+    /* padding: 17.5px 13.5px; */
+    /* align-items: center; */
+    font-size: 22px;
+    color: #39f;
+    background-color: #fff;
+   
+}
+
+.nav-inner-service {
+    margin: -1px 0 0 -1px;
+    
+}
+.nav-inner-service::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.nav-inner-service > ul{
+    margin: 0;
+    padding: 0;
+}
+.services {
+    width: 851px;
+    height: 51px;
+    float: left;    
+    margin: 0;
+    padding: 0;
+
+}
+
+.service-item {
+    float: left;
+}
+
+.service-item > a {
+    width: 90px;
+    padding: 0 17px;
+    display: block;
+    height: 51px;
+    position: relative;
+
+}
+
+.post-job-btn {
+    /* cursor: pointer;
+    background-color: #fff;
+    display: block;
+    position: relative;
+    top: 18px;
+    left: 50%;
+    height: 16px;
+    background-position: 0 -4px;
+    width: 56px;
+    margin-left: -28px; */
+
+}
+.post-job-btn > span {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 0px 17px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    z-index: -1;
+    font-size: 16px;
+    font-weight: 900;
+    color: #39f;
 }
