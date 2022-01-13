@@ -1,0 +1,157 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #e8ecef;
+    font: 12px "맑은 고딕", Malgun Gothic, "돋움", Dotum, sans-serif;
+    display: block;
+}
+
+.resumePage{
+    position: relative;
+    height: 1362px;
+    width: 100%;
+    text-align: center;
+    /* z-index: -1; */
+    display: block;
+
+}
+
+.resumeHeader{
+    width: 100%;
+    height:35px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-color: #fff;
+    color: #666;
+    /* border-bottom: 1px solid black; */
+    position: relative;
+    float: right;
+
+    display: block;
+    /* justify-content: space-between; */
+}
+
+ .resumeWrapper{ 
+    display: block;
+    position: absolute;
+    top: 78px;
+    width: 100%;
+    height: 1327px;
+    /* background-color: aquamarine; */
+}
+
+
+
+.container{
+    position: relative;
+    overflow: hidden;
+    width: 1200px;
+    height: 34px;
+    /* background-color: burlywood; */
+    margin: 0 auto; 
+ 
+}
+
+.container > a{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 5px;
+    
+}
+
+/* a .logo .linkLogo{
+    padding-top: 13px;
+    height: 29px;
+    width: 72px;
+} */
+
+.resumeContainer{
+    position: relative;
+    width: 1200px;
+    height: 1327px;
+    /* background-color: chartreuse; */
+    margin: 0 auto;
+    padding-bottom: 200px;
+    text-align: left;
+
+}
+
+.resumeTitle{
+    width: 937px;
+    height: 80px;
+    margin-bottom: 20px;
+    background-color: black;
+}
+
+.resumeTitle input {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 80px;
+    padding: 0 28px;
+    color: #333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 30px;
+}
+
+
+.forWrap{
+    position: relative;
+    width: 940px;
+}
+
+h2.header{
+    position: relative;
+    margin-bottom: 14px;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form{
+    position: relative;
+    width: 940px;
+    margin-bottom: 34px;
+    padding: 20px 20px 10px;
+    background-color: #fff;
+    border: 1px solid #dbe0e9;
+    /* -webkit-box-sizing: border-box; */
+    box-sizing: border-box;
+}
+
+.row:nth-child(1) {
+    z-index: 190;
+}
+
+.row{
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 0;
+}
+
+.links{
+    padding: 6px 0 0 12px; 
+    /* background-color: aqua; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+} 
+
+.links > a {
+    color: #666;
+}
+
+.links :first-child {
+    border-right: 1px solid #666;
+    padding-right: 15px;
+    margin-right: 7px;
+}
+
+
+
+

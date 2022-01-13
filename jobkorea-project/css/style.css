@@ -13,6 +13,7 @@
 
 body {
     text-align: center;
+    
 }
 div {
     display: block;
@@ -52,3 +53,4 @@ li {
     width: 935px;
     margin: 30px auto 0px;
 }
+
