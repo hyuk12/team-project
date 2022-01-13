@@ -271,3 +271,70 @@ button {
     font-weight: 900;
     color: #39f;
 }
+
+.nav-user {
+    float: right;
+}
+
+.my-info {
+    float: left;
+    position: relative;
+    margin-left: -1px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.my-info-open {
+    overflow: hidden;
+    height: 51px;
+    padding-left: 0;
+    border-left: 1px solid #ebeef3;
+    border-right: 1px solid #ebeef3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    position: relative;
+}
+
+.my-info-open > i {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-size: 28px;
+    text-align: center;
+    color: #a4a7aa;
+}
+
+.company-open   {
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 51px;
+    color: #30353a;
+    background-color: transparent;
+    line-height: 150px;
+    box-sizing: border-box;
+    border-right: 1px solid #ebeef3;
+}
+
+.company-open::before {
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 76px;
+    height: 15px;
+    margin: -7px 0 0 -38px;
+
+}
+
+.company-open > .post-job-btn > span {
+    
+    color: #494949;
+}
