@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Builder
 @Data
-public class User {
+public class Company {
 	
 	private int id;
 	
@@ -20,10 +20,10 @@ public class User {
 	
 //	기업 정보
 	
-//	private String compType;
-//	private String compNum;
-//	private String compName;
-//	private String ceoName;
+	private String comptype;
+	private String compnum;
+	private String compname;
+	private String ceoname;
 	
 	
 	private LocalDateTime create_date;

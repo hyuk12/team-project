@@ -23,4 +23,16 @@ public class PageController {
 	public String signupCompForm() {
 		return "auth/signupComp";
 	}
+	
+	@GetMapping({"/auth/signin"})
+	public String signinForm() {
+		return "auth/signin";
+	} 
+	
+	@GetMapping({"/auth/signinComp"})
+	public String signinCompForm() {
+		return "auth/signinComp";
+	}
+	
+	
 }
