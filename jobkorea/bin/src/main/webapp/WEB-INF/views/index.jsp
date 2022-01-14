@@ -100,7 +100,7 @@
                 </ul>
                 <ul>
                     <li class="signup-btn">
-                        <a href="/auth/signup">회원가입</a>
+                        <a href="#">회원가입</a>
                     </li>
                 </ul>
             </div>
