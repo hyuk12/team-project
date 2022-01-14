@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>잡코리아 통합 회원가입 : 개인회원 가입 ㅣ 잡코리아 - 좋은 일이 생긴다</title>
-    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="/css/signup.css">
 </head>
 
 <body>

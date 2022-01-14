@@ -7,7 +7,7 @@ import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 @Controller
-public class PageContoller {
+public class PageController {
 	
 	@GetMapping({"/", "index"})
 	public String indexForm() {
