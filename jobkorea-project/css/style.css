@@ -48,7 +48,12 @@ li {
     margin: 0;
 }
 
+main {
+    width:auto;
+    height: auto;
+}
 .container {
     width: 100%;
+    height: auto;
     margin: 30px auto 0px;
 }
