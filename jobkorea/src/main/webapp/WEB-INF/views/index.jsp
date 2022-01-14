@@ -99,7 +99,7 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="signup-btn">
+                    <li class="auth/signup">
                         <a href="#">회원가입</a>
                     </li>
                 </ul>
