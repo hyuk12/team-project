@@ -89,7 +89,7 @@ input {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 768px;
+  width: 420px;
   margin: 0 auto;
   padding: 50px;
   border: 1px;
@@ -159,7 +159,7 @@ input {
 }
 .inpTxt {
   width: 265px;
-  padding: 0 0 0 0px;
+  padding: 0px 0px 0px 15px;
   height: 48px;
   line-height: 46px;
   color: #333;
@@ -175,4 +175,26 @@ input {
   font: bold 16px "Malgun Gothic", "맑은 고딕", verdana, dotum, "돋움",
     sans-serif;
   letter-spacing: -1px;
+}
+
+.social-login {
+  display: flex;
+  flex-direction: row;
+}
+.social-login-btn {
+  width: 175px;
+  border: 1px solid #d2d2d2;
+
+  margin: 5px;
+  padding: 10px;
+
+  font: bold 14px "Malgun Gothic", "맑은 고딕", verdana, dotum, "돋움",
+    sans-serif;
+}
+
+#footer {
+  width: 100%;
+  margin: auto 10px;
+  background: #fff;
+  border-top: 1px solid #ddd;
 }
