@@ -16,93 +16,123 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3000px;
 }
 
-.section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* .main-wrap {
+    width: 1260px;
+    margin: 0 auto;
+    position: relative;
+   
+} */
 
-.add-section {
-    width: 700px;
-    height: 100px;
-}
-
-.add-section img {
-    width: 100%;
-    height: 100%;
-}
-
-.login-section{
-    display: flex;
+.main-side {
+    position: relative;
+    float: right;
+    width: 262px;
+    height:auto;
     
-    justify-content: center;
-    align-items: center;
-    margin-left: 100px;
-    width: 300px;
-    height: 150px;
-    border: 1px solid #e8ecef ;
-    border-radius: 10px;
 }
 
-.my-login-info{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 280px;
-    height: 130px;
-    border: none;
-    background-color: #f8f9fb;
+.login-wrap {
+    display: block;
+    
+    width: 260px;
+    height: 110px;
+    margin: 0px 0px 0px 1200px;
+    padding: 0;
+    border: 1px solid #e3e4e8;
+    background-color: #f3f4f6;
+    box-sizing: border-box;
 }
 
-.my-login-info > a {
+.login-btns {
+    display: block;
+    
+    padding: 0;
+    
+    width: 262px;
+    margin: -1px 0 0 -1px;
+    border: 1px solid #e3e4e8;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.login-btns  > li {
+    float: left;
+    width: 50%;
+    height: 70px;
+    text-align: center;
+    vertical-align: middle;
+} 
+
+.user-login-btn {
+    outline: none;
+    border-right: 1px solid #e3e4e8;
+    width: 130px;
+    height: 70px;
+    background-color: #fff;
+}
+
+.company-login-btn {
+    outline: none;
+    width: 129px;
+    height: 70px;
+    background-color: #fff;
+    line-height: 70px;
+
+}
+
+.user-login-btn > a {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 130px;
-    height: 70px;
+    line-height : 30px;
+    border-right: 1px solid #e3e4e8;
+    font-weight: 700;
+}
+
+.company-login-btn > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    line-height : 30px;
+    border-right: 1px solid #e3e4e8;
+    font-weight: 700;
+}
+
+
+button {
+    overflow: visible;
+    background: transparent;
+    cursor: pointer;
+}
+li {
+    list-style: none;
+}
+
+
+.signup-btn {
+    display: flex;
     font-weight: bold;
-    font-size: 16px;
-    letter-spacing: 2px;
-   
+    justify-self: center;
+    
+    width: 260px;
+    height: 21px;
 }
 
-.my-login-info > a > i{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-}
-
-.my-login-info button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 65px;
-    height: 30px;
-    border: 1px solid #e8ecef ;
-    border-radius: 10px;
-}
-
-.my-info-resume {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #dfe3e68f ;
-    border-radius: 10px;
-    width: 150px;
-    height: 40px;
+.signup-btn > a {
+    display: block;
+    margin-top: 5px;
+    padding: 3px;
+    font-size: 12px;
+    width: 56px;
 }
 
 .board-menu {
-    width: 1680px;
-    margin-top: 30px;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
 }
 
 .board-menu-item {
@@ -122,6 +152,7 @@
 
 .board-item-group {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 30px;
     width: 1260px;
@@ -134,7 +165,7 @@
     align-items: flex-start;
     width: 306px;
     height: 214px;
-    margin-top: 3px;
+    margin-top: 10px;
     /* margin-right: 5px; */
     background-color: #fff;
     overflow: hidden;
