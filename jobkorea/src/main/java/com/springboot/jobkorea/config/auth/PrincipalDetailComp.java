@@ -12,19 +12,16 @@ import com.springboot.jobkorea.domain.user.User;
 import lombok.Data;
 
 @Data
-public class PrincipalDetail implements UserDetails{
+public class PrincipalDetailComp implements UserDetails{
 
 	
 	private static final long serialVersionUID = 1L;
 	
-	private User user;
+	
 	private Company company; 
 	
-	public PrincipalDetail(User user) {
-		this.user = user;
-		
-	}
-	public PrincipalDetail(Company company) {
+	
+	public PrincipalDetailComp(Company company) {
 		this.company = company;
 	}
 
@@ -40,25 +37,23 @@ public class PrincipalDetail implements UserDetails{
 
 			@Override
 			public String getAuthority() {
-				return user.getRole();
+				return company.getRole();
 				
 			}
 		});
 		return collection;
-		
-		
 	}
 
 	@Override
 	public String getPassword() {
 		// TODO Auto-generated method stub
-		return user.getPassword();
+		return company.getPassword();
 	}
 
 	@Override
 	public String getUsername() {
 		// TODO Auto-generated method stub
-		return user.getUsername();
+		return company.getUsername();
 	}
 
 	@Override
