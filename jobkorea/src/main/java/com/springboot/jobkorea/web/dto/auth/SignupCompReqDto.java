@@ -3,6 +3,8 @@ package com.springboot.jobkorea.web.dto.auth;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
 import com.springboot.jobkorea.domain.user.Company;
 import com.springboot.jobkorea.domain.user.User;
 
@@ -51,7 +53,7 @@ public class SignupCompReqDto {
 				.compname(compname)
 				.ceoname(ceoname)
 				.username(username)
-				.password(password)
+				.password(new BCryptPasswordEncoder().encode(password))
 				.role("ROLE_USER")
 				.name(name)
 				.phone(phone)
