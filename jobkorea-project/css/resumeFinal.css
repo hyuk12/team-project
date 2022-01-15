@@ -1,0 +1,392 @@
+body{
+    background-color: #f2f4f7;
+    font: 12px "맑은 고딕", Malgun Gothic, "돋움", Dotum, sans-serif;
+    color: #666;
+    letter-spacing: -1px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.resumeWrapper{
+    position: relative;
+    text-align: center;
+    height: 1520px;
+}
+
+.resumeViewContainer{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    padding-bottom: 75px;
+    text-align: left;
+    box-sizing: border-box;
+    height: 1440px;
+}
+
+.resumeSubject{
+    margin-bottom: 24px;
+    font-size: 30px;
+    color: #000;
+    letter-spacing: -2px;
+    line-height: 1.4; 
+}
+
+.profile{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 33px;
+    height: 265px; 
+}
+
+.container{
+    width: 940px;
+    height: 105px;
+    padding: 0 0 20px 40px;
+    margin-bottom: 10px;
+    box-sizing: border-box; 
+ 
+}
+
+.info-container{
+    width: 900px;
+    height: 85px; 
+}
+
+.info-general{
+    padding-top: 15px;
+    margin-bottom: 13px;
+    font-size: 0; 
+    display: flex;
+
+}
+
+.profile .info-general .name {
+    margin-left: 0;
+    font-size: 20px;
+    color: #000;
+}
+
+.profile .info-general .year{
+    transform: translateY(8px);
+}
+
+.profile .info-general .item{
+    display: inline-block;
+    font-size: 14px;
+    color: #888;
+    margin-left: 7px;
+    vertical-align: top;
+}
+
+.sex{
+    transform: translateY(8px);
+    margin: 0 5px;
+}
+.yaer{
+    transform: translateY(8px);
+    margin-right: 15px;
+}
+.age{
+    transform: translateY(8px);
+    margin-left: 5px;
+}
+
+.info-detail{
+    width: 650px;
+    
+}
+
+.item{
+    display: flex;
+}
+
+.summary{
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.item1{
+    /* float: left; */
+    position: relative;
+    display: inline-block;
+    min-height: 90px;
+    width: 230px;
+
+    padding: 27px 15px 0;
+    vertical-align: top;
+    text-align: center; 
+    box-sizing: border-box;
+
+}
+
+.item1:first-child{
+    width: 233px;
+}
+
+
+.label{
+    width: 68px;
+    margin-right: 10px;
+    border-right: 1px solid #888;
+} 
+
+.value{
+    font-size: 14px;
+    color: #000;
+    letter-spacing: 0;
+}
+
+.profile .summary .item1:after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: 89px;
+    background-color: #edeef0;
+    
+     
+    transform: translateY(-50%);
+}
+
+.option{
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #39f;
+}
+
+.education > .header{
+    margin-bottom: 13px;
+    font-size: 22px;
+    font-weight: normal;
+    color: #000; 
+}
+
+.description{
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #000;
+    line-height: 1.6;
+}
+
+.education{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 33px;
+}
+
+.list-education{
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #000;
+    background-color: #fff;
+    width: 940px;
+    height: 90px;
+}
+.date{
+    position: absolute;
+    left: 38px;
+    top: 22px;
+    font-size: 14px;
+    color: #000;
+    letter-spacing: 0;
+}
+.term{
+    margin-bottom: 7px;
+    font-size: 14px;
+    color: #000;
+}
+.state{
+    font-size: 13px;
+    color: #3399ff;
+    letter-spacing: -1px;
+}
+
+.stateGraduate{
+    font-size: 13px;
+    color: #3399ff;
+    letter-spacing: -1px;
+    float: left;
+}
+
+.term-calculator{
+    font-size: 13px;
+    color: #3399ff;
+    letter-spacing: -1px;
+    float: left;
+}
+
+.content{
+    width: 700px;
+    height: 25px; 
+}
+
+.content-header{
+    margin-bottom: 8px;
+    line-height: 1.55;
+}
+
+.name{
+    position: relative;
+    display: inline;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    vertical-align: top;
+    word-break: break-all;
+ 
+}
+
+.line{
+    display: inline;
+    margin-left: 11px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+
+
+
+ 
+.career > .header {
+    margin-bottom: 13px;
+    font-size: 22px;
+    font-weight: normal;
+    color: #000;
+}
+
+.career{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 33px;
+}
+
+.list-career{
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #000;
+    background-color: #fff;
+
+    height: 90px;
+}
+
+.list-career div.item1 {
+    padding-top: 21px;
+    padding-bottom: 17px;
+}
+
+
+
+
+
+
+
+.cert{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 33px;
+}
+
+.list-cert{
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #000;
+    background-color: #fff;
+
+    height: 90px;
+}
+
+.list-cert div.item1 {
+    padding-top: 21px;
+    padding-bottom: 17px;
+}
+
+.agency{
+    display: inline;
+    margin-left: 11px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+.coverLetter{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 33px;
+}
+
+.list-coverLetter{
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #000;
+    background-color: #fff;
+    padding: 27px 38px 33px;
+}
+
+.list-coverLetter li .header{
+    margin-bottom: 9px;
+    font-size: 18px;
+    color: #000;
+    line-height: 1.9;
+    font-weight: bold;
+}
+
+.list-coverLetter li .content{
+    font-size: 14px;
+    color: #000;
+    line-height: 1.8;
+    word-break: break-all;
+}
+
+.sidemenu-wrap {
+    z-index: 9000;
+    position: absolute;
+    right: 20px;
+    top: 85px;
+    width: 90px;
+    height: 100px;
+    margin-left: -470px;
+}
+
+.sidemenu{
+    position: absolute;
+    right: 174px;
+    top: 66px;
+}
+
+.sidemenu button{
+    position: relative;
+    display: block;
+    width: 133px;
+    height: 44px;
+    background-color: #3399ff;
+    color: white;
+    border: 0 none; 
+    overflow: visible; 
+    cursor: pointer;
+
+}
+
+.button{
+    position: relative;
+    display: block;
+}

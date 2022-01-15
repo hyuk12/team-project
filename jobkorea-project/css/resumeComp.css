@@ -1,0 +1,214 @@
+body{
+    font: 12px "맑은 고딕", Malgun Gothic, "돋움", Dotum, sans-serif;
+    color: #666;
+    letter-spacing: -1px;
+}
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font: 12px "맑은 고딕", Malgun Gothic, "돋움", Dotum, sans-serif;
+    display: block;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  list-style: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  background-color: white;
+}
+
+li {
+  display: list-item;
+  list-style: none;
+  background-color: white;
+}
+
+a {
+  color: #494949;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+h1 {
+  display: block;
+
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+
+  font-weight: normal;
+  font-size: 100%;
+}
+
+div {
+  padding: 0;
+  margin: 0;
+
+  display: block;
+}
+
+input {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+button{
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid#ddd;
+    vertical-align: middle;
+}
+.header img{
+    display: block;
+    margin: 0 auto 24px;
+}
+
+
+.resumeWrapper{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.resumeContainer{
+    position: relative;
+    width: 900px;
+    padding-top: 150px;
+    padding-bottom: 200px;
+    text-align: center; 
+    margin: 0 auto;  
+}
+
+h1.header{
+    margin-top: 0px;
+    margin-bottom: 29px;
+    text-align: center;
+    font-size: 21px;
+    letter-spacing: -1px;
+    line-height: 1.33;
+    font-weight: normal;
+}
+
+.button{
+    display: block;
+    width: 180px;
+    height: 50px;
+    padding-top: 14px;
+    margin: 0 auto;
+    background-color: #ff6600;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.listPassrate{
+    overflow: hidden;
+    position: relative;
+    margin-top: 143px;
+}
+
+h2.header{
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    border-bottom: 2px solid #4a5470;
+    letter-spacing: -2px;
+}
+
+ul{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 900px;
+    text-align: left; 
+     
+}
+
+.listPassrate li{
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 215px;
+    height: 162px;
+    margin: 0 10px 10px 0;
+    padding-top: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #c8cbd0;
+    font-size: 13px;
+    font-family: 'Malgun Gothic';
+}
+
+.company{
+    margin-bottom: 3px;
+    padding: 0 10px;
+}
+
+.company span{
+    vertical-align: middle;
+    color: #000;
+    font-family: 'Tahoma','Malgun Gothic';
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.33;
+}
+
+.logo{
+    overflow: hidden;
+    width: 100%;
+    height: 51px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.logo img{
+    width: 128px;
+    height: 51px;
+}
+
+.description{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 38px;
+    padding: 0 10px;
+}
+
+.description span{
+    font-size: 13px;
+    color: #333;
+    line-height: 1.42857;
+}
+
+.extra{
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 136px;
+    width: 100%;
+    padding: 0 10px; 
+    box-sizing: border-box;
+}
+
+.dday{
+    float: left;
+    padding: 2px 0;
+    color: #777;
+    line-height: 1;
+    font-size: 12px;
+}

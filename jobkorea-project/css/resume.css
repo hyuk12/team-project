@@ -8,6 +8,62 @@ body{
     display: block;
 }
 
+ul {
+  display: block;
+  list-style-type: disc;
+  list-style: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  background-color: white;
+}
+
+li {
+  display: list-item;
+  list-style: none;
+  background-color: white;
+}
+
+a {
+  color: #494949;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+h1 {
+  display: block;
+
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+
+  font-weight: normal;
+  font-size: 100%;
+}
+
+div {
+  padding: 0;
+  margin: 0;
+
+  display: block;
+}
+
+input {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+button{
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid#ddd;
+    vertical-align: middle;
+}
+
 .resumePage{
     position: relative;
     height: 1362px;
@@ -34,8 +90,7 @@ body{
 }
 
  .resumeWrapper{ 
-    display: block;
-    position: absolute;
+    position: relative;
     top: 78px;
     width: 100%;
     height: 1327px;
@@ -62,28 +117,24 @@ body{
     
 }
 
-/* a .logo .linkLogo{
-    padding-top: 13px;
-    height: 29px;
-    width: 72px;
-} */
-
+/* resumeContainer */
 .resumeContainer{
     position: relative;
     width: 1200px;
-    height: 1327px;
-    /* background-color: chartreuse; */
     margin: 0 auto;
     padding-bottom: 200px;
     text-align: left;
-
 }
 
+/* resumeTitle */
 .resumeTitle{
+    overflow: hidden;
+    position: relative;
     width: 937px;
     height: 80px;
     margin-bottom: 20px;
     background-color: black;
+    border: 1px solid #dbe0e9;
 }
 
 .resumeTitle input {
@@ -92,17 +143,13 @@ body{
     width: 100%;
     height: 80px;
     padding: 0 28px;
+    border: 0;
     color: #333;
     white-space: nowrap;
     text-overflow: ellipsis;
     font-size: 30px;
 }
 
-
-.forWrap{
-    position: relative;
-    width: 940px;
-}
 
 h2.header{
     position: relative;
@@ -112,9 +159,17 @@ h2.header{
     font-size: 20px;
 }
 
+/* form */
+.formWrap{
+    position: relative;
+    width: 940px;
+}
+
+
 .form{
     position: relative;
     width: 940px;
+    height: 177px;
     margin-bottom: 34px;
     padding: 20px 20px 10px;
     background-color: #fff;
@@ -123,19 +178,723 @@ h2.header{
     box-sizing: border-box;
 }
 
-.row:nth-child(1) {
-    z-index: 190;
+.profileForm{
+    position: relative;
+    width: 940px;
+    height: 177px;
+    margin-bottom: 34px;
+    padding: 20px 20px 10px;
+    background-color: #fff;
+    border: 1px solid #dbe0e9;
+    /* -webkit-box-sizing: border-box; */
+    box-sizing: border-box; 
 }
 
+.rows{
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 0;
+    display: flex;
+    /* display: block; */
+    float: left;
+
+}
+
+.rows div {
+    width: 178px;
+    height: 58px;
+    border: 2px solid #ddd;
+    margin: 0 10px;
+    color: #999;
+}
+
+.dropDown{
+    position: relative;
+    width: 110px;
+    height: 62px;
+    z-index: 20;
+    margin-right: 0;
+}
+
+.dropDown div{
+    background-color: white;
+}
+
+
+
+.buttonChoose{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+li .button{
+    width: 100%;
+    border: 0;  
+    text-align: left;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font: 15px;
+    background-color: white;
+}
+
+/* careerForm 경력*/
+
+.careerForm{
+    position: relative;
+    width: 940px;
+    height: 316px;
+    margin-bottom: 34px;
+    padding: 20px 20px 10px;
+    background-color: #fff;
+    border: 1px solid #dbe0e9;
+    box-sizing: border-box;
+    color: #999;
+}
+
+.careerFormRow{
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 0;
+    display: flex;
+    float: left;
+}
+
+/* .careerFormRow div {
+    width: 178px;
+    height: 58px;
+    border: 2px solid #ddd;
+    margin-right: 10px;
+    color: #999;
+} */
+
+.compName{
+    width: 278px;
+    height: 62px;
+    padding-top: 5px;
+    padding-left: 10px;
+    border: 1.5px solid #dbe0e9;
+}
+
+.compName input{
+    width: 235px;
+    margin-right: 15px;
+
+}
+
+.buseoName{
+    width: 278px;
+    height: 62px;
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-right: 10px;
+    border: 1.5px solid #dbe0e9;
+}
+
+.buseoName input{
+    width: 235px;
+    margin-right: 15px;
+}
+
+.ipsa{
+    width: 115px;
+    height: 62px;
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-right: 10px;
+    border: 1.5px solid #dbe0e9;
+}
+
+.ipsa input{
+    width: 80px;
+    margin-right: 15px;
+}
+
+.teasa{
+    width: 115px;
+    height: 62px;
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-right: 10px;
+    border: 1.5px solid #dbe0e9;
+}
+
+.teasa input{
+    width: 80px;
+    margin-right: 15px;
+}
+
+.jikGp{
+    width: 278px;
+    height: 62px;
+    padding-top: 5px;
+    padding-left: 10px;
+    border: 1.5px solid #dbe0e9;
+}
+
+.jikGp input{
+    width: 235px;
+    margin-right: 15px;
+}
+
+input{
+    font-size: 12px;
+    line-height: 25px;
+  
+}
+
+.upJong{
+    width: 278px;
+    height: 62px;
+    padding-top: 5px;
+    padding-left: 10px;
+    border: 1.5px solid #dbe0e9;
+}
+
+.upJong input{
+    width: 235px;
+    margin-right: 15px;
+   
+}
+
+.yeonBong{
+    width: 115px;
+    height: 62px;
+    padding-top: 5px;
+    padding-left: 10px;
+    border: 1.5px solid #dbe0e9;
+}
+
+.yeonBong input{
+    width: 85px;
+    margin-right: 15px;
+   
+}
+
+.upMu{
+    border: 1px solid #dae0e9;
+    width: 900px;
+    /* height: 87px; */
+    padding: 5px 0 0 10px;
+}
+
+.upMu label{
+    font-size: 10px;
+    color: #999;
+}
+.upMu textarea{
+    margin-top: 5px;
+    border: none;
+    width: 887px;
+    height: 87px;
+    resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* formProfile */
+
+.formProfileForm{
+    position: relative;
+    width: 940px;
+    height: 180px;
+    margin-bottom: 34px;
+    padding : 20px 20px 10px;
+    background-color: #fff;
+    border: 1px solid #dbe0e9;
+    color: #999;
+}
+
+.jool{
+    display: flex;
+    width: 896px;
+    height: 62px;
+    margin-bottom: 10px;
+}
+
+.joolInputName{
+    width: 180px;
+    height: 60px;
+    border: 2px solid #ddd;
+    padding: 0 15px;
+    margin-right: 10px;
+}
+
+.joolInputName input{
+    width: 150px;
+    margin-top: 5px;
+}
+
+.joolInputBirth{
+    width: 180px;
+    height: 60px;
+    border: 2px solid #ddd;
+    padding: 0 15px;
+    margin-right: 10px;
+}
+
+.joolInputBirth input{
+    width: 150px; 
+    margin-top: 5px;
+}
+
+.joolInputMail{
+    width: 276px;
+    height: 62px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+}
+
+.joolInputMail input{
+    width: 250px; 
+    margin-top: 5px;
+}
+
+.joolPhoneNum{
+    width: 182px;
+    height: 62px;
+    /* margin-left: 10px; */
+    padding: 0 15px;
+    border: 1px solid #ddd;
+}
+
+.joolPhoneNum input{
+    width: 150px; 
+    margin-top: 5px;
+}
+
+.joolAddress{
+    width: 580px;
+    height: 62px;
+    margin-left: 10px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+}
+
+.joolAddress input{
+    width: 550px; 
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.description{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    font-size: 13px;
+    color: #999;
+    font-weight: normal;
+}
+
+.star{
+    color: #ff3333;
+}
+
+
+
+.input input{
+    display: block;
+    width: 100%;
+    /* height: 60px; */
+    padding: 0 15px;
+    border: 0;
+    color: #333;
+    outline: none;
+    /* -webkit-box-sizing: border-box; */
+    box-sizing: border-box;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+
+
+/* row */
 .row{
     position: relative;
     margin-bottom: 10px;
     font-size: 0;
+    display: flex;
+    /* display: block; */
+    float: left;
+
 }
 
+.row div {
+    width: 178px;
+    height: 58px;
+    border: 2px solid #ddd;
+    margin: 0 10px;
+    color: #999;
+}
+
+.picturePlus{
+    position: absolute;
+    right: 20px;
+    width: 103px;
+    height: 134px;
+    border: 2px solid #ddd;
+    text-align: center;
+    line-height: 134px !important;
+}
+
+
+
+.school{
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0 20px 10px;
+    font-size: 0;
+    display: flex;
+    float: left;  
+}
+
+.school div{
+    border: 2px solid #ddd;
+    color: #999;
+}
+
+.dropDown div{ border: 2px solid #ddd;
+    color: #999;}
+
+.inputSchool{
+    width: 350px;
+    height: 62px;
+
+}
+
+.inputSchool input{
+    width: 300px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.ipHak{
+    width: 106px;
+    height: 62px;
+    margin-left: 10px;
+    padding-left: 5px;
+}
+
+.ipHak input {
+    width: 90px;
+    margin-top: 5px;
+}
+
+.jolUp{
+    width: 106px;
+    height: 62px;
+    padding-left: 5px;
+}
+
+.jolUp input {
+    width: 90px;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.jolUpStatus{
+    width: 106px;
+    height: 62px;
+    padding-left: 5px;
+}
+
+.jolUpStatus input {
+    width: 96px;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.majorName{
+    width: 460px;
+    height: 62px; 
+    padding-left: 5px;
+}
+
+.majorName input{
+    width: 445px;
+    margin-top: 5px;
+}
+ 
+.hakJum{
+    width: 106px;
+    height: 62px;
+    padding-left: 5px;
+    margin-left: 10px;
+}
+
+.hakJum input{
+    width: 90px;
+    margin-top: 5px;
+}
+
+/* 자격증 */
+
+.licenseForm{
+    position: relative;
+    z-index: 100;
+    display: flex;
+    float: left;
+    width: 940px;
+    margin-bottom: 34px;
+    padding: 20px 20px 10px;
+    background-color: #fff;
+    border: 1px solid #dbe0e9; 
+    box-sizing: border-box;
+}
+
+.cert{
+    width: 450px;
+    height: 62px;
+    margin-right: 10px;
+    color: #666;
+    border: 1px solid #ddd;
+}
+
+.cert input{
+    width: 447px; 
+}
+
+.balHeng{
+    width: 286px;
+    height: 62px;
+    margin-right: 10px;
+    color: #666;
+    border: 1px solid #ddd;
+}
+
+.balHeng input{
+    width: 270px;
+}
+
+.getMonth{
+    width: 125px;
+    height: 62px;
+    margin-right: 10px;
+    color: #666;
+    border: 1px solid #ddd;
+
+}
+
+.getMonth input{
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+/* 오른쪽 광고배너 */
+.fixedAd{
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    width: 240px;
+    height: 300px;
+    background-color: #fff;
+    margin: 0px;
+    
+}
+
+.fixedAd button{
+    width: 100%;
+    margin: 0;
+    color: white;
+    background-color: #3399ff;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.container{
+    padding: 0 14px;
+    margin-bottom: 59px;
+    width: 240px;
+    height: 200px;
+
+}
+.container h2{
+    height: 48px;
+    padding-top: 16px;
+    font-size: 14px;
+    color: #999;
+    text-align: left;
+}
+
+.container ul{
+    position: relative;
+    padding: 15px 0 20px;
+    border-top: 3px solid #eee;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.container li{
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* form은 이미 선언되어있으니 위에 두고 
+새로 적용할 것들을 여기에 */
+.introduceForm{    
+    position: relative;
+    width: 940px;
+    /* height: 177px; */
+    margin-bottom: 34px;
+    padding: 20px 20px 10px;
+    background-color: #fff;
+    border: 1px solid #dbe0e9;
+    /* -webkit-box-sizing: border-box; */
+    box-sizing: border-box;  
+}
+
+.submit{
+    margin-top: 30px;
+    border-top: 1px solid #dbe0db;
+}
+
+.contents{ 
+}
+
+.contents div{
+    border: 1px solid #dbe0db;
+    width: 100%;
+    height: 58px;
+}
+
+.contents div:last-child{
+    height: 272px; 
+}
+
+.contents input{
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+.contents textarea{
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    resize: none; 
+    font-size: 16px;
+    padding: 12px 14px;
+}
+
+.submit{
+    text-align: center;
+}
+
+.submit button{
+    border: 0 none;
+    background-color: #fff;
+    width: 100%;
+    height: 50px;
+}
+
+
+.form2{
+    position: relative;
+    width: 940px;
+    height: 231px;
+    margin-bottom: 34px;
+    padding: 20px 20px 10px;
+    background-color: #fff;
+    border: 1px solid #dbe0e9;
+    /* -webkit-box-sizing: border-box; */
+    box-sizing: border-box;
+}
+
+
+div.goYong{
+    width: 426px;
+    height: 62px;
+}
+
+div.wnatMoney{
+    width: 214px;
+    height: 62px;
+}
+
+
+div.wantPlace{
+    padding: 12px 60px 5px 0px;
+    width: 832px;
+    height: 42px;
+}
+
+div.workKey{
+    width: 832px;
+    height: 64px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* a .logo .linkLogo{
+    padding-top: 13px;
+    height: 29px;
+    width: 72px;
+} */
+
+/* 
 .links{
     padding: 6px 0 0 12px; 
-    /* background-color: aqua; */
+     
     position: absolute;
     right: 0;
     top: 0;
@@ -151,7 +910,24 @@ h2.header{
     padding-right: 15px;
     margin-right: 7px;
 }
+ */
 
+ /* 
+.input-profile-name{
+    width: 178px;
+    height: 58px;
+    border: 2px solid #ddd;
+    margin-right: 10px;
+} */
 
-
-
+/* .input.is-label.is-value input{
+    height: 41px;
+} */
+/* 
+.input-profile-birth{
+    width: 178px;
+    height: 58px;
+    border: 2px solid #ddd;
+    margin-right: 10px;
+}
+ */
