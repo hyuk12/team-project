@@ -1,0 +1,155 @@
+.main-page {
+  background-color: rgba(238, 238, 238, 0.849);
+
+  width: 100%;
+  height: 230px;
+
+  display: flex;
+  justify-content: center;
+
+  border-bottom: 0 none;
+}
+
+.myContent {
+  width: 1200px;
+  height: 190px;
+
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.box {
+  border: 1px solid #dce1eb;
+  background-color: #fff;
+}
+
+.profile {
+  width: 190px;
+  height: 190px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.profile-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 86px;
+  height: 86px;
+
+  overflow: hidden;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+.profile-img img {
+  max-width: 86px;
+}
+.username {
+  font-size: 16px;
+  color: #333;
+  margin-top: 5px;
+}
+
+.active {
+  width: 1000px;
+  height: 190px;
+}
+.activeList {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.count-num {
+  width: 82px;
+  height: 82px;
+
+  border-radius: 50%;
+  background-color: rgba(238, 238, 238, 0.849);
+  color: #39f;
+
+  font-size: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.count-num p {
+  font-size: 40px;
+}
+
+.activeName {
+  border: 1px solid #d6d6d6;
+
+  margin-top: 10px;
+  padding: 2px 7px 4px;
+
+  font-size: 13px;
+}
+
+.center {
+  width: auto;
+  height: 220px;
+
+  background-color: rgba(238, 238, 238, 0.849);
+
+  border-top: 0 none;
+
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+.content-group {
+  width: 1200px;
+  height: 190px;
+}
+
+.group-top {
+  width: 100%;
+  height: 50px;
+
+  border-bottom: 1px solid #dce1eb;
+}
+
+.top-mn {
+  padding: 15px;
+}
+.top-mn h2 {
+  float: left;
+  font-size: 16px;
+}
+
+.group-center {
+  width: 100%;
+  height: 140px;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.center-mn {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mn-tilte {
+  padding-top: 25px;
+}
+
+.center-submn ul {
+  /* padding-top: 10px;*/
+}
+.center-submn li {
+  padding-top: 10px;
+  padding-right: 20px;
+}
