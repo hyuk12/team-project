@@ -9,9 +9,9 @@ import lombok.RequiredArgsConstructor;
 @Controller
 public class PageController {
 	
-	@GetMapping({"/", "index"})
+	@GetMapping({"/signinbefore/index"})
 	public String indexForm() {
-		return "index";
+		return "signinbefore/index";
 	}
 	
 	@GetMapping({"/auth/signup"})
@@ -32,6 +32,11 @@ public class PageController {
 	@GetMapping({"/auth/signinComp"})
 	public String signinCompForm() {
 		return "auth/signinComp";
+	}
+	
+	@GetMapping({"/", "myIndex"})
+	public String signinAfterForm() {
+		return "myIndex";
 	}
 	
 	

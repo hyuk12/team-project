@@ -15,7 +15,7 @@
     <div id="container">
         <div class="logotop-login">
             <p class="lnb">
-                <a href="/index">잡코리아홈</a>
+                <a href="/signinbefore/index">잡코리아홈</a>
                 <span class="txtBar">|</span>
                 <a href="#">고객센터</a>
             </p>

@@ -22,7 +22,7 @@
             </div>
             <ul class="gnb">
                 <li>
-                    <a href="/index">홈</a>
+                    <a href="/signinbefore/index">홈</a>
                 </li>
                 <li>
                     <a href="">고객센터</a>
