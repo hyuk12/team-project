@@ -45,7 +45,7 @@
                     <input type="password" class="inpTxt inpPW off devCapsLock" name="password" title="비밀번호 입력"
                         autocomplete="off" placeholder="비밀번호">
                 </div>
-                 <button type="submit" class="btLogin">로그인</button>
+                 <button type="button" class="btLogin">로그인</button>
                 </div>
         </form>
             

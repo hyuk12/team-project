@@ -192,7 +192,48 @@
                                 <div class="profile-info"><h1>전국 물류센터 계약직 대규모 모집</h1></div>
                                 <div class="follow-btn"><i class="far fa-star"></i></div>
                             </div>
-                        </div>         
+                        </div>
+                      <div class="board-item-group">
+                        <div class="board-item">
+                            <div class="company-profile">
+                                <div class="company-info">
+                                    <img src="/images/nav-logo.png" alt="">
+                                </div>
+                                <div class="profile-name"><h3>cupang</h3></div>
+                                <div class="profile-info"><h1>전국 물류센터 계약직 대규모 모집</h1></div>
+                                <div class="follow-btn"><i class="far fa-star"></i></div>
+                            </div>
+                        </div>  
+                        <div class="board-item">
+                            <div class="company-profile">
+                                <div class="company-info">
+                                    <img src="/images/nav-logo.png" alt="">
+                                </div>
+                                <div class="profile-name"><h3>cupang</h3></div>
+                                <div class="profile-info"><h1>전국 물류센터 계약직 대규모 모집</h1></div>
+                                <div class="follow-btn"><i class="far fa-star"></i></div>
+                            </div>
+                        </div>     
+                        <div class="board-item">
+                            <div class="company-profile">
+                                <div class="company-info">
+                                    <img src="/images/nav-logo.png" alt="">
+                                </div>
+                                <div class="profile-name"><h3>cupang</h3></div>
+                                <div class="profile-info"><h1>전국 물류센터 계약직 대규모 모집</h1></div>
+                                <div class="follow-btn"><i class="far fa-star"></i></div>
+                            </div>
+                        </div>    
+                      <div class="board-item">
+                            <div class="company-profile">
+                                <div class="company-info">
+                                    <img src="/images/nav-logo.png" alt="">
+                                </div>
+                                <div class="profile-name"><h3>cupang</h3></div>
+                                <div class="profile-info"><h1>전국 물류센터 계약직 대규모 모집</h1></div>
+                                <div class="follow-btn"><i class="far fa-star"></i></div>
+                            </div>
+                        </div>           
                     </div>
                 </div>
               </div>            
