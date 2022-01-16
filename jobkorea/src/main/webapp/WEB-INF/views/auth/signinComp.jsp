@@ -35,7 +35,7 @@
                     </li>
                 </ul>
             </div>
-            <form action="/auth/signinComp" method="post">
+          <form action="/auth/signinComp" method="post">
             <div class="input-row">
                 <div class="input-item">
                     <input type="text" class="inpTxt inpID off" name="M_ID" size="16" maxlength="20" title="아이디 입력"
@@ -43,9 +43,9 @@
                     <input type="password" class="inpTxt inpPW off devCapsLock" name="M_PWD" id="M_PWD" size="16" title="비밀번호 입력"
                         autocomplete="off" placeholder="비밀번호">
                 </div>
-                 <button type="button" class="btLogin">로그인</button>
+                 <button type="submit" class="btLogin">로그인</button>
             </div>
-            </form>
+          </form>
             <div class="find-row">
                 <p>
                 	<a href="/auth/signupComp">회원가입</a>
