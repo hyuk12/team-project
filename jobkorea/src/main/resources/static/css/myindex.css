@@ -53,8 +53,8 @@
     align-items: center;
     width: 280px;
     height: 130px;
-    border-radius: 10px;
-    background-color: #dfe3e68f;
+    border: none;
+    background-color: #f8f9fb;
 }
 
 .my-login-info > a {
@@ -67,18 +67,6 @@
     font-size: 16px;
     letter-spacing: 2px;
    
-}
-
-.my-login-info > a:hover{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 40px;
-    background-color: #b3b7bb8f;
-    border: 1px solid #e8ecef;
-    border-radius: 10px;
-
 }
 
 .my-login-info > a > i{
@@ -98,18 +86,6 @@
     border-radius: 10px;
 }
 
-.my-login-info > button:hover{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 40px;
-    background-color: #b3b7bb8f;
-    border: 1px solid #e8ecef;
-    border-radius: 10px;
-
-}
-
 .my-info-resume {
     display: flex;
     justify-content: center;
@@ -118,17 +94,6 @@
     border-radius: 10px;
     width: 150px;
     height: 40px;
-}
-
-.my-info-resume > a:hover{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 40px;
-    background-color: #b3b7bb8f;
-    border: 1px solid #e8ecef;
-    border-radius: 10px;
 }
 
 .board-menu {
@@ -156,7 +121,6 @@
 
 .board-item-group {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 30px;
     width: 1260px;
@@ -169,7 +133,7 @@
     align-items: flex-start;
     width: 306px;
     height: 214px;
-    margin-top: 10px;
+    margin-top: 3px;
     /* margin-right: 5px; */
     background-color: #fff;
     overflow: hidden;

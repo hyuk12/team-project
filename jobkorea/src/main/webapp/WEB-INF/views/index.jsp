@@ -89,12 +89,12 @@
                 <ul class="login-btns">
                     <li>
                         <button type="button" class="user-login-btn" title="개인회원 로그인">
-                            <a href="#">개인회원 <br>로그인</a>
+                            <a href="/auth/signin">개인회원 <br>로그인</a>
                         </button>
                     </li>
                     <li>
                         <button type="button" class="company-login-btn" title="기업전용 로그인">
-                            <a href="#">기업전용 <br>로그인</a>
+                            <a href="/auth/signinComp">기업전용 <br>로그인</a>
                         </button>
                     </li>
                 </ul>

@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 @charset "UTF-8";
 
+=======
+>>>>>>> origin/chh
 *{
     margin: 0;
 }
@@ -308,7 +311,10 @@ input{
     margin: 0;
     padding: 0;
     
+<<<<<<< HEAD
     z-index: 10;
+=======
+>>>>>>> origin/chh
     font-size: 16px;
     color: #333;
     background-color: transparent;
@@ -405,6 +411,13 @@ input{
     background-repeat: no-repeat;
 }
 
+<<<<<<< HEAD
+=======
+.skip{
+
+}
+
+>>>>>>> origin/chh
 li.person_on{
     list-style: none;
 
