@@ -35,7 +35,7 @@
                     </li>
                 </ul>
             </div>
-          <form action="/auth/signinComp" method="post">
+          <form action="/auth/signin" method="post">
             <div class="input-row">
                 <div class="input-item">
                     <input type="text" class="inpTxt inpID off" name="M_ID" size="16" maxlength="20" title="아이디 입력"

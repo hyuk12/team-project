@@ -323,7 +323,7 @@ input{
     background-color: transparent;
 }
 
-.mbrBtnRegist{
+#mbrBtnRegist{
     width: 100%;
     height: 75px;
     background-color: #3399ff;

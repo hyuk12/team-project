@@ -90,19 +90,19 @@
 
                 <div class="first_mbr_name">
                     <div class="col_2">
-                        <input type="text" id="M_userName" name="username" class="su-ip" placeholder="아이디 *" maxlength="12">
+                        <input type="text" id="M_userName" name="name" class="su-ip" placeholder="가입자명 *" maxlength="12">
                     </div>
                 </div>
                 <div class="second_mbr_name">
                     <div class="col_2">
-                        <input type="text" id="M_pwd" name="password" class="su-ip" placeholder="비밀번호 *"  maxlength="12">
+                        <input type="text" id="M_pwd" name="username class="su-ip" placeholder="아이디 *"  maxlength="12">
                     </div>
                 </div>
             </div>
             <!-- 아이디 -->
             <div class="row mbr_id">
                 <div class="col_2">
-                    <input type="text" id="idCheck" name="name" class="su-ip"  placeholder="가입자명 *"  maxlength="16">
+                    <input type="text" id="idCheck" name="password" class="su-ip"  placeholder="비밀번호 *"  maxlength="16">
                 </div>
             </div>
 
@@ -130,13 +130,13 @@
         <!-- 가입하기 버튼 -->
         <div class="row_group regist_complete" style="position: relative;">
             <div class="row">
-                <button type="submit" class="mbrBtnRegist">
+                <button type="submit" id="mbrBtnRegist" class="su-submit-btns">
                     <span>가입하기</span>
                 </button>
             </div>
         </div>
     </div>
-    <script src="/js/signupComp.js"></script>
+    <script src="/js/signup.js"></script>
 </body>
 
 </html>

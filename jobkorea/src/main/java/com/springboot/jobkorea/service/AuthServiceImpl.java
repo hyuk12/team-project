@@ -55,32 +55,38 @@ public class AuthServiceImpl implements AuthService {
 	}
 
 	@Override
-	public SignupCompRespDto<?> validCheck(SignupCompReqDto signupCompReqDto, BindingResult bindingResult) {
-		if(bindingResult.hasErrors()) {
-			Map<String, String> errorMap = new HashMap<String, String>();
-			for(FieldError error : bindingResult.getFieldErrors()) {
-				errorMap.put(error.getField(), error.getDefaultMessage());
-			}
-			SignupCompRespDto<Map<String, String>> signupCompRespDto = new SignupCompRespDto<Map<String, String>>();
-			signupCompRespDto.setCode(444);
-			signupCompRespDto.setData(errorMap);
-			
-			return signupCompRespDto;
-		}else {
-			int checkUsernameResult = userRepository.checkUsernameByUsername(signupCompReqDto.getUsername());
-			SignupCompRespDto<String> signupCompRespDto = new SignupCompRespDto<String>();
-			if(checkUsernameResult == 0) {
-				//회원가입성공
-				Company compUserEntity = signupCompReqDto.toEntity();
-				userRepository.insertCompUser(compUserEntity);
-				signupCompRespDto.setCode(001);
-				signupCompRespDto.setData("회원가입 완료.");
-			}else {
-				//회원가입실패
-				signupCompRespDto.setCode(002);
-				signupCompRespDto.setData("이미 존재하는 아이디입니다.");
-			}
-			return signupCompRespDto;
+	public SignupCompRespDto<?> validCheck(SignupCompReqDto signupReqDto, BindingResult bindingResult) {
+		// TODO Auto-generated method stub
+		return null;
 	}
-	}
+
+//	@Override
+//	public SignupCompRespDto<?> validCheck(SignupCompReqDto signupCompReqDto, BindingResult bindingResult) {
+//		if(bindingResult.hasErrors()) {
+//			Map<String, String> errorMap = new HashMap<String, String>();
+//			for(FieldError error : bindingResult.getFieldErrors()) {
+//				errorMap.put(error.getField(), error.getDefaultMessage());
+//			}
+//			SignupCompRespDto<Map<String, String>> signupCompRespDto = new SignupCompRespDto<Map<String, String>>();
+//			signupCompRespDto.setCode(444);
+//			signupCompRespDto.setData(errorMap);
+//			
+//			return signupCompRespDto;
+//		}else {
+//			int checkUsernameResult = userRepository.checkUsernameByUsername(signupCompReqDto.getUsername());
+//			SignupCompRespDto<String> signupCompRespDto = new SignupCompRespDto<String>();
+//			if(checkUsernameResult == 0) {
+//				//회원가입성공
+//				Company compUserEntity = signupCompReqDto.toEntity();
+//				userRepository.insertCompUser(compUserEntity);
+//				signupCompRespDto.setCode(001);
+//				signupCompRespDto.setData("회원가입 완료.");
+//			}else {
+//				//회원가입실패
+//				signupCompRespDto.setCode(002);
+//				signupCompRespDto.setData("이미 존재하는 아이디입니다.");
+//			}
+//			return signupCompRespDto;
+//	}
+//	}
 }
