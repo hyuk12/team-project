@@ -18,6 +18,8 @@ public class PrincipalDetail implements UserDetails{
 	private static final long serialVersionUID = 1L;
 	
 	private User user;
+	
+	
 	private Company company; 
 	
 	public PrincipalDetail(User user) {

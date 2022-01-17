@@ -10,7 +10,7 @@ import com.springboot.jobkorea.service.AuthService;
 import com.springboot.jobkorea.web.dto.auth.SignupCompReqDto;
 import com.springboot.jobkorea.web.dto.auth.SignupReqDto;
 import lombok.RequiredArgsConstructor;
-
+    
 @RequiredArgsConstructor
 @RestController
 public class AuthController {

@@ -40,23 +40,40 @@ button{
     width: 287px;
     border: 1px solid #d2d2d2;
 
+    line-height: 30px;
+    font-size: 15px;
 }
 
-.iconNaver{
+
+#btnNvLogin img{
     position: relative;
-    top: 20px;
-    width: 20px;
-    height: 18px;
-    margin-right: 20px;
-    background: url(/images/naver.png) 0 0 no-repeat;
-    
-}
-.iconGoogle{
+    top: 5px;
+    width: 18px;
+    height: 21px;
     margin-right: 10px;
-    background: url(/images/google.png) 0 0 no-repeat;
+    padding-right: 10px;
+
+}
+
+#btnGooLogin {
+    display: inline-block;
+    height: 44px;
+    width: 287px;
+    border: 1px solid #d2d2d2;
+
+    line-height: 30px;
+    font-size: 15px;
 }
 
 
+#btnGooLogin img{
+    position: relative;
+    top: 5px;
+    width: 20px;
+    height: 21px;
+    margin-right: 10px;
+    padding-right: 10px;
+}
 
 #wrap{
     width: 640px !important;
@@ -139,36 +156,38 @@ button{
     text-decoration: none;
     font-size: 22px;
 }
-/* 개인 회원 */
-.person{
 
-     width: 220px;
+.person{
+    width: 420px;
+    height: 60px;
+    
+    background-color: #3399ff;  
+   
+}
+.person a{
+    color: white;
+    width: 100%;
+    padding-left: 180px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.corp{
+    width: 220px;
     height: 60px;
     background-color: white;
     color: #656565;
     border-bottom: 2px solid #3399ff;
     box-sizing: border-box;
 }
-.person a{
-     width: 100%;
+
+
+.corp a{
+    width: 100%;
     padding-left: 65px;
     font-size: 18px;
-}
-
-/* 기업 회원 */
-.corp{
-   width: 420px;
-    height: 60px;
-    background-color: #3399ff;  
-}
-
-
-.corp a{   
-    color: white;
-    width: 100%;
-    padding-left: 180px;
-    font-size: 22px;
-    font-weight: bold;
+    
 }
 
 .row_group{
@@ -214,9 +233,8 @@ button{
     position: absolute;
     right: 30px;
     top :41px;
-    font-size: 11px;
-    
-    color: #9d9d9d;
+    font-size: 13pxj;
+    color: #afb0b2;
 }
 
 strong{
@@ -242,10 +260,6 @@ strong{
     font: inherit;
 }
 
-#insaID{
-    width: 225px;
-}
-
 .col_1 label{
     color: #afb0b2;
     font-size: 16px;
@@ -261,38 +275,8 @@ strong{
     border: 1px solid #ddd;
 }
 
-.row mbr_name{
-    display: flex;
-    float: left;
-}
 
-.first_mbr_name{
-    display: inline-block;
-    width: 225px;
-}
-
-.second_mbr_name{
-    margin-left: 15px;
-    display: inline-block;
-    width: 284px;
-}
-
-.second_mbr_name > .col_1 {
-    position: absolute;
-    left: 250px;
-}
-
- 
-
-
-
-
-
-.mbr_email p{
-    display: block;
-    font-size: 12px;
-    color: #666666;
-    padding: 15px 0 5px 0px;
+.mbr_id{
 
 }
 
@@ -319,11 +303,11 @@ input{
     padding: 0;
 
     border: 0;
-    margin-top: 30px;
+    margin-bottom: 10px;
     background-color: transparent;
 }
 
-.mbrBtnRegist{
+#mbrBtnRegist{
     width: 100%;
     height: 75px;
     background-color: #3399ff;
@@ -337,7 +321,8 @@ input{
 
 
 
-/* ------------------------- */
+
+
 
 
 
@@ -420,8 +405,6 @@ li.person_on{
     
 
 }
-
-
 
 
 
