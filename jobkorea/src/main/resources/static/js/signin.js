@@ -4,31 +4,53 @@
 
 
 
-const loginBtn = document.querySelector('.btLogin');
+const ploginBtns = document.querySelector('.pbtLogin');
+const cloginBtns = document.querySelector('.cbtLogin');
 const form = document.querySelector('form');
-const usernameObj = document.querySelector('.username');
-const personBtn = document.querySelectorAll('.Cbtns');
-const userForm = document.querySelector('.input-item');
-const compForm = document.querySelector('.input-item2');
+const usernameObjs = document.querySelector('.personname');
+const compUsernameObjs = document.querySelector('.compusername');
+const tabli = document.querySelectorAll('.tab-li');
+const inputItem = document.querySelector('.input-item');
+const inputItem2 = document.querySelector('.input-item2');
+const on = document.querySelector('.on');
 
 function changeUsername() {
     const inputId = document.querySelector('.inpID').value;
-    usernameObj.value = inputId + '_p';
+
+    usernameObjs.value = inputId + '_p';
 }
 
-function hiddenDiv (){
-    if(compForm.style.display == 'none'){
-        compForm.style.display = 'block';
-    }else{
-        compForm.style.display = 'none';
-    }
+function changeUsername2() {
+    const inputId = document.querySelector('.inpID').value;
+
+    compUsernameObjs.value = inputId + '_c';
 }
 
-personBtn[1].onclick = () => {
-    hiddenDiv();
-}
+tabli[0].onclick = () => {
+    tabli[0].classList.add('on');
+    tabli[1].classList.remove('on');
 
-loginBtn.onclick = () => {
+    inputItem.style.display = 'flex';
+    inputItem2.style.display = 'none';
+
+}
+ploginBtns.onclick = () => {
     changeUsername();
     form.submit();
 }
+
+tabli[1].onclick = () => {
+    tabli[1].classList.add('on');
+    tabli[0].classList.remove('on');
+
+    inputItem.style.display = 'none';
+    inputItem2.style.display = 'flex';
+
+}
+
+cloginBtns.onclick = () => {
+    console.log(changeUsername2());
+    changeUsername2();
+    form.submit();
+}
+

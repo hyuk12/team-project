@@ -10,6 +10,7 @@
         jobkorea.co,kr
     </title>
     <link rel="stylesheet" href="/css/signin.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
     <div id="container">
@@ -30,10 +31,10 @@
         	<div class="select-row">
                 <ul id="decMemTab">
                     <li class="on">
-                        <a href="/auth/signin" class="Cbtns">개인회원</a>
+                        <a href="#" class="tab-li on">개인회원</a>
                     </li>
                     <li>
-                        <a href="/auth/signin" class="Cbtns">기업회원</a>
+                        <a href="#" class="tab-li on">기업회원</a>
                     </li>
                 </ul>
             </div>
@@ -42,18 +43,20 @@
                 <div class="input-item">
                     <input type="text" class="inpTxt inpID off" name="id-ip"   title="아이디 입력"
                         style="ime-mode:inactive" autocomplete="off" placeholder="개인아이디">
-                    <input type="hidden" class="username" name="username" value="">
+                    <input type="hidden" class="personname" name="username" value="">
                     <input type="password" class="inpTxt inpPW off devCapsLock" name="password" title="비밀번호 입력"
                         autocomplete="off" placeholder="비밀번호">
+                    <button type="button" class="pbtLogin">로그인</button>
                 </div>
                 <div class="input-item2">
                     <input type="text" class="inpTxt inpID off" name="id-ip"   title="아이디 입력"
                            style="ime-mode:inactive" autocomplete="off" placeholder="기업아이디">
-                    <input type="hidden" class="username" name="username" value="">
+                    <input type="hidden" class="compusername" name="username" value="">
                     <input type="password" class="inpTxt inpPW off devCapsLock" name="password" title="비밀번호 입력"
                            autocomplete="off" placeholder="비밀번호">
+                    <button type="button" class="cbtLogin">로그인</button>
                 </div>
-                <button type="button" class="btLogin">로그인</button>
+
             </div>
         </form>
             

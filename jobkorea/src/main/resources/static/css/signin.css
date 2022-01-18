@@ -27,7 +27,6 @@ a {
   font-weight: normal;
 }
 
-
 h1 {
   display: block;
 
@@ -108,7 +107,7 @@ input {
   width: 400px;
   height: auto;
 }
-.select-row:after {
+.select-row:aftrer {
   content: "";
   display: block;
   height: 0;
@@ -126,7 +125,7 @@ input {
   font-weight: bold;
   height: 39px;
   font: bold 16px/36px "Malgun Gothic", "맑은 고딕", verdana, dotum, "돋움",
-    sans-serif;
+  sans-serif;
   letter-spacing: -1px;
   border-bottom: 1px solid #39f;
 }
@@ -141,19 +140,16 @@ input {
 }
 
 .input-row {
-  display: flex;
   position: relative;
+  display: flex;
   text-align: left;
   margin-top: 10px;
 }
-
-
-
 .input-item {
   display: flex;
   flex-direction: column;
 }
-.input-item2{
+.input-item2 {
   display: none;
   flex-direction: column;
 }
@@ -172,7 +168,7 @@ input {
   line-height: 46px;
   color: #333;
   font: bold 14px "Malgun Gothic", "맑은 고딕", verdana, dotum, "돋움",
-    sans-serif;
+  sans-serif;
 }
 .btLogin {
   width: 120px;
@@ -181,7 +177,7 @@ input {
   color: #fff;
   min-height: 55px;
   font: bold 16px "Malgun Gothic", "맑은 고딕", verdana, dotum, "돋움",
-    sans-serif;
+  sans-serif;
   letter-spacing: -1px;
 }
 
@@ -197,7 +193,7 @@ input {
   padding: 10px;
 
   font: bold 14px "Malgun Gothic", "맑은 고딕", verdana, dotum, "돋움",
-    sans-serif;
+  sans-serif;
 }
 
 #footer {
