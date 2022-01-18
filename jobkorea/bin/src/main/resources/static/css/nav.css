@@ -1,0 +1,343 @@
+/* header */
+.header {
+    position: relative;
+    zoom: 1;
+    width: 100%;
+    z-index: 2000;
+   
+  
+    background-color: #fff;
+}
+
+.nav-main {
+    
+    position: relative;
+    padding-top: 31px;
+    margin: 0px 210px;
+    width: 1260px;
+    min-width: 1260px;
+    height: 102px;
+    color: #494949;
+    font: 12px "맑은고딕", Malgun Gothic, "굴림", Gulim, sans-serif;
+
+    
+}
+
+.nav-logo {
+    position: relative;
+    width: 180px;
+    height: 42px;
+    overflow: visible;
+    margin: 0px 0px 0px 13px;
+    float: left;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+.nav-logo img{
+    display: block;
+    position: absolute;
+    top: -8px;
+    width: 160px;
+    height: 60px;
+    font-size: 0;
+}
+
+.nav-search{
+    display: flex;
+    float: left;
+    box-sizing: border-box;
+    width: 410px;
+    height: 42px;
+    border: 2px solid #39f;
+    margin-left: 0px;
+}
+input {
+    vertical-align: middle;
+}
+.nav-search-ip {
+    background: none;
+    border: 0;
+    width: 366px;
+    padding: 0 10px 3px 12px;
+    height: 38px;
+    font: 12px "맑은고딕", Malgun Gothic, "굴림", Gulim, sans-serif;
+    letter-spacing: -1px;
+    outline: none;
+}
+.nav-search-borderBtn {
+    width: 406px;
+    height: 0;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    /* z-index: 1000;
+    /* display: block;
+    text-align: left; */ 
+}
+
+.nav-search-borderBtn > .nav-search-btn  {
+    
+    overflow: hidden;
+    float: left;
+    width: 44px;
+    height: 38px;
+    background-color: #3399ff;
+    background-position: -146px 9px;
+    border: none;
+    cursor: pointer;
+    text-indent: -9999em;
+    position: absolute;
+    right: 0;
+    /* top: 0; */
+    background: url(/images/search.png) 0 0 no-repeat;
+}
+
+
+
+.nav-items {
+    float: left;
+    padding-left: 6px;
+}
+.nav-item-search {
+    width: 119px;
+    height: 42px;
+    float: left;
+}
+
+.joblist-btn {
+    position: relative;
+    width: 119px;
+    height: 42px;
+    border: 1px solid #85c2ff;
+    padding-top: 2px;
+}
+button {
+    overflow: visible;
+    background: transparent;
+    cursor: pointer;
+    vertical-align: middle;
+    border: 0 none;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.textjob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    text-align: center;
+    z-index: -1;
+    color: #39f;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+#nav-home-icon{
+    font-size: 25px;
+}
+#nav-plus-icon{
+    font-size: 25px;
+}
+
+.nav-items-profile {
+    
+    border: 0px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+}
+
+.nav-items-profile img {
+    max-width: 25px;
+}
+
+.nav-bar {
+   
+    height: 50px;
+    border-top: 1px solid #ebeef3;
+    border-bottom: 1px solid #3399ff;
+    position: relative;
+
+    
+}
+.nav-inner {
+    width: 1260px;
+    min-width: 1260px;
+    margin: 0px auto;
+}
+
+.category {
+  float: left;
+  height: 51px;
+  border-left: 1px solid #ebeef3;
+  border-right: 1px solid #ebeef3;
+  overflow: hidden;
+}
+
+.category-btn {
+    display: block;
+    width: 49px;
+    height: 51px;
+    position: relative;
+}
+
+.category-btn > i {
+    
+    /* padding: 17.5px 13.5px; */
+    /* align-items: center; */
+    font-size: 22px;
+    color: #39f;
+    background-color: #fff;
+   
+}
+
+.nav-inner-service {
+    margin: -1px 0 0 -1px;
+    
+}
+.nav-inner-service::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.nav-inner-service > ul{
+    margin: 0;
+    padding: 0;
+}
+.services {
+    width: 851px;
+    height: 51px;
+    float: left;    
+    margin: 0;
+    padding: 0;
+
+}
+
+.service-item {
+    float: left;
+}
+
+.service-item > a {
+    width: 90px;
+    padding: 0 17px;
+    display: block;
+    height: 51px;
+    position: relative;
+
+}
+
+.post-job-btn {
+    /* cursor: pointer;
+    background-color: #fff;
+    display: block;
+    position: relative;
+    top: 18px;
+    left: 50%;
+    height: 16px;
+    background-position: 0 -4px;
+    width: 56px;
+    margin-left: -28px; */
+
+}
+.post-job-btn > span {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 0px 17px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    z-index: -1;
+    font-size: 16px;
+    font-weight: 900;
+    color: #39f;
+}
+
+
+.nav-user {
+    float: right;
+}
+
+.my-info {
+    float: left;
+    position: relative;
+    margin-left: -1px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.my-info-open {
+    overflow: hidden;
+    height: 51px;
+    padding-left: 0;
+    border-left: 1px solid #ebeef3;
+    border-right: 1px solid #ebeef3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    position: relative;
+}
+
+.my-info-open > i {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-size: 28px;
+    text-align: center;
+    color: #a4a7aa;
+}
+
+.company-open   {
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 51px;
+    color: #30353a;
+    background-color: transparent;
+    line-height: 150px;
+    box-sizing: border-box;
+    border-right: 1px solid #ebeef3;
+}
+
+.company-open::before {
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 76px;
+    height: 15px;
+    margin: -7px 0 0 -38px;
+
+}
+
+.company-open > .post-job-btn > span {
+    
+    color: #494949;
+}
+

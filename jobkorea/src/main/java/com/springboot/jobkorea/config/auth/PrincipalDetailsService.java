@@ -23,12 +23,20 @@ public class PrincipalDetailsService implements UserDetailsService{
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		User userEntity = userRepository.getUserByUsername(username);
 		Company compEntity = userRepository.getCompanyByUsername(username);
+		
 		if(userEntity == null) {
-			if(compEntity != null) {
-				return new PrincipalDetail(compEntity);
-			}else {
+			if (compEntity == null ) {
 				return null;
+			} else {
+				return new PrincipalDetail(compEntity);
 			}
+
+		//	if(compEntity != null) {
+		//		return new PrincipalDetail(compEntity);
+		//	}else {
+		//		return null;
+		//	}
+		
 		}else {
 			return new PrincipalDetail(userEntity);
 		}
