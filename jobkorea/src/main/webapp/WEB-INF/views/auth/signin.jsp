@@ -29,11 +29,11 @@
         
         	<div class="select-row">
                 <ul id="decMemTab">
-                    <li class="on">
-                        <a href="/auth/signin" data-m-type="M">개인회원</a>
+                    <li class="tab-li on">
+                        <a href="#" data-m-type="M">개인회원</a>
                     </li>
-                    <li>
-                        <a href="/auth/signinComp" data-m-type="Co">기업회원</a>
+                    <li class="tab-li">
+                        <a href="#" data-m-type="Co">기업회원</a>
                     </li>
                 </ul>
             </div>
@@ -44,6 +44,12 @@
                         style="ime-mode:inactive" autocomplete="off" placeholder="아이디">
                     <input type="password" class="inpTxt inpPW off devCapsLock" name="password" title="비밀번호 입력"
                         autocomplete="off" placeholder="비밀번호">
+                </div>
+                <div class="input-item2">
+                    <input type="text" class="inpTxt inpID off" name="M_ID" size="16" maxlength="20" title="아이디 입력"
+                        style="ime-mode:inactive" autocomplete="off" placeholder="기업 아이디">
+                    <input type="password" class="inpTxt inpPW off devCapsLock" name="M_PWD" id="M_PWD" size="16" title="기업비밀번호 입력"
+                        autocomplete="off" placeholder="기업 비밀번호">
                 </div>
                  <button type="submit" class="btLogin">로그인</button>
                 </div>
@@ -86,5 +92,6 @@
             </p>
         </div>
     </div>
+    <script src="/js/signin.js"></script>
 </body>
 </html>
