@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.springboot.jobkorea.domain.user.Company;
 import com.springboot.jobkorea.domain.user.User;
-import com.springboot.jobkorea.domain.user.UserDtl;
+
 import com.springboot.jobkorea.domain.user.UserRepository;
 
 import lombok.RequiredArgsConstructor;
@@ -21,18 +21,28 @@ public class PrincipalDetailsService implements UserDetailsService{
 	
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		User userEntity = userRepository.getUserByUsername(username);
-		Company compEntity = userRepository.getCompanyByUsername(username);
-		if(userEntity == null) {
-			if(compEntity != null) {
-				return new PrincipalDetail(compEntity);
-			}else {
+		int tokenIndex = username.lastIndexOf("_");
+		String userFlag = username.substring(tokenIndex + 1);
+		username = username.substring(0, tokenIndex);
+
+		if(userFlag.equals("p")){
+			User userEntity = userRepository.getUserByUsername(username);
+			if(userEntity == null){
 				return null;
+			}else{
+				System.out.println(userEntity);
+				return new PrincipalDetail(userEntity);
 			}
+
 		}else {
-			return new PrincipalDetail(userEntity);
+			Company compEntity = userRepository.getCompanyByUsername(username);
+			if(compEntity == null){
+				return null;
+			}else{
+				System.out.println(compEntity);
+				return new PrincipalDetail(compEntity);
+			}
 		}
 	}
-	
 
 }

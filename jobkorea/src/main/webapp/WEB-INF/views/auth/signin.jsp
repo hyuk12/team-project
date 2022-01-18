@@ -30,23 +30,31 @@
         	<div class="select-row">
                 <ul id="decMemTab">
                     <li class="on">
-                        <a href="/auth/signin" data-m-type="M">개인회원</a>
+                        <a href="/auth/signin" class="Cbtns">개인회원</a>
                     </li>
                     <li>
-                        <a href="/auth/signinComp" data-m-type="Co">기업회원</a>
+                        <a href="/auth/signin" class="Cbtns">기업회원</a>
                     </li>
                 </ul>
             </div>
        <form action="/auth/signin" method="post">
-            <div class="input-row">
+            <div class="input-row" >
                 <div class="input-item">
-                    <input type="text" class="inpTxt inpID off" name="username"  title="아이디 입력"
-                        style="ime-mode:inactive" autocomplete="off" placeholder="아이디">
+                    <input type="text" class="inpTxt inpID off" name="id-ip"   title="아이디 입력"
+                        style="ime-mode:inactive" autocomplete="off" placeholder="개인아이디">
+                    <input type="hidden" class="username" name="username" value="">
                     <input type="password" class="inpTxt inpPW off devCapsLock" name="password" title="비밀번호 입력"
                         autocomplete="off" placeholder="비밀번호">
                 </div>
-                 <button type="submit" class="btLogin">로그인</button>
+                <div class="input-item2">
+                    <input type="text" class="inpTxt inpID off" name="id-ip"   title="아이디 입력"
+                           style="ime-mode:inactive" autocomplete="off" placeholder="기업아이디">
+                    <input type="hidden" class="username" name="username" value="">
+                    <input type="password" class="inpTxt inpPW off devCapsLock" name="password" title="비밀번호 입력"
+                           autocomplete="off" placeholder="비밀번호">
                 </div>
+                <button type="button" class="btLogin">로그인</button>
+            </div>
         </form>
             
             
@@ -86,5 +94,6 @@
             </p>
         </div>
     </div>
+    <script src="/js/signin.js"></script>
 </body>
 </html>

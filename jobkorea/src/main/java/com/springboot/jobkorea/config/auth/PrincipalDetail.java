@@ -3,6 +3,7 @@ package com.springboot.jobkorea.config.auth;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import com.springboot.jobkorea.domain.user.UserRepository;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -16,17 +17,30 @@ public class PrincipalDetail implements UserDetails{
 
 	
 	private static final long serialVersionUID = 1L;
-	
+
+
 	private User user;
-	private Company company; 
+	private Company company;
+
+	private String username;
+	private String password;
+	private String role;
+
 	
 	public PrincipalDetail(User user) {
 		this.user = user;
-		
+		this.username = user.getUsername();
+		this.password = user.getPassword();
+		this.role = user.getRole();
 	}
+
 	public PrincipalDetail(Company company) {
 		this.company = company;
+		this.username = company.getUsername();
+		this.password = company.getPassword();
+		this.role = company.getRole();
 	}
+	
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -34,14 +48,15 @@ public class PrincipalDetail implements UserDetails{
 		
 		Collection<GrantedAuthority>collection = new ArrayList<GrantedAuthority>();
 		collection.add(new GrantedAuthority() {
-			
+
 			
 			private static final long serialVersionUID = 1L;
 
+			
 			@Override
 			public String getAuthority() {
 				
-				return user.getRole();
+				return role;
 				
 			}
 		});
@@ -53,13 +68,13 @@ public class PrincipalDetail implements UserDetails{
 	@Override
 	public String getPassword() {
 		// TODO Auto-generated method stub
-		return user.getPassword();
+		return password;
 	}
 
 	@Override
 	public String getUsername() {
 		// TODO Auto-generated method stub
-		return user.getUsername();
+		return username;
 	}
 
 	@Override
@@ -85,5 +100,6 @@ public class PrincipalDetail implements UserDetails{
 		// TODO Auto-generated method stub
 		return true;
 	}
+
 
 }

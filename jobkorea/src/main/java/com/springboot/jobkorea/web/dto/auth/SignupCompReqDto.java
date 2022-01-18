@@ -54,7 +54,7 @@ public class SignupCompReqDto {
 				.ceoname(ceoname)
 				.username(username)
 				.password(new BCryptPasswordEncoder().encode(password))
-				.role("ROLE_USER")
+				.role("COMPANY")
 				.name(name)
 				.phone(phone)
 				.email(email)

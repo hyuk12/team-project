@@ -7,6 +7,8 @@ public interface UserRepository {
 	public int checkUsernameByUsername(String username);
 	public int insertUser(User user);
 	public int insertCompUser(Company company);
+	public User getRoleByRole(String role);
+	public Company getCompRoleByRole(String role);
 	public User getUserByUsername(String username);
 	public Company getCompanyByUsername(String username);
 	

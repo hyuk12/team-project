@@ -35,15 +35,16 @@
                     </li>
                 </ul>
             </div>
-          <form action="/auth/signinComp" method="post">
+          <form action="/auth/signin" method="post">
             <div class="input-row">
                 <div class="input-item">
-                    <input type="text" class="inpTxt inpID off" name="M_ID" size="16" maxlength="20" title="아이디 입력"
+                    <input type="text" class="inpTxt inpID off" name="M_ID" value="" size="16" maxlength="20" title="아이디 입력"
                         style="ime-mode:inactive" autocomplete="off" placeholder="아이디">
+                    <input type="hidden" class="username" name="username" value="_c">
                     <input type="password" class="inpTxt inpPW off devCapsLock" name="M_PWD" id="M_PWD" size="16" title="비밀번호 입력"
                         autocomplete="off" placeholder="비밀번호">
                 </div>
-                 <button type="submit" class="btLogin">로그인</button>
+                 <button type="button" class="btLogin">로그인</button>
             </div>
           </form>
             <div class="find-row">
@@ -82,5 +83,6 @@
             </p>
         </div>
     </div>
+    <script src="/js/signinComp.js"></script>
 </body>
 </html>

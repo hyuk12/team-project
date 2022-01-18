@@ -27,6 +27,7 @@ a {
   font-weight: normal;
 }
 
+
 h1 {
   display: block;
 
@@ -107,7 +108,7 @@ input {
   width: 400px;
   height: auto;
 }
-.select-row:aftrer {
+.select-row:after {
   content: "";
   display: block;
   height: 0;
@@ -140,13 +141,20 @@ input {
 }
 
 .input-row {
-  position: relative;
   display: flex;
+  position: relative;
   text-align: left;
   margin-top: 10px;
 }
+
+
+
 .input-item {
   display: flex;
+  flex-direction: column;
+}
+.input-item2{
+  display: none;
   flex-direction: column;
 }
 
