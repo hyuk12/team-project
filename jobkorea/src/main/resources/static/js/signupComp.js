@@ -117,5 +117,5 @@ submitBtns.onclick = () => {
 		signup();
 		checkEmail();
 		checkPhone();
-		checkCompNum()
+		checkCompNum();
 	}
