@@ -21,13 +21,7 @@ public class PrincipalDetailsService implements UserDetailsService{
 	
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-<<<<<<< HEAD
-<<<<<<< HEAD
 		int tokenIndex = username.lastIndexOf("_");
-=======
-
-		int tokenIndex = username.indexOf("_");
->>>>>>> 7e0a0f3e03c7c09d2f2f8a6ce729c6f23e08302a
 		String userFlag = username.substring(tokenIndex + 1);
 		System.out.println(userFlag);
 		username = username.substring(0, tokenIndex);
@@ -48,20 +42,19 @@ public class PrincipalDetailsService implements UserDetailsService{
 				System.out.println(compEntity);
 				return new PrincipalDetail(compEntity);
 			}
-=======
-		User userEntity = userRepository.getUserByUsername(username);
+		// User userEntity = userRepository.getUserByUsername(username);
 		// Company compEntity = userRepository.getCompanyByUsername(username);
 		
-		if(userEntity == null) {
-			return null;
+		// if(userEntity == null) {
+		//	return null;
 			/*
 			 * if (compEntity == null ) { return null; } else { return new
 			 * PrincipalDetail(compEntity); }
 			 */
-		} else {
-			return new PrincipalDetail(userEntity);
->>>>>>> 48a8d831a8ccdfd8a96e8202facd40c3b5cc10ea
-		}
+		// } else {
+			// return new PrincipalDetail(userEntity);
+		// }
 	}
 
+	}
 }
