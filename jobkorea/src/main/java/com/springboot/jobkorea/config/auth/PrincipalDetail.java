@@ -40,11 +40,14 @@ public class PrincipalDetail implements UserDetails{
 
 			@Override
 			public String getAuthority() {
+				
 				return user.getRole();
 				
 			}
 		});
 		return collection;
+		
+		
 	}
 
 	@Override

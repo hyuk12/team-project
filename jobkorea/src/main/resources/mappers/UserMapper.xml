@@ -11,6 +11,7 @@
   			user_mst
   		where
   			username = #{username};
+  			
   	</select>
   
   	<insert id="insertUser" parameterType="com.springboot.jobkorea.domain.user.User">
