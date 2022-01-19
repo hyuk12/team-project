@@ -8,23 +8,22 @@
 const ploginBtns = document.querySelector('.pbtLogin');
 const cloginBtns = document.querySelector('.cbtLogin');
 const form = document.querySelector('form');
-const usernameObjs = document.querySelector('.personname');
-const compUsernameObjs = document.querySelector('.compusername');
+const usernameObjs = document.querySelectorAll('.personname');
 const tabli = document.querySelectorAll('.tab-li');
 const inputItem = document.querySelector('.input-item');
 const inputItem2 = document.querySelector('.input-item2');
 const on = document.querySelector('.on');
 
 function changeUsername() {
-    const inputId = document.querySelector('.inpID').value;
+    const inputId = document.querySelectorAll('.inpID')[0].value;
 
-    usernameObjs.value = inputId + '_p';
+    usernameObjs[0].value = inputId + '_p';
 }
 
 function changeUsername2() {
-    const inputId = document.querySelector('.inpID').value;
+    const inputId = document.querySelectorAll('.inpID')[1].value;
 
-    compUsernameObjs.value = inputId + '_c';
+    usernameObjs[1].value = inputId + '_c';
 }
 =======
 const inputItem = document.querySelector('.input-item');

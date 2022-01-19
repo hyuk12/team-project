@@ -60,7 +60,7 @@
 <<<<<<< HEAD
                     <input type="text" class="inpTxt inpID off" name="id-ip"   title="아이디 입력"
                            style="ime-mode:inactive" autocomplete="off" placeholder="기업아이디">
-                    <input type="hidden" class="compusername" name="username" value="">
+                    <input type="hidden" class="personname" name="username" value="">
                     <input type="password" class="inpTxt inpPW off devCapsLock" name="password" title="비밀번호 입력"
                            autocomplete="off" placeholder="비밀번호">
                     <button type="button" class="cbtLogin">로그인</button>
