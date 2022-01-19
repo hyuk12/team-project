@@ -33,6 +33,7 @@ public class PrincipalDetail implements UserDetails{
 		this.password = user.getPassword();
 		this.role = user.getRole();
 	}
+<<<<<<< HEAD
 
 	public PrincipalDetail(Company company) {
 		this.company = company;
@@ -41,6 +42,11 @@ public class PrincipalDetail implements UserDetails{
 		this.role = company.getRole();
 	}
 	
+=======
+	// public PrincipalDetail(Company company) {
+	//	 this.company = company;
+	// }
+>>>>>>> 48a8d831a8ccdfd8a96e8202facd40c3b5cc10ea
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {

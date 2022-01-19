@@ -30,11 +30,19 @@
         
         	<div class="select-row">
                 <ul id="decMemTab">
+<<<<<<< HEAD
                     <li class="on">
                         <a href="#" class="tab-li on">개인회원</a>
                     </li>
                     <li>
                         <a href="#" class="tab-li on">기업회원</a>
+=======
+                    <li class="tab-li on">
+                        <a href="#" data-m-type="M">개인회원</a>
+                    </li>
+                    <li class="tab-li">
+                        <a href="#" data-m-type="Co">기업회원</a>
+>>>>>>> 48a8d831a8ccdfd8a96e8202facd40c3b5cc10ea
                     </li>
                 </ul>
             </div>
@@ -49,12 +57,22 @@
                     <button type="button" class="pbtLogin">로그인</button>
                 </div>
                 <div class="input-item2">
+<<<<<<< HEAD
                     <input type="text" class="inpTxt inpID off" name="id-ip"   title="아이디 입력"
                            style="ime-mode:inactive" autocomplete="off" placeholder="기업아이디">
                     <input type="hidden" class="compusername" name="username" value="">
                     <input type="password" class="inpTxt inpPW off devCapsLock" name="password" title="비밀번호 입력"
                            autocomplete="off" placeholder="비밀번호">
                     <button type="button" class="cbtLogin">로그인</button>
+=======
+                    <input type="text" class="inpTxt inpID off" name="M_ID" size="16" maxlength="20" title="아이디 입력"
+                        style="ime-mode:inactive" autocomplete="off" placeholder="기업 아이디">
+                    <input type="password" class="inpTxt inpPW off devCapsLock" name="M_PWD" id="M_PWD" size="16" title="기업비밀번호 입력"
+                        autocomplete="off" placeholder="기업 비밀번호">
+                </div>
+                 <input type="hidden" class="checkID">
+                 <button type="submit" class="btLogin">로그인</button>
+>>>>>>> 48a8d831a8ccdfd8a96e8202facd40c3b5cc10ea
                 </div>
 
             </div>
