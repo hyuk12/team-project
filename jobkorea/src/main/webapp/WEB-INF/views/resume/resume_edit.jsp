@@ -49,7 +49,7 @@
                         <div class="jool">
                             <div class="joolInputName">
                                 <label for="">이름<span class="star">*</span></label>
-                                <input type="text" name="name" value=${principal.user.name }>
+                                <input type="text" name="name" value=${principal.users.name }>
                             </div>
                             <div class="joolInputBirth">
                                 <label for="">생년월일<span class="star">*</span></label>
@@ -71,14 +71,14 @@
                             </div>
                             <div class="joolInputMail">
                                 <label for="">이메일</label>
-                                <input type="text" name="email" value="${principal.user.email }">
+                                <input type="text" name="email" value="${principal.users.email }">
                             </div>
                         </div>
 
                         <div class="jool">
                             <div class="joolPhoneNum">
                                 <label for="">휴대전화번호<span class="star">*</span></label>
-                                <input type="text" name="phone" value="${principal.user.phone }">
+                                <input type="text" name="phone" value="${principal.users.phone }">
                             </div>
                             <div class="joolAddress">
                                 <label for="">주소</label>
@@ -86,92 +86,7 @@
                             </div>
                         </div>
                     </div>
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <!--
-                <div class="formWrap">
-                    <h2 class="header">인적사항
-                        <div class="description">
-                            <span class="star">*</span> 필수 입력 정보입니다.
-                        </div>
-                    </h2>
-
-
-
-                    <div class="profileForm">
-                        <div class="rows">
-                            <div class="input-profile-name">
-                                <label for="UserInfo_M_Name">
-                                    이름
-                                    <span class="star">*</span>
-                                </label>
-                                <input type="text" name="UserInfo.M_Name" id="UserInfo_M_Name"
-                                    data-foramt-type="name">
-                            </div>
-                            <div class="input-profile-birth">
-                                <label for="UserInfo_M_Born">
-                                    생년월일
-                                    <span class="star">*</span>
-                                </label>
-                                <input data-format-type="birth" type="text" id="UserInfo_M_Born"
-                                    name="UserInfo.M_Born" placeholder="2022.01.14">
-                            </div>
-                            <div class="dropDown">
-                                <button>
-                                    <label for="UserInfo_M_Sex">
-                                        성별
-                                        <span class="star">*</span>
-                                    </label>
-                                    <div class="list">
-                                        <ul>
-                                            <li>남자</li>
-                                            <li>여자</li>
-                                        </ul>
-                                    </div>
-                                </button>
-                            </div>
-                            <div>
-                                <label for=UserInfo_M_Email">
-                                    이메일
-                                    <span class="star">*</span>
-ㅇ                                </label>
-                                <input type="text">
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div>
-                                <label for="UserInfo_M_PhoneNum">
-                                    휴대폰 번호
-                                    <span class="star">*</span>
-                                </label>
-                                <input type="text">
-                            </div>
-                            <div><label for="UserInfo_M_Address">
-                                    주소
-                                </label>
-                                <input type="text">
-                            </div>
-                        </div>
-                        <div class="picturePlus">
-                            <a href="#">사진추가</a>
-                        </div>
-                    </div>
-                </div>
-
-            -->
+           
                 <h2 class="header">학력</h2>
                 <div class="form">
                     <div class="school">

@@ -21,31 +21,26 @@ public class PrincipalDetailsService implements UserDetailsService{
 	
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-
-		int tokenIndex = username.indexOf("_");
-		
+		int tokenIndex = username.lastIndexOf("_");
 		String userFlag = username.substring(tokenIndex + 1);
 		username = username.substring(0, tokenIndex);
-		System.out.println(userFlag);
 
 		if(userFlag.equals("p")){
 			User userEntity = userRepository.getUserByUsername(username);
 			if(userEntity == null){
 				return null;
 			}else{
-				System.out.println(userEntity);
 				return new PrincipalDetail(userEntity);
 			}
 
-		}else {
+		} else {
+			System.out.println(username);
 			Company compEntity = userRepository.getCompanyByUsername(username);
 			if(compEntity == null){
 				return null;
 			}else{
-				System.out.println(compEntity);
 				return new PrincipalDetail(compEntity);
 			}
 		}
 	}
-
 }

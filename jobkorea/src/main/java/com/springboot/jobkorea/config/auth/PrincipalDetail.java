@@ -19,7 +19,7 @@ public class PrincipalDetail implements UserDetails{
 	private static final long serialVersionUID = 1L;
 
 
-	private User user;
+	private User users;
 	private Company company;
 
 	private String username;
@@ -28,7 +28,7 @@ public class PrincipalDetail implements UserDetails{
 
 	
 	public PrincipalDetail(User user) {
-		this.user = user;
+		this.users = user;
 		this.username = user.getUsername();
 		this.password = user.getPassword();
 		this.role = user.getRole();
@@ -48,11 +48,7 @@ public class PrincipalDetail implements UserDetails{
 		
 		Collection<GrantedAuthority>collection = new ArrayList<GrantedAuthority>();
 		collection.add(new GrantedAuthority() {
-
-			
 			private static final long serialVersionUID = 1L;
-
-			
 			@Override
 			public String getAuthority() {
 				

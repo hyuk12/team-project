@@ -30,29 +30,29 @@
         
         	<div class="select-row">
                 <ul id="decMemTab">
-                    <li class="on">
-                        <a href="#" class="tab-li on">개인회원</a>
+                    <li class="tab-li on">
+                        <a href="#">개인회원</a>
                     </li>
-                    <li>
-                        <a href="#" class="tab-li on">기업회원</a>
+                    <li class="tab-li">
+                        <a href="#">기업회원</a>
                     </li>
                 </ul>
             </div>
        <form action="/auth/signin" method="post">
             <div class="input-row" >
+            <input type="hidden" class="username" name="username">
+            <input type="hidden" class="password" name="password">    
                 <div class="input-item">
-                    <input type="text" class="inpTxt inpID off" name="id-ip"   title="아이디 입력"
+                    <input type="text" class="inpTxt inpID off"  title="아이디 입력"
                         style="ime-mode:inactive" autocomplete="off" placeholder="개인아이디">
-                    <input type="hidden" class="personname" name="username" value="">
-                    <input type="password" class="inpTxt inpPW off devCapsLock" name="password" title="비밀번호 입력"
+                    <input type="password" class="inpTxt inpPW off devCapsLock" title="비밀번호 입력"
                         autocomplete="off" placeholder="비밀번호">
                     <button type="button" class="pbtLogin">로그인</button>
                 </div>
                 <div class="input-item2">
-                    <input type="text" class="inpTxt inpID off" name="id-ip"   title="아이디 입력"
+                    <input type="text" class="inpTxt inpID off"  title="아이디 입력"
                            style="ime-mode:inactive" autocomplete="off" placeholder="기업아이디">
-                    <input type="hidden" class="personname" name="username" value="">
-                    <input type="password" class="inpTxt inpPW off devCapsLock" name="password" title="비밀번호 입력"
+                    <input type="password" class="inpTxt inpPW off devCapsLock"title="비밀번호 입력"
                            autocomplete="off" placeholder="비밀번호">
                     <button type="button" class="cbtLogin">로그인</button>
                 </div>
