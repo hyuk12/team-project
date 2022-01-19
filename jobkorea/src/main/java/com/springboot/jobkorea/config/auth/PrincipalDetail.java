@@ -24,9 +24,9 @@ public class PrincipalDetail implements UserDetails{
 		this.user = user;
 		
 	}
-	public PrincipalDetail(Company company) {
-		this.company = company;
-	}
+	// public PrincipalDetail(Company company) {
+	//	 this.company = company;
+	// }
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {

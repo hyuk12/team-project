@@ -5,6 +5,8 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface UserRepository {
 	public int checkUsernameByUsername(String username);
+	public int checkCompUsernameByCompUsername(String username);
+	
 	public int insertUser(User user);
 	public int insertCompUser(Company company);
 	public User getUserByUsername(String username);

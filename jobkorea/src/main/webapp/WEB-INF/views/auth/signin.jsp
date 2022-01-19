@@ -51,6 +51,7 @@
                     <input type="password" class="inpTxt inpPW off devCapsLock" name="M_PWD" id="M_PWD" size="16" title="기업비밀번호 입력"
                         autocomplete="off" placeholder="기업 비밀번호">
                 </div>
+                 <input type="hidden" class="checkID">
                  <button type="submit" class="btLogin">로그인</button>
                 </div>
         </form>
