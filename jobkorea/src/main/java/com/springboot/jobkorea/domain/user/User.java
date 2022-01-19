@@ -14,9 +14,10 @@ public class User {
 	private String name;
 	private String username;
 	private String password;
+	private String role;
 	private String email;
 	private String phone;
-	private String role;
+	
 	
 //	기업 정보
 	

@@ -11,4 +11,7 @@ public interface UserRepository {
 	public User getUserByUsername(String username);
 	public Company getCompanyByUsername(String username);
 	
+	// 이력서 등록
+	public UserDtl updateByUser(UserDtl userDtl);
+	
 }

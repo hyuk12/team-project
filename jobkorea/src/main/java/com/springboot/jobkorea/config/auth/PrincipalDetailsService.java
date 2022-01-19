@@ -23,9 +23,11 @@ public class PrincipalDetailsService implements UserDetailsService{
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
 		int tokenIndex = username.indexOf("_");
+		
 		String userFlag = username.substring(tokenIndex + 1);
-		System.out.println(userFlag);
 		username = username.substring(0, tokenIndex);
+		System.out.println(userFlag);
+
 		if(userFlag.equals("p")){
 			User userEntity = userRepository.getUserByUsername(username);
 			if(userEntity == null){

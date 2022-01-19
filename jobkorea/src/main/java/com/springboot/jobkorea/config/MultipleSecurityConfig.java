@@ -14,8 +14,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 @EnableWebSecurity
 @Configuration
-@EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
-public class MultipleSecurityConfig  {
+
+public class MultipleSecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	
 
@@ -24,28 +24,25 @@ public class MultipleSecurityConfig  {
 		return new BCryptPasswordEncoder();
 	}
 	
-	@Order(1)
-	@Configuration
-	public static class PersonalSecurityconfiguration extends WebSecurityConfigurerAdapter{
+
 		
-		
-		@Override
-		protected void configure(HttpSecurity http) throws Exception {
-			http.csrf().disable();
-			http.authorizeRequests()
-				.antMatchers("/myIndex","/")
-					.authenticated()
-				.anyRequest()
-				.permitAll()
-				.and()
-				.formLogin()
-				.loginPage("/auth/signin")
-				.loginProcessingUrl("/auth/signin")
-				.defaultSuccessUrl("/");
+	@Override
+	protected void configure(HttpSecurity http) throws Exception {
+		http.csrf().disable();
+		http.authorizeRequests()
+			.antMatchers("/myIndex","/","/resume/**")
+			.authenticated()
+			.anyRequest()
+			.permitAll()
+			.and()
+			.formLogin()
+			.loginPage("/auth/signin")
+			.loginProcessingUrl("/auth/signin")
+			.defaultSuccessUrl("/");
 		}
 	}
 	
 	
 	
-	
-}
+
+

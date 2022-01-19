@@ -1,5 +1,7 @@
 package com.springboot.jobkorea.domain.user;
 
+import java.time.LocalDateTime;
+
 public class UserDtl {
 	private int id;
 	
@@ -9,6 +11,7 @@ public class UserDtl {
 	private String gender; // 성별
 	private String email; // 이메일
 	private String address; // 주소
+	private String profile_img; //프로필이미지
 	private String education; //학력
 	private String schoolName; // 학교명
 	private String admissionYear; // 입학년월일
@@ -29,5 +32,9 @@ public class UserDtl {
 	private String issuedBy; // 발행처
 	private String handlingMonth; // 취급월
 	private String selfIntroduction; // 자기소개서
+	
+	private LocalDateTime create_date;
+	private LocalDateTime update_date;
+	
 	
 }

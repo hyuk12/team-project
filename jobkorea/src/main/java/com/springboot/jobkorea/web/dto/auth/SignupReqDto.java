@@ -34,9 +34,9 @@ public class SignupReqDto {
 				.name(name)
 				.username(username)
 				.password(new BCryptPasswordEncoder().encode(password))
+				.role("PERSONAL")
 				.email(email)
 				.phone(phone)
-				.role("PERSONAL")
 				.build();
 	}
 }

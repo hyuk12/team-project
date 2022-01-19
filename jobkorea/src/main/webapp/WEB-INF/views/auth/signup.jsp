@@ -70,7 +70,7 @@
                     	</label>
                 	</div>
                 	<div class="col_2">
-                    	<input type="text" id="M_Name" class="su-ip" name="M_Name" placeholder="이름 *" class="mbr_name" maxlength="12">
+                    	<input type="text" id="M_Name" class="su-ip" name="name" placeholder="이름 *" class="mbr_name" maxlength="12">
                 	</div>
             	</div>
 
@@ -81,7 +81,7 @@
                     	</label>
                 	</div>
                 	<div class="col_2">
-                    	<input type="text" id="idCheck" class="su-ip"  name="idCheck" placeholder="아이디(잡코리아, 알바몬 통합 ID) *" maxlength="16">
+                    	<input type="text" id="idCheck" class="su-ip"  name="username" placeholder="아이디(잡코리아, 알바몬 통합 ID) *" maxlength="16">
                 	</div>
             	</div>
 
@@ -92,7 +92,7 @@
                     	</label>
                 	</div>
                 	<div class="col_2">
-                    	<input type="text" id="M_Pwd" class="su-ip"  name="M_Pwd" placeholder="비밀번호(8~16자의 영문, 숫자, 특수기호) *" maxlength="16">
+                    	<input type="text" id="M_Pwd" class="su-ip"  name="password" placeholder="비밀번호(8~16자의 영문, 숫자, 특수기호) *" maxlength="16">
                 	</div>
             	</div>
 
@@ -103,7 +103,7 @@
                     	</label>
                 	</div>
                 	<div class="col_2">
-                    	<input type="text" id="M_Email" class="su-ip"  name="M_Email" placeholder="이메일 *" size="8" maxlength="30">
+                    	<input type="text" id="M_Email" class="su-ip"  name="email" placeholder="이메일 *" size="8" maxlength="30">
                 	</div>
             	</div>
             	<!-- 휴대폰번호 -->
@@ -113,7 +113,7 @@
                     	</label>
                 	</div>
                 	<div class="col_2">
-                    	<input type="text" id="M_Phone" class="su-ip"  name="M_Phone" placeholder="휴대폰 번호 *" size="8" maxlength="30">
+                    	<input type="text" id="M_Phone" class="su-ip"  name="phone" placeholder="휴대폰 번호 *" size="8" maxlength="30">
                 	</div>
             	</div>
 
