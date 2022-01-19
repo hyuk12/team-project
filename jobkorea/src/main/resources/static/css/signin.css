@@ -170,9 +170,10 @@ input {
   font: bold 14px "Malgun Gothic", "맑은 고딕", verdana, dotum, "돋움",
   sans-serif;
 }
-.btLogin {
-  width: 120px;
-  height: 99px;
+.pbtLogin,
+.cbtLogin {
+  width: 282px;
+  height: 50px;
   background: #3399ff;
   color: #fff;
   min-height: 55px;

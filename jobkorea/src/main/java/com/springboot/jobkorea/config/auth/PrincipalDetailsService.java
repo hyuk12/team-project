@@ -30,16 +30,15 @@ public class PrincipalDetailsService implements UserDetailsService{
 			if(userEntity == null){
 				return null;
 			}else{
-				System.out.println(userEntity);
 				return new PrincipalDetail(userEntity);
 			}
 
-		}else {
+		} else {
+			System.out.println(username);
 			Company compEntity = userRepository.getCompanyByUsername(username);
 			if(compEntity == null){
 				return null;
 			}else{
-				System.out.println(compEntity);
 				return new PrincipalDetail(compEntity);
 			}
 		}
