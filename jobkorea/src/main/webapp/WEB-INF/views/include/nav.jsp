@@ -65,7 +65,7 @@
                 <ul class="nav-user">
                     <li class="my-info">
                         <a href="#" class="my-info-open">
-                            <i class="far fa-user"></i>
+                            <img src="/images/mypage-logo.png" >
                         </a>
                     </li>
                     <li class="service-item">
