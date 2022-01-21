@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
-!<html>
+<html>
 <head>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/nav.css">
@@ -41,7 +41,7 @@
             <div class="nav-inner-service">
                 <ul class="services">
                     <li class="service-item">
-                        <a href="#">
+                        <a href="/jobs/joblist">
                                 <span class="post-job-btn">
                                     <span>채용정보</span>
                                 </span>
