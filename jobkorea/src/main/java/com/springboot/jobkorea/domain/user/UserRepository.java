@@ -2,6 +2,8 @@ package com.springboot.jobkorea.domain.user;
 
 import org.apache.ibatis.annotations.Mapper;
 
+import com.springboot.jobkorea.domain.resume.Resume;
+
 @Mapper
 public interface UserRepository {
 	public int checkUsernameByUsername(String username);
@@ -11,7 +13,8 @@ public interface UserRepository {
 	public User getUserByUsername(String username);
 	public Company getCompanyByUsername(String username);
 	
-	// 이력서 등록
-	public UserDtl updateByUser(UserDtl userDtl);
+	
+	public Resume getResumeById(int id);
+
 	
 }

@@ -65,7 +65,7 @@ function signupValidMsg(data){
 		);
 	}else if(signupDataObj.code == 001){
 		alert(signupDataObj.data);
-		location.replace('/auth/signin');
+		location.replace('/resume/edit');
 	
 	}
 }

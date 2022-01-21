@@ -5,7 +5,6 @@
 
 <sec:authorize access="isAuthenticated()">
 	<sec:authentication property="principal" var="principal"/>
-
 </sec:authorize>
 
 <!DOCTYPE html>
@@ -23,142 +22,115 @@
 
 <body>
 <div class="resumePage">
-    <!-- <div class="resumeHeader">
-        <div class="container">
-            <a href="https://www.jobkorea.co.kr/" class="logo linkLogo"><img
-                    src="https://i.jobkorea.kr/content/images/text_user/resume/logo-jobkorea.png?20190718"
-                    alt="JOBKOREA"></a>
-
-            <div class="links">
-                <a href="#">개인회원 홈</a>
-                <a href="#">이력서 관리</a>
-            </div>
-        </div>
-    </div> -->
     <div class="resumeWrapper">
         <div class="resumeContainer">
             <div class="formWrap">
-
-                <div class="resumeTitle">
-                    <input maxlength="100" placeholder="기업에게 나에 대해 알려줍시다. 강점, 목표, 관심분야도 좋아요." type="text">
-                </div>
-
                 <div class="formProfile">
-                    <h2 class="header">인적사항</h2>
+                <form enctype="multipart/form-data">
+                	<h2 class="header">인적사항</h2>
                     <div class="formProfileForm">
                         <div class="jool">
                             <div class="joolInputName">
                                 <label for="">이름<span class="star">*</span></label>
-                                <input type="text" name="name" value=${principal.users.name }>
+                                <input type="text" class="re-ip" name="name" value="${principal.users.name }">
                             </div>
                             <div class="joolInputBirth">
                                 <label for="">생년월일<span class="star">*</span></label>
-                                <input type="text" placeholder="2022-01-15">
+                                <input type="text" class="re-ip" name="birth" placeholder="2022-01-15" value="${principal.resume.birth}">
                             </div>
                             <div class="dropDown">
-                                <button type="button" class="button buttonChoose">
-                                        <span>
-                                            성별
-                                            <span class="star">*</span>
-                                        </span>
-                                </button>
-                                <div>
-                                    <ul class="hide">
-                                        <li><button type="button" class="button"><span>남자</span></button></li>
-                                        <li><button type="button" class="button"><span>여자</span></button></li>
-                                    </ul>
-                                </div>
+                            	<div>
+                            		<label>성별</label>
+                                		<input type="text" list="gender-ip" class="gender-ip re-ip" name="gender" value="${principal.resume.gender }">
+                                		<datalist id="gender-ip">
+                                			<option value="남성"/>
+                                			<option value="여성"/>
+                                		</datalist>
+                                	
+                            	</div>
+                                	
                             </div>
                             <div class="joolInputMail">
                                 <label for="">이메일</label>
-                                <input type="text" name="email" value="${principal.users.email }">
+                                <input type="text" class="re-ip" name="email" value="${principal.users.email }">
                             </div>
+                            <div class="picturePlus" >
+                    			<div class="profile-img-add-btn">
+                    				<input type="file" id="file" name="profile_img">
+                    				<img id="profile-img"  src="/image/${principal.resume.profile_img }">
+                    				
+                    			</div>
+                    		</div>
                         </div>
 
                         <div class="jool">
                             <div class="joolPhoneNum">
                                 <label for="">휴대전화번호<span class="star">*</span></label>
-                                <input type="text" name="phone" value="${principal.users.phone }">
+                                <input type="text" class="re-ip" name="phone" value="${principal.users.phone }">
                             </div>
                             <div class="joolAddress">
                                 <label for="">주소</label>
-                                <input type="text" name="address" id="">
+                                <input type="text" class="re-ip" name="address" value="${principal.resume.address }">
                             </div>
                         </div>
                     </div>
+                    
            
                 <h2 class="header">학력</h2>
                 <div class="form">
                     <div class="school">
                         <div class="dropDown">
-                            <button type="button" class="button buttonChoose">
-                                    <span>
-                                        학교구분
-                                        <span class="star">*</span>
-                                    </span>
-                            </button>
-                            <div>
-                                <ul class="hide">
-                                    <li> <button type="button" class="button"><span>고등학교</span></button></li>
-                                    <li> <button type="button" class="button"><span>대학교(2,3년)</span></button></li>
-                                    <li> <button type="button" class="button"><span>대학교(4년)</span></button></li>
-                                    <li> <button type="button" class="button"><span>대학원</span></button></li>
-                                </ul>
-                            </div>
+                        	<div>
+                        		<label>학교구분</label>
+                            		<input type="text" class="re-ip" list="education-ip" name="education" value="${principal.resume.education }" >
+                            		<datalist id="education-ip">
+                            			<option value="고등학교"/>
+                            			<option value="대학교(2, 3)년제"/>
+                            			<option value="대학교(4) 년제"/>
+                            			<option value="대학원"/>
+                            		</datalist>
+                        	</div>
                         </div>
                         <div class="inputSchool">학교명
                             <span class="star">*</span>
-                            <input type="text" name="" id=inputSchool">
+                            <input type="text" class="re-ip" name="schoolname" id=inputSchool" value="${principal.resume.schoolname }">
                         </div>
                         <div class="ipHak">입학년월
                             <span class="star">*</span>
-                            <input type="text">
+                            <input type="text" class="re-ip" name="admissionyear" value="${principal.resume.admissionyear }">
                         </div>
                         <div class="jolUp">졸업년월
                             <span class="star">*</span>
-                            <input type="text">
+                            <input type="text" class="re-ip" name="graduateyear" value="${principal.resume.graduateyear }">
                         </div>
-                        <div class="dropDown">
-                            <button type="button" class="button buttonChoose jolUpStatus ">
-                                    <span>
-                                        졸업상태
-                                        <span class="star">*</span>
-                                    </span>
-                            </button>
-                            <div>
-                                <ul class="hide">
-                                    <li> <button type="button" class="button"><span>졸업</span></button></li>
-                                    <li> <button type="button" class="button"><span>졸업예정</span></button></li>
-                                    <li> <button type="button" class="button"><span>재학중</span></button></li>
-                                    <li> <button type="button" class="button"><span>중퇴</span></button></li>
-                                    <li> <button type="button" class="button"><span>수료</span></button></li>
-                                    <li> <button type="button" class="button"><span>휴학</span></button></li>
-                                </ul>
-                            </div>
-                        </div>
+                    
                     </div>
-                    <div class="school">
+                    <div class="school2">
+                    	<div class="dropDown">
+                    		<div>
+                    			<label>졸업상태</label>
+                            		<input type="text" class="re-ip" list="graduationstatus-ip" name="graduationstatus" value="${principal.resume.graduationstatus }" >
+                            		<datalist id="graduationstatus-ip">
+                            			<option value="졸업"/>
+                            			<option value="졸업예정"/>
+                            			<option value="재학중"/>
+                            			<option value="중퇴"/>
+                            			<option value="수료"/>
+                            			<option value="휴학"/>
+                            		</datalist>
+                    		</div>
+                        </div>
                         <div class="majorName">전공명
-                            <input type="text" name="" id="">
+                            <input type="text" class="re-ip" name="major" value="${principal.resume.major }">
                         </div>
                         <div class="hakJum">학점
-                            <input type="text">
-                        </div>
-
-                        <div class="dropDown">
-                            <button type="button" class="button buttonChoose jolUpStatus ">
-                                    <span>
-                                        총점
-                                    </span>
-                            </button>
-                            <div>
-                                <ul class="hide">
-                                    <li> <button type="button" class="button"><span>4.5</span></button></li>
-                                    <li> <button type="button" class="button"><span>4.3</span></button></li>
-                                    <li> <button type="button" class="button"><span>4.0</span></button></li>
-                                    <li> <button type="button" class="button"><span>100</span></button></li>
-                                </ul>
-                            </div>
+                            <input type="text" class="re-ip" list="grades-ip" name="grades"  value="${principal.resume.grades }">
+                            <datalist id="grades-ip">
+                            	<option value="4.5이상"/>
+                            	<option value="4.0이상"/>
+                            	<option value="3.5이상"/>
+                            	<option value="3.0이상"/>
+                            </datalist>
                         </div>
                     </div>
                 </div>
@@ -172,38 +144,31 @@
                         <div class="compName">
                             회사명
                             <span class="star">*</span>
-                            <input type="text">
+                            <input type="text" class="re-ip" name="compname" value="${principal.resume.compname }">
                         </div>
                         <div class="buseoName">
                             부서명
-                            <input type="text">
+                            <input type="text" class="re-ip" name="department" value="${principal.resume.department }">
                         </div>
                         <div class="ipsa">입사년월
                             <span class="star">*</span>
-                            <input type="text" placeholder="예) 2020.12.25">
+                            <input type="text" class="re-ip" name="joinyear" placeholder="예) 2020.12.25" value="${principal.resume.joinyear }">
                         </div>
                         <div class="teasa">퇴사년월
                             <span class="star">*</span>
-                            <input type="text" placeholder="예) 2022.02.22">
+                            <input type="text" class="re-ip" name="leaveyear" placeholder="예) 2022.02.22" value="${principal.resume.leaveyear }">
                         </div>
                         <!-- <div>재직중</div> -->
                     </div>
                     <div class="careerFormRow">
                         <div class="jikGp">직급/직책
-                            <input type="text" placeholder="예) 부장/파트장">
+                            <input type="text" class="re-ip" name="position" placeholder="예) 부장/파트장" value="${principal.resume.position }">
                         </div>
                         <div class="upJong">업종
-                            <input type="text" placeholder="예) 서비스/마케팅">
+                            <input type="text" class="re-ip" name="sectors" placeholder="예) 서비스/마케팅" value="${principal.resume.sectors }">
                         </div>
                         <div class="yeonBong">연봉
-                            <input type="text" placeholder="만원">
-                        </div>
-                    </div>
-                    <div class="careerFormRow">
-                        <div class="upMu">
-                            <label for="">담당업무</label>
-                            <textarea name="Career[c5].Prfm_Prt" cols="30" rows="10" id="Career_Prfm_Prt_c5"
-                                      placeholder="담당하신 업무와 성과에 대해 간단명료하게 적어주세요."></textarea>
+                            <input type="text" class="re-ip" name="salary" placeholder="만원" value="${principal.resume.salary }">
                         </div>
                     </div>
                 </div>
@@ -215,15 +180,15 @@
                     <div class="cert">
                         <label for="">자격증 명</label>
                         <span class="star">*</span>
-                        <input type="text">
+                        <input type="text" class="re-ip" name="certificate" value="${principal.resume.certificate }">
                     </div>
                     <div class="balHeng">
                         <label for="">발행처</label>
-                        <input type="text" name="" id="">
+                        <input type="text" class="re-ip" name="issuedby" value="${principal.resume.issuedby }">
                     </div>
                     <div class="getMonth">
                         <label for="">취득월</label>
-                        <input type="text">
+                        <input type="text" name="handlingmonth" class="re-ip" value="${principal.resume.handlingmonth }">
                     </div>
                 </div>
 
@@ -236,45 +201,16 @@
                                 <input type="text" placeholder="항목 제목을 입력하세요.">
                             </div>
                             <div>
-                                <textarea name="" id="" cols="30" rows="10" placeholder="해당내용을 입력하세요."></textarea>
+                                <textarea class="re-ip" name="selfintroduction" id="" cols="30" rows="10" placeholder="해당내용을 입력하세요." value="">${principal.resume.selfintroduction }</textarea>
                             </div>
                         </div>
-
-                        <div class="submit">
-                            <button type="button">제출</button>
-                        </div>
                     </div>
                 </div>
-
-                <div class="fixedAd">
-                    <div class="container">
-                        <h2>이력서 항목</h2>
-                        <ul>
-                            <li><a href="#">학력</a></li>
-                            <li><a href="#">경력</a></li>
-                            <li><a href="#">자격증</a></li>
-                            <li><a href="#">자기소개서</a></li>
-                        </ul>
-                    </div>
-                    <button type="button" onclick="location.href='#'">이력서저장</button>
+                <div class="submit">
+                	<button type="button" class="submitBtn" >이력서저장</button>
                 </div>
-
-                <!-- <h2 class="header">희망근무조건</h2>
-                <div class="form2">
-                    <div class="row">
-                        <div class="goYong">고용형태</div>
-                        <div>희망연봉</div>
-                    </div>
-                    <div class="row">
-                        <div class="wantPlace">희망근무지</div>
-                    </div>
-                    <div class="row">
-                        <div class="workKey">직무산업키워드</div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-            </div>
+             </form>
+           </div>
         </div>
        </div>
      </div>

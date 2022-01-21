@@ -9,7 +9,7 @@ body{
 }
 
 ul {
-  display: block;
+  display: table-row;
   list-style-type: disc;
   list-style: none;
   margin-block-start: 1em;
@@ -21,7 +21,7 @@ ul {
 }
 
 li {
-  display: list-item;
+  
   list-style: none;
   background-color: white;
 }
@@ -55,6 +55,7 @@ div {
 input {
   vertical-align: middle;
   display: inline-block;
+  border: none;
 }
 
 button{
@@ -169,7 +170,7 @@ h2.header{
 .form{
     position: relative;
     width: 940px;
-    height: 177px;
+    height: 200px;
     margin-bottom: 34px;
     padding: 20px 20px 10px;
     background-color: #fff;
@@ -227,13 +228,11 @@ h2.header{
     height: 100%;
 }
 
-.hide {
-	display: none;
+
+
+.profile-img-add-btn{
 	position: relative;
-    width: 110px;
-    height: 62px;
-    z-index: 20;
-    margin-right: 0;
+	height: auto;
 }
 
 
@@ -244,22 +243,13 @@ h2.header{
 
 
 
-li .button{
-    width: 100%;
-    border: 0;  
-    text-align: left;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    font-size: 15px;
-    background-color: white;
-}
 
 /* careerForm 경력*/
 
 .careerForm{
     position: relative;
     width: 940px;
-    height: 316px;
+    height: 180px;
     margin-bottom: 34px;
     padding: 20px 20px 10px;
     background-color: #fff;
@@ -463,11 +453,11 @@ input{
 
 .joolInputMail{
     width: 276px;
-    height: 62px;
+    height: 60px;
     margin-right: 10px;
     margin-left: 10px;
     padding: 0 15px;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
 }
 
 .joolInputMail input{
@@ -565,11 +555,28 @@ input{
 .picturePlus{
     position: absolute;
     right: 20px;
-    width: 103px;
-    height: 134px;
+    width: 110px;
+    height: 141px;
     border: 2px solid #ddd;
     text-align: center;
     line-height: 134px !important;
+}
+
+#profile-img{
+	display: flex;
+	position: absoulte;
+	width: 103px;
+	height: 134px;
+	overflow: hidden;
+	border: none;
+}
+
+
+#file {
+	width: 100px;
+	position: absolute;
+	display: flex;
+	
 }
 
 
@@ -581,16 +588,43 @@ input{
     padding: 0 20px 10px;
     font-size: 0;
     display: flex;
-    float: left;  
+     
 }
+
+
+
 
 .school div{
     border: 2px solid #ddd;
     color: #999;
 }
 
-.dropDown div{ border: 2px solid #ddd;
-    color: #999;}
+.school2{
+	position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0 20px 10px;
+    font-size: 0;
+    display: flex;
+    float: left;  
+}
+
+.school2 div{
+    border: 2px solid #ddd;
+    color: #999;
+}
+
+
+
+.dropDown div{ 
+	border: 2px solid #ddd;
+    color: #999;
+    height: 60px;
+    }
+    
+.dropDown input {
+	width: 100px;
+}
 
 .inputSchool{
     width: 350px;
@@ -715,61 +749,13 @@ input{
     width: 100px;
 }
 
-
-
-
-
-
-
-
-/* 오른쪽 광고배너 */
-.fixedAd{
-    overflow: hidden;
-    position: fixed;
-    right: 0;
-    top: 80px;
-    width: 240px;
-    height: 300px;
-    background-color: #fff;
-    margin: 0px;
-    
+.submitBtn{
+	width: 150px;
+	border: 1px solid #3399ff;
 }
 
-.fixedAd button{
-    width: 100%;
-    margin: 0;
-    color: white;
-    background-color: #3399ff;
-    border: 0;
-    font-weight: bold;
-    padding: 10px 0;
-}
-.container{
-    padding: 0 14px;
-    margin-bottom: 59px;
-    width: 240px;
-    height: 200px;
 
-}
-.container h2{
-    height: 48px;
-    padding-top: 16px;
-    font-size: 14px;
-    color: #999;
-    text-align: left;
-}
 
-.container ul{
-    position: relative;
-    padding: 15px 0 20px;
-    border-top: 3px solid #eee;
-    margin-top: 0px;
-    text-align: left;
-}
-
-.container li{
-    margin-bottom: 15px;
-}
 
 
 
@@ -796,8 +782,12 @@ input{
 }
 
 .submit{
-    margin-top: 30px;
-    border-top: 1px solid #dbe0db;
+	
+    margin: 10px auto;
+    border: 1px solid #dbe0db;
+    border-radius: 5px;
+    width:200px;
+    background-color: #3399ff;
 }
 
 .contents{ 
@@ -876,6 +866,8 @@ div.workKey{
     width: 832px;
     height: 64px;
 }
+
+
 
 
 

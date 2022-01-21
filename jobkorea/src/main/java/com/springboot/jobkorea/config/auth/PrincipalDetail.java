@@ -1,16 +1,22 @@
 package com.springboot.jobkorea.config.auth;
 
 import java.util.ArrayList;
+
 import java.util.Collection;
 
-import com.springboot.jobkorea.domain.user.UserRepository;
+
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import com.springboot.jobkorea.domain.resume.Resume;
 import com.springboot.jobkorea.domain.user.Company;
 import com.springboot.jobkorea.domain.user.User;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
 
 @Data
 public class PrincipalDetail implements UserDetails{
@@ -21,14 +27,16 @@ public class PrincipalDetail implements UserDetails{
 
 	private User users;
 	private Company company;
+	private Resume resume;
 
 	private String username;
 	private String password;
 	private String role;
-
 	
-	public PrincipalDetail(User user) {
+	
+	public PrincipalDetail(User user, Resume resume) {
 		this.users = user;
+		this.resume = resume;
 		this.username = user.getUsername();
 		this.password = user.getPassword();
 		this.role = user.getRole();
@@ -96,6 +104,6 @@ public class PrincipalDetail implements UserDetails{
 		// TODO Auto-generated method stub
 		return true;
 	}
-
+	
 
 }

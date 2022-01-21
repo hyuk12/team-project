@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.springboot.jobkorea.domain.resume.ResumeRepository">
+  	<select id="getResumeById" resultType="com.springboot.jobkorea.domain.resume.Resume" parameterType="Integer">
+  		select
+  			*
+  		from
+  			user_dtl
+  		where
+  			id = #{id};
+  	</select>
+  	<update id="updateUserById" parameterType="com.springboot.jobkorea.domain.user.User">
+  		update
+  			user_mst
+  		set
+  			name = #{name},
+  			phone = #{phone},
+  			email = #{email}
+  		where
+  			id = #{id};
+  	</update>
+  	
+  	
+  	<update id="updateResumeById" parameterType="com.springboot.jobkorea.domain.resume.Resume">
+  		update
+			user_dtl
+
+		set	
+			birth = #{birth},
+			gender = #{gender},
+			address = #{address},
+			profile_img = #{profile_img},
+			education = #{education},
+			schoolname = #{schoolname},
+			admissionyear = #{admissionyear},
+			graduateyear = #{graduateyear},
+			grades = #{grades},
+			major = #{major},
+			graduationstatus = #{graduationstatus},
+			compname = #{compname},
+			department = #{department},
+			joinyear = #{joinyear},
+			leaveyear =#{leaveyear},
+			position = #{position},
+			sectors = #{sectors},
+			salary = #{salary},
+			certificate = #{certificate},
+			issuedby = #{issuedby},
+			handlingmonth = #{handlingmonth},
+			selfintroduction = #{selfintroduction},
+			
+			update_date = NOW()
+		where
+			id = #{id};
+  		
+  	
+  	</update>
+  
+  </mapper>

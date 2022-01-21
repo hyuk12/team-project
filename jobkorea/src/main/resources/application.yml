@@ -55,7 +55,7 @@ mybatis:
   - /mappers/*.xml
   
 file :
-  path: C:\Spring\workspace\git\fileupload
+  path: C:\fileupload\
 
 test:
   filename: test_file.txt  

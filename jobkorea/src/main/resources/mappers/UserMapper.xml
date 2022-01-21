@@ -67,4 +67,17 @@
   		where
   			username = #{username};
   	</select>
+  	<select id="getUserByUserId" resultType="com.springboot.jobkorea.domain.user.User" parameterType="Integer">
+  		
+  		select
+  			*
+  		from
+  			user_mst
+  		where
+  			id = #{id};
+  	</select>
+  	
+  	
+  	
+  	
   </mapper>

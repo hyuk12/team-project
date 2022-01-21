@@ -12,6 +12,7 @@ import lombok.Data;
 @Data
 public class SignupReqDto {
 	
+	private int id;
 	@NotBlank
 	private String name;
 	

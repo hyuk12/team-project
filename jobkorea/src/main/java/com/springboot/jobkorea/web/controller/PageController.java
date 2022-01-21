@@ -1,6 +1,7 @@
 package com.springboot.jobkorea.web.controller;
 
 import com.springboot.jobkorea.config.auth.PrincipalDetail;
+
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -38,7 +39,7 @@ public class PageController {
 		return "myIndex";
 	}
 
-	@GetMapping({"/resume/resume_edit"})
+	@GetMapping({"/resume/edit"})
 	public String resumeEditForm(@AuthenticationPrincipal PrincipalDetail principalDetail){
 		return "/resume/resume_edit";
 	}
