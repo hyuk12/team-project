@@ -1,5 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+
+<!-- 세션에서 인증이 되었다면 -->
+<sec:authorize access="isAuthenticated()">
+<!-- property: princopal 객체를 principal이라는 이름으로 넣음 -->
+<sec:authentication property="principal" var="principal"/>
+</sec:authorize>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -67,7 +75,7 @@
                     </ul>
                     <ul class="nav-user">
                         <li class="my-info">
-                            <a href="#" class="my-info-open">
+                            <a href="/mypage/personalPage" class="my-info-open">
                                 <i class="far fa-user"></i>
                             </a>
                         </li>
@@ -91,7 +99,8 @@
                 </div>
                 <div class="login-section">
                     <div class="my-login-info">
-                        <a href="#">이름 님 <i class="fas fa-angle-right"></i></a><button><span>로그아웃</span></button>
+                        <a href="/mypage/personalPage">${principal.users.name }님 <i class="fas fa-angle-right"></i></a>
+                        <a href="/logout"><span>로그아웃</span></a>
                         <div class="my-info-resume"><a href="#">이력서 관리</a></div>                    
                     </div>
                 </div>

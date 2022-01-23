@@ -13,7 +13,7 @@
     <nav class="header">
         <div class="nav-main">
             <div class="nav-logo">
-                <a href="#">
+                <a href="/signinbefore/index">
                     <img src="/images/nav-logo.png">
                 </a>
             </div>
@@ -67,7 +67,7 @@
                     </ul>
                     <ul class="nav-user">
                         <li class="my-info">
-                            <a href="#" class="my-info-open">
+                            <a href="/mypage/personalPage" class="my-info-open">
                                 <i class="far fa-user"></i>
                             </a>
                         </li>
@@ -94,7 +94,7 @@
                     </li>
                     <li>
                         <button type="button" class="company-login-btn" title="기업전용 로그인">
-                            <a href="/auth/signinComp">기업전용 <br>로그인</a>
+                            <a href="/auth/signin">기업전용 <br>로그인</a>
                         </button>
                     </li>
                 </ul>

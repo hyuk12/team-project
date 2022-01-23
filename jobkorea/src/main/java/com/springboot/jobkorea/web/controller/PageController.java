@@ -38,6 +38,16 @@ public class PageController {
 	public String signinAfterForm() {
 		return "myIndex";
 	}
+
+	@GetMapping({"/mypage/personalPage"})
+	public String personalForm() {
+		return "mypage/personalPage";
+	}
+
+	@GetMapping({"/accounts/password/change/personal"})
+	public String personalChPwForm() {
+		return "accounts/personal_ch_pw";
+	}
 	
 	
 }

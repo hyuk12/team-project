@@ -67,4 +67,14 @@
   		where
   			username = #{username};
   	</select>
+  	
+  	<update id="updatePasswordById" parameterType="com.springboot.jobkorea.domain.user.User">
+  		update
+  			user_mst
+  		set
+  			password = #{password},
+  			update_date = now()
+  		where
+  			id = #{id};
+  	</update>
   </mapper>

@@ -11,4 +11,5 @@ public interface UserRepository {
 	public User getUserByUsername(String username);
 	public Company getCompanyByUsername(String username);
 	
+	public int updatePasswordById(User user);
 }
