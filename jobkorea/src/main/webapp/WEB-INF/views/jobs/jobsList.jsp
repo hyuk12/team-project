@@ -101,10 +101,10 @@
                         <div class="comp-item-list">
                             <div class="comp-item-first">
                                 <div class="comp-name">
-                                    <a href="#">(주) 주연테크</a>
+                                    <a href="/jobs/jobinfo">(주) 주연테크</a>
                                 </div>
                                 <div class="comp-info">
-                                    <a href="#">
+                                    <a href="/jobs/jobinfo">
                                         2022년 상반기 각 부문 신입 및 경력 모집
                                     </a>
                                     <span class="comp-info-item">

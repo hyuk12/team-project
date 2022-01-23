@@ -47,4 +47,9 @@ public class PageController {
 	public String joblistForm() {
 		return "/jobs/jobsList";
 	}
+	
+	@GetMapping({"/jobs/jobinfo"})
+	public String jobinfoForm() {
+		return "/jobs/jobsInfoMain";
+	}
 }

@@ -1,0 +1,261 @@
+/* main */
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 44px;
+    background-color: #fff;
+    z-index: 200;
+    text-align: left;
+    position: relative;
+    
+}
+
+.jobsInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 980px;
+  
+}
+
+.jobsInfo-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 980px;
+  margin: 20px 0px 20px 0px;
+  font-size: 20px;
+  
+}
+
+.main{
+  border-top: 2px solid #333;
+  border-right: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  width: 980px;
+  height: 400px;
+  display: flex;
+}
+
+.comp-name-info{
+  width: 700px;
+  border-right: 1px solid #e5e5e5;
+
+}
+
+.comp-name{
+  display: flex;
+  flex-direction:column;
+  margin: 0px auto;
+  width: 650px;
+  height: 140px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.company{
+  display: flex;
+  align-items: center;
+  width: 650px;
+  height: 30px;
+  margin: 20px 0 0 0 ;
+  font-size: 20px;
+  font-weight: 200;
+  color: #333;
+}
+
+.company a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  width: 80px;
+  height: 20px;
+  border: 1px solid #e5e5e5;
+  font-size: 12px ;
+  color: rgb(139, 136, 136);
+}
+
+.company a:hover{
+  background-color: #39f;
+  color: #fff;
+}
+
+.company-title{
+  margin: 20px 0 0 0 ;
+}
+
+.company-title h1{
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+.name-info{
+  display: flex;
+  justify-content: center;
+  width: 650px;
+  height: 247px;
+  margin: 0px;
+}
+.left-content{
+  display: flex;
+  flex-direction: column;
+  width: 325px;
+}
+.left-content span:first-child{
+  margin: 20px;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -1px;
+}
+
+.left-content span{
+  display: flex;
+  margin: 0 0 10px 20px ;
+  font-weight: 400;
+  color: #a3a0a0;
+  letter-spacing: -1px;
+}
+
+.left-content span > p{
+  margin: 0 0 0 10px ;
+  color: #39f;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: -1px;
+}
+.right-content{
+  display: flex;
+  flex-direction: column;
+  width: 325px;
+}
+.right-content span:first-child{
+  margin: 20px;
+  font-weight: 700;
+  color: #333;
+}
+.right-content span{
+  display: flex;
+  margin: 0 0 10px 20px ;
+  font-weight: 400;
+  color: #a3a0a0;
+  letter-spacing: -1px;
+}
+
+.right-content span >.employmet-type{
+  margin: 0 0 0 10px ;
+  color: #39f;
+  letter-spacing: -1px;
+  font-size: 12px;
+}
+
+.right-content span > p{
+  margin: 0 0 0 10px ;
+  font-weight: 545;
+  font-size: 12px;
+  color: rgb(80, 80, 80);
+  letter-spacing: -1px;
+}
+
+
+.comp-info{
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+.comp-logo-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
+}
+
+.comp-logo-img img{
+  display: flex;
+  width: 280px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.bottom-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-content span{
+  display: flex;
+  margin: 0 0 10px 20px ;
+  font-weight: 400;
+  color: #a3a0a0;
+  letter-spacing: -1px;
+}
+
+.bottom-content span:first-child{
+  margin: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+.bottom-content span > p{
+  margin: 0 0 0 20px ;
+  font-weight: 545;
+  font-size: 12px;
+  color: rgb(80, 80, 80);
+  letter-spacing: -1px;
+}
+
+.btn-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 980px;
+  height: 120px;
+  
+}
+
+.apply-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #a3a0a0;
+  width: 180px;
+  height: 60px;
+  font-size: 16px;
+  background-color: rgb(255, 140, 0);
+  color: #fff;
+}
+
+.fa-check {
+  letter-spacing: 10px;
+}
+
+.bottom-info-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 980px;
+  margin: 20px 0px 20px 0px;
+  border-left: 5px solid #39f;
+  
+}
+
+.bottom-info-title h1{
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.bottom-main{
+  border-top: 2px solid #333;
+  
+  border-bottom: 1px solid #e5e5e5;
+  width: 980px;
+  height: 980px;
+  display: flex;
+}
