@@ -234,3 +234,28 @@
 .fa-check {
   letter-spacing: 10px;
 }
+
+.bottom-info-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 980px;
+  margin: 20px 0px 20px 0px;
+  border-left: 5px solid #39f;
+  
+}
+
+.bottom-info-title h1{
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.bottom-main{
+  border-top: 2px solid #333;
+  
+  border-bottom: 1px solid #e5e5e5;
+  width: 980px;
+  height: 980px;
+  display: flex;
+}
