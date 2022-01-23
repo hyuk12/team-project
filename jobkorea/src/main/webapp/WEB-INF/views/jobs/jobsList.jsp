@@ -6,7 +6,7 @@
 	
 	<link rel="stylesheet" href="/css/jobposting.css">
 
-	<script src="https://kit.fontawesome.com/c3df4d7d1c.js" crossorigin="anonymous"></script>
+	
 </head>
 <body>
     <jsp:include page="../include/nav.jsp"></jsp:include>

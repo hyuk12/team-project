@@ -14,7 +14,7 @@ const resumeInputs = document.querySelectorAll('.re-ip');
  
  // 클릭시 하이드된 리스트버튼들 나옴
 
-
+var profileImgFile ='';
 var imgFileChangeFlag = false;
 
 imgFile.style.display = 'none';
@@ -28,57 +28,16 @@ imgFile.onchange = () => {
 	
 	reader.onload = (e) => {
 		imgFileChangeFlag = true;
-		profileImg.src = e.target.result;		
+		profileImgFile = e.target.result;	
+		profileImg.src = profileImgFile;	
 	}
 	reader.readAsDataURL(imgFile.files[0]);// 파일의 실제경로를 받아옴
 	// 받아오는 순간 readasdata에서 onload가 이뤄지고 그것의 결과는 result를 들고와서 src 프로필이미지 url에 대입한다
 	
 }
 
-function isEmpty(str){
-	if(typeof str == "undefined" || str == null || str == ''){
-		return '사용가능';
-	}else {
-		return str;
-	}
-}
 
-function resumeValidMsg(data){
-	let resumeDataObj = JSON.parse(data);
-	if(resumeDataObj.code == 010){
-		alert(
-		'유효성 검사 오류.\n' +
-		'오류 코드: ' + signupDataObj.code + '\n' +
-		'오류 내용\n' +
-		'\t' + 'name :' + isEmpty(resumeDataObj.data.name) + '\n' +
-		'\t' + 'birth :'  + isEmpty(resumeDataObj.data.birth) + '\n' +
-		'\t' + 'gender :'  + isEmpty(resumeDataObj.data.gender) + '\n' +
-		'\t' + 'email :'  + isEmpty(resumeDataObj.data.email) + '\n' +
-		'\t' + 'phone :'  + isEmpty(resumeDataObj.data.phone) + '\n' +
-		'\t' + 'education :'  + isEmpty(resumeDataObj.data.education) + '\n' +
-		'\t' + 'schoolname :'  + isEmpty(resumeDataObj.data.schoolname) + '\n' +
-		'\t' + 'admissionyear :'  + isEmpty(resumeDataObj.data.admissionyear) + '\n' +
-		'\t' + 'graduateyear :'  + isEmpty(resumeDataObj.data.graduateyear) + '\n' +
-		'\t' + 'graduationstatus :'  + isEmpty(resumeDataObj.data.grades) + '\n' +
-		'\t' + 'compname :'  + isEmpty(resumeDataObj.data.compname) + '\n' +
-		'\t' + 'joinyear :'  + isEmpty(resumeDataObj.data.joinyear) + '\n' +
-		'\t' + 'leaveyear :'  + isEmpty(resumeDataObj.data.leaveyear) + '\n' +
-		'\t' + 'certificate :'  + isEmpty(resumeDataObj.data.certificate) + '\n' +
-		'\t' + 'selfintroduction :'  + isEmpty(resumeDataObj.data.selfintroduction) + '\n'
-		);
-	}else if(resumeDataObj.code == 002){
-		alert(
-			'아이디 중복 오류.\n' +
-			'오류 코드: ' + resumeDataObj.code + '\n' +
-			'오류 내용\n' +
-			resumeDataObj.data
-		);
-	}else if(resumeDataObj.code == 001){
-		alert(resumeDataObj.data);
-		location.replace('/');
-	
-	}
-}
+
 
 function resume(){
 	let signupObj = {
@@ -135,6 +94,10 @@ function multipartSubmit(){
 		processData: false,
 		contentType: false,
 		success: function(data){
+			if(data == true){
+				const personImg = document.querySelector('.img-place');
+				personImg.src = profileImgFile;
+			}
 			
 		},
 		error: function(){

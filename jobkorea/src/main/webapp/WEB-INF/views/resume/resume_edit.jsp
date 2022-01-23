@@ -57,7 +57,11 @@
                             <div class="picturePlus" >
                     			<div class="profile-img-add-btn">
                     				<input type="file" id="file" name="profile_img">
-                    				<img id="profile-img"  src="/image/${principal.resume.profile_img }">
+                    				<div class="img-place">
+                    					<img id="profile-img"  src="/image/${principal.resume.profile_img }">
+                    				</div>
+                    
+                    				
                     				
                     			</div>
                     		</div>

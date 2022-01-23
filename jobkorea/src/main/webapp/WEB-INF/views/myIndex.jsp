@@ -1,5 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+
+<sec:authorize access="isAuthenticated()">
+	<sec:authentication property="principal" var="principal"/>
+</sec:authorize>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,8 +25,8 @@
                 </div>
                 <div class="login-section">
                     <div class="my-login-info">
-                        <a href="#">이름 님 <i class="fas fa-angle-right"></i></a><button><span>로그아웃</span></button>
-                        <div class="my-info-resume"><a href="#">이력서 관리</a></div>                    
+                        <a href="#">${principal.users.name } 님 <i class="fas fa-angle-right"></i></a><button><span>로그아웃</span></button>
+                        <div class="my-info-resume"><a href="/resume/edit">이력서 관리</a></div>                    
                     </div>
                 </div>
             </div>

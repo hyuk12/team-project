@@ -35,7 +35,7 @@ public class PageController {
 
 	
 	@GetMapping({"/", "myIndex"})
-	public String signinAfterForm() {
+	public String signinAfterForm(@AuthenticationPrincipal PrincipalDetail principalDetai) {
 		return "myIndex";
 	}
 

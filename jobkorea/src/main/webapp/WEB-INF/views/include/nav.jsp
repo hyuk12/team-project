@@ -48,7 +48,7 @@
                         </a>
                     </li>
                     <li class="service-item">
-                        <a href="#">
+                        <a href="/resume/edit">
                                 <span class="post-job-btn">
                                     <span>이력서 등록</span>
                                 </span>
