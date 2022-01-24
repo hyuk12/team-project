@@ -24,7 +24,7 @@
     <div class="wrapper">
         <div class="resume">
             <div class="left">
-                <img src="" alt="증명사진 들어올 자리">
+                <img src="/image/${principal.resume.profile_img }" alt="증명사진 들어올 자리">
 
                 <div class="name" name = "name">${principal.users.name }</div>
 
