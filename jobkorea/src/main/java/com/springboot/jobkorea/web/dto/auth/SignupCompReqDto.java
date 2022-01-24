@@ -31,7 +31,7 @@ public class SignupCompReqDto {
 	
 	
 	
-	public User toEntity() {
+	public Company toEntity() {
 		return Company.builder()
 				.compType(comptype)
 				.compNum(compnum)
