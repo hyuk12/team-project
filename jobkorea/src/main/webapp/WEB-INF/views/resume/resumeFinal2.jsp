@@ -55,7 +55,7 @@
                         </div>
                         <div>
                             <div class="bold">BIRTHDAY</div>
-                            <div class="sub">생일</div>
+                            <div class="sub">${principal.resume.birth }</div>
                         </div>
                     </div>
 
@@ -67,8 +67,8 @@
                     <div class="edu">
                         <div class="edu1">
                             <div>입학년월</div>
-                            <div> 학교이름</div>
-                            <div>졸업유무</div>
+                            <div> ${principal.resume.admissionyear }</div>
+                            <div>${principal.resume.graduationstatus }</div>
                         </div>
                         <div class="edu1">
                            <div>입학년월</div>
