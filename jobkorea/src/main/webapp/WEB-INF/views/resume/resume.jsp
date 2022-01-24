@@ -14,9 +14,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/resumeFinal2.css">
+    <link rel="stylesheet" href="/css/resume.css">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="http://jquery.com"></script>
+    
     <title>이력서</title>
 </head>
 
@@ -24,7 +24,7 @@
     <div class="wrapper">
         <div class="resume">
             <div class="left">
-                <img src="${principal.resume.profile_img }" alt="증명사진 들어올 자리">
+                <img src="/image/${principal.resume.profile_img }" alt="증명사진 들어올 자리">
 
                 <div class="name" name = "name">${principal.users.name }</div>
 
@@ -42,7 +42,7 @@
                         </div>
                         <div>
                             <div class="bold">ADDRESS</div>
-                            <div class="sub">주소입력</div>
+                            <div class="sub">${principal.resume.address }</div>
                         </div>
                     </div>
 
@@ -55,7 +55,7 @@
                         </div>
                         <div>
                             <div class="bold">BIRTHDAY</div>
-                            <div class="sub">생일</div>
+                            <div class="sub">${principal.resume.birth }</div>
                         </div>
                     </div>
 
@@ -66,46 +66,31 @@
                     <h2>EDUCATION</h2>
                     <div class="edu">
                         <div class="edu1">
-                            <div>입학년월</div>
-                            <div> 학교이름</div>
-                            <div>졸업유무</div>
-                        </div>
-                        <div class="edu1">
-                           <div>입학년월</div>
-                            <div> 학교이름</div>
-                            <div>졸업유무</div>
-                        </div>
-                        <div class="edu1">
-                          <div>입학년월</div>
-                            <div> 학교이름</div>
-                            <div>졸업유무</div>
+                            <div>${principal.resume.admissionyear }</div>
+                            <div> ${principal.resume.schoolname }</div>
+                            <div>${principal.resume.graduationstatus }</div>
                         </div>
                     </div>
                 </div>
                 <div class="career">
-                    <h2>EXPERIENCE CAREER</h2>
+                    <h2>CAREER</h2>
                     <div class="car">
                         <div class="car1">
-                            <div>어학연수</div>
-                            <div>2000년~2003년</div>
-                            <div>필리핀</div>
+                            <div>회사명: ${principal.resume.compname }</div>
+                            <div>${principal.resume.joinyear}~${principal.resume.leaveyear }</div>
+                            <div>${principal.resume.position }</div>
                         </div>
                         <div class="car1">
-                            <div>봉사활동</div>
-                            <div>2000년~2003년</div>
-                            <div>고아원</div>
-                        </div>
-                        <div class="car1">
-                            <div>인턴경험</div>
-                            <div>2000년~2003년</div>
-                            <div>삼성물산필리핀지사</div>
+                            <div>자격증</div>
+                            <div>${principal.resume.certificate }</div>
+                            <div>${principal.resume.handlingmonth }</div>
                         </div>
                     </div>
                 </div>
                 <div class="introduce">
                     <h2>INTRODUCE</h2>
-                    <textarea readonly name="" id="" cols="30" rows="30">
-							
+                    <textarea readonly name="selfintroduction" id="" cols="30" rows="30">
+							${principal.resume.selfintroduction }
                     </textarea>
                 </div>
             </div>	

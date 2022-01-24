@@ -43,6 +43,12 @@ public class PageController {
 	public String resumeEditForm(@AuthenticationPrincipal PrincipalDetail principalDetail){
 		return "/resume/resume_edit";
 	}
+	
+	@GetMapping({"/resume"})
+	public String resumeForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
+		return "/resume/resume";
+				
+	}
 	@GetMapping({"/jobs/joblist"})
 	public String joblistForm() {
 		return "/jobs/jobsList";

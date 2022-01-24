@@ -12,9 +12,9 @@ const picture = document.querySelector('.picture');
 
 const resumeInputs = document.querySelectorAll('.re-ip');
  
- // 클릭시 하이드된 리스트버튼들 나옴
 
-var profileImgFile ='';
+
+var profileImgFile = '';
 var imgFileChangeFlag = false;
 
 imgFile.style.display = 'none';
@@ -36,51 +36,6 @@ imgFile.onchange = () => {
 	
 }
 
-
-
-
-function resume(){
-	let signupObj = {
-		name: resumeInputs[0].value,
-		birth: resumeInputs[1].value,
-		gender: resumeInputs[2].value,
-		email: resumeInputs[3].value,
-		profile_img: resumeInputs[4].value,
-		phone: resumeInputs[5].value,
-		address: resumeInputs[6].value,
-		education: resumeInputs[7].value,
-		schoolname: resumeInputs[8].value,
-		admissionyear: resumeInputs[9].value,
-		graduateyear: resumeInputs[10].value,
-		graduationstatus: resumeInputs[11].value,
-		major: resumeInputs[12].value,
-		grades: resumeInputs[13].value,
-		compname: resumeInputs[14].value,
-		department: resumeInputs[15].value,
-		joinyear: resumeInputs[16].value,
-		leaveyear: resumeInputs[17].value,
-		position: resumeInputs[18].value,
-		sectors: resumeInputs[19].value,
-		salary: resumeInputs[20].value,
-		certificate: resumeInputs[21].value,
-		issuedby: resumeInputs[22].value,
-		handlingmonth: resumeInputs[23].value,
-		selfintroduction: resumeInputs[24].value
-	}
-	
-	$.ajax({
-		type: "post",
-		url: "/resume/resume_edit",
-		data: signupObj,
-		dataType: "text",
-		success: function(data){
-			resumeValidMsg(data);
-		},
-		error: function(){
-			alert('비동기 처리 오류');
-		}
-	});
-}
 
 
 function multipartSubmit(){

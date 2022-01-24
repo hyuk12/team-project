@@ -6,7 +6,6 @@ import javax.validation.constraints.Size;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import com.springboot.jobkorea.domain.user.Company;
-import com.springboot.jobkorea.domain.user.User;
 
 import lombok.Data;
 
