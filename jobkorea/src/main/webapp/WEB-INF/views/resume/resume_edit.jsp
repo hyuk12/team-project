@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이력서 작성</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/resume.css">
+    <link rel="stylesheet" href="/css/resume_edit.css">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 

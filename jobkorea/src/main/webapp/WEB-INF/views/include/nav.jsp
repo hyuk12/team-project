@@ -10,7 +10,7 @@
 <nav class="header">
     <div class="nav-main">
         <div class="nav-logo">
-            <a href="#">
+            <a href="/">
                 <img src="/images/nav-logo.png">
             </a>
         </div>
