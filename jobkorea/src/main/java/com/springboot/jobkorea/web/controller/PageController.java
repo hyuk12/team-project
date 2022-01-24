@@ -42,4 +42,8 @@ public class PageController {
 	public String resumeEditForm(@AuthenticationPrincipal PrincipalDetail principalDetail){
 		return "/resume/resume_edit";
 	}
+	@GetMapping({"/resume/resumeFinal2"})
+	public String resumeFinal(@AuthenticationPrincipal PrincipalDetail principalDetail) {
+		return "/resume/resumeFinal2";
+	}
 }

@@ -1,5 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
+         
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+
+<sec:authorize access="isAuthenticated()">
+	<sec:authentication property="principal" var="principal"/>
+
+</sec:authorize>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +18,7 @@
     <title>이력서 작성</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/resume.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
 <body>
@@ -40,7 +49,7 @@
                         <div class="jool">
                             <div class="joolInputName">
                                 <label for="">이름<span class="star">*</span></label>
-                                <input type="text">
+                                <input type="text" name="name" value=${principal.users.name }>
                             </div>
                             <div class="joolInputBirth">
                                 <label for="">생년월일<span class="star">*</span></label>
@@ -54,7 +63,7 @@
                                         </span>
                                 </button>
                                 <div>
-                                    <ul>
+                                    <ul class="hide">
                                         <li><button type="button" class="button"><span>남자</span></button></li>
                                         <li><button type="button" class="button"><span>여자</span></button></li>
                                     </ul>
@@ -62,107 +71,22 @@
                             </div>
                             <div class="joolInputMail">
                                 <label for="">이메일</label>
-                                <input type="text" placeholder="abc@google.com">
+                                <input type="text" name="email" value="${principal.users.email }">
                             </div>
                         </div>
 
                         <div class="jool">
                             <div class="joolPhoneNum">
-                                <label for="">휴대폰번호<span class="star">*</span></label>
-                                <input type="text">
+                                <label for="">휴대전화번호<span class="star">*</span></label>
+                                <input type="text" name="phone" value="${principal.users.phone }">
                             </div>
                             <div class="joolAddress">
                                 <label for="">주소</label>
-                                <input type="text" name="" id="">
+                                <input type="text" name="address" id="">
                             </div>
                         </div>
                     </div>
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <!--
-                <div class="formWrap">
-                    <h2 class="header">인적사항
-                        <div class="description">
-                            <span class="star">*</span> 필수 입력 정보입니다.
-                        </div>
-                    </h2>
-
-
-
-                    <div class="profileForm">
-                        <div class="rows">
-                            <div class="input-profile-name">
-                                <label for="UserInfo_M_Name">
-                                    이름
-                                    <span class="star">*</span>
-                                </label>
-                                <input type="text" name="UserInfo.M_Name" id="UserInfo_M_Name"
-                                    data-foramt-type="name">
-                            </div>
-                            <div class="input-profile-birth">
-                                <label for="UserInfo_M_Born">
-                                    생년월일
-                                    <span class="star">*</span>
-                                </label>
-                                <input data-format-type="birth" type="text" id="UserInfo_M_Born"
-                                    name="UserInfo.M_Born" placeholder="2022.01.14">
-                            </div>
-                            <div class="dropDown">
-                                <button>
-                                    <label for="UserInfo_M_Sex">
-                                        성별
-                                        <span class="star">*</span>
-                                    </label>
-                                    <div class="list">
-                                        <ul>
-                                            <li>남자</li>
-                                            <li>여자</li>
-                                        </ul>
-                                    </div>
-                                </button>
-                            </div>
-                            <div>
-                                <label for=UserInfo_M_Email">
-                                    이메일
-                                    <span class="star">*</span>
-                                </label>
-                                <input type="text">
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div>
-                                <label for="UserInfo_M_PhoneNum">
-                                    휴대폰 번호
-                                    <span class="star">*</span>
-                                </label>
-                                <input type="text">
-                            </div>
-                            <div><label for="UserInfo_M_Address">
-                                    주소
-                                </label>
-                                <input type="text">
-                            </div>
-                        </div>
-                        <div class="picturePlus">
-                            <a href="#">사진추가</a>
-                        </div>
-                    </div>
-                </div>
-
-            -->
+           
                 <h2 class="header">학력</h2>
                 <div class="form">
                     <div class="school">
@@ -174,7 +98,7 @@
                                     </span>
                             </button>
                             <div>
-                                <ul>
+                                <ul class="hide">
                                     <li> <button type="button" class="button"><span>고등학교</span></button></li>
                                     <li> <button type="button" class="button"><span>대학교(2,3년)</span></button></li>
                                     <li> <button type="button" class="button"><span>대학교(4년)</span></button></li>
@@ -202,7 +126,7 @@
                                     </span>
                             </button>
                             <div>
-                                <ul>
+                                <ul class="hide">
                                     <li> <button type="button" class="button"><span>졸업</span></button></li>
                                     <li> <button type="button" class="button"><span>졸업예정</span></button></li>
                                     <li> <button type="button" class="button"><span>재학중</span></button></li>
@@ -228,7 +152,7 @@
                                     </span>
                             </button>
                             <div>
-                                <ul>
+                                <ul class="hide">
                                     <li> <button type="button" class="button"><span>4.5</span></button></li>
                                     <li> <button type="button" class="button"><span>4.3</span></button></li>
                                     <li> <button type="button" class="button"><span>4.0</span></button></li>
@@ -350,12 +274,12 @@
                 </div>
             </div>
         </div> -->
-
-
             </div>
-
         </div>
-
+       </div>
+     </div>
+   </div>
+	<script src="/js/resume_edit.js"></script>
 </body>
 
 </html>
