@@ -35,6 +35,7 @@
                     </li>
                 </ul>
             </div>
+<<<<<<< HEAD
           <form action="/auth/signin" method="post">
             <div class="input-row">
                 <div class="input-item">
@@ -45,6 +46,17 @@
                         autocomplete="off" placeholder="비밀번호">
                 </div>
                  <button type="button" class="btLogin">로그인</button>
+=======
+          <form action="/auth/signinComp" method="post">
+            <div class="input-row">
+                <div class="input-item">
+                    <input type="text" class="inpTxt inpID off" name="M_ID" size="16" maxlength="20" title="아이디 입력"
+                        style="ime-mode:inactive" autocomplete="off" placeholder="아이디">
+                    <input type="password" class="inpTxt inpPW off devCapsLock" name="M_PWD" id="M_PWD" size="16" title="비밀번호 입력"
+                        autocomplete="off" placeholder="비밀번호">
+                </div>
+                 <button type="submit" class="btLogin">로그인</button>
+>>>>>>> chh
             </div>
           </form>
             <div class="find-row">
@@ -83,6 +95,9 @@
             </p>
         </div>
     </div>
+<<<<<<< HEAD
     <script src="/js/signinComp.js"></script>
+=======
+>>>>>>> chh
 </body>
 </html>

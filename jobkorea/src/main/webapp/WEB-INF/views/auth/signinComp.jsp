@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>잡코리아 알바몬 통합 로그인 | 잡코리아 - 좋은 일이 생긴다
-        jobkorea.co,kr
+        jobkorea.co.kr
     </title>
     <link rel="stylesheet" href="/css/signin.css">
 </head>

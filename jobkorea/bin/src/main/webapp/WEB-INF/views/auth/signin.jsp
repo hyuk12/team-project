@@ -10,7 +10,10 @@
         jobkorea.co,kr
     </title>
     <link rel="stylesheet" href="/css/signin.css">
+<<<<<<< HEAD
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+=======
+>>>>>>> chh
 </head>
 <body>
     <div id="container">
@@ -31,14 +34,22 @@
         	<div class="select-row">
                 <ul id="decMemTab">
                     <li class="on">
+<<<<<<< HEAD
                         <a href="#" class="tab-li on">개인회원</a>
                     </li>
                     <li>
                         <a href="#" class="tab-li on">기업회원</a>
+=======
+                        <a href="/auth/signin" data-m-type="M">개인회원</a>
+                    </li>
+                    <li>
+                        <a href="/auth/signinComp" data-m-type="Co">기업회원</a>
+>>>>>>> chh
                     </li>
                 </ul>
             </div>
        <form action="/auth/signin" method="post">
+<<<<<<< HEAD
             <div class="input-row" >
                 <div class="input-item">
                     <input type="text" class="inpTxt inpID off" name="id-ip"   title="아이디 입력"
@@ -58,6 +69,17 @@
                 </div>
 
             </div>
+=======
+            <div class="input-row">
+                <div class="input-item">
+                    <input type="text" class="inpTxt inpID off" name="username"  title="아이디 입력"
+                        style="ime-mode:inactive" autocomplete="off" placeholder="아이디">
+                    <input type="password" class="inpTxt inpPW off devCapsLock" name="password" title="비밀번호 입력"
+                        autocomplete="off" placeholder="비밀번호">
+                </div>
+                 <button type="submit" class="btLogin">로그인</button>
+                </div>
+>>>>>>> chh
         </form>
             
             
@@ -97,6 +119,9 @@
             </p>
         </div>
     </div>
+<<<<<<< HEAD
     <script src="/js/signin.js"></script>
+=======
+>>>>>>> chh
 </body>
 </html>

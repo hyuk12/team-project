@@ -7,10 +7,13 @@ const submitBtns = document.querySelectorAll('.su-submit-btns');
 const myEmail = document.querySelector('#M_Email');
 const myPhone = document.querySelector('#M_Phone');
 
+<<<<<<< HEAD
 document.onload = () => {
 
 }
 
+=======
+>>>>>>> chh
 function checkPhone(){
 	var num = myPhone.value;
 	

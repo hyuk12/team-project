@@ -27,37 +27,17 @@ public class SignupCompReqDto {
 	
 	
 	
-	@NotBlank
-	@Size(min=4, max=10)
-	private String username;
-	
-	@NotBlank
-	@Size(min=7, max=13)
-	private String password;
-	
-	@NotBlank
-	private String name;
-	
-	@NotBlank
-	private String phone;
-	
-	@NotBlank
-	private String email;
 	
 	
 	
-	public Company toEntity() {
+	
+	public User toEntity() {
 		return Company.builder()
-				.comptype(comptype)
-				.compnum(compnum)
-				.compname(compname)
-				.ceoname(ceoname)
-				.username(username)
-				.password(new BCryptPasswordEncoder().encode(password))
-				.role("ROLE_USER")
-				.name(name)
-				.phone(phone)
-				.email(email)
+				.compType(comptype)
+				.compNum(compnum)
+				.compName(compname)
+				.ceoName(ceoname)
+				
 				.build();
 	}
 }

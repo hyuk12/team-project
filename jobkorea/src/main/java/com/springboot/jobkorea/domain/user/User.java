@@ -9,8 +9,9 @@ import lombok.Data;
 @Data
 public class User {
 	
-	private int id;
+	public int id;
 	
+<<<<<<< HEAD
 	private String name;
 	private String username;
 	private String password;
@@ -18,15 +19,23 @@ public class User {
 	private String email;
 	private String phone;
 	
+=======
+	public String name;
+	public String username;
+	public String password;
+	public String email;
+	public String phone;
+	public String role;
+>>>>>>> chh
 	
 //	기업 정보
 	
-//	private String compType;
-//	private String compNum;
-//	private String compName;
-//	private String ceoName;
+	private String compType;
+	private String compNum;
+	private String compName;
+	private String ceoName;
 	
 	
-	private LocalDateTime create_date;
-	private LocalDateTime update_date;
+	public LocalDateTime create_date;
+	public LocalDateTime update_date;
 }

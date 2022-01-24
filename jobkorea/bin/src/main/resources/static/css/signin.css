@@ -125,7 +125,11 @@ input {
   font-weight: bold;
   height: 39px;
   font: bold 16px/36px "Malgun Gothic", "맑은 고딕", verdana, dotum, "돋움",
+<<<<<<< HEAD
   sans-serif;
+=======
+    sans-serif;
+>>>>>>> chh
   letter-spacing: -1px;
   border-bottom: 1px solid #39f;
 }
@@ -149,10 +153,13 @@ input {
   display: flex;
   flex-direction: column;
 }
+<<<<<<< HEAD
 .input-item2 {
   display: none;
   flex-direction: column;
 }
+=======
+>>>>>>> chh
 
 .inpID {
   border: 1px solid #e1e1e2;
@@ -168,7 +175,11 @@ input {
   line-height: 46px;
   color: #333;
   font: bold 14px "Malgun Gothic", "맑은 고딕", verdana, dotum, "돋움",
+<<<<<<< HEAD
   sans-serif;
+=======
+    sans-serif;
+>>>>>>> chh
 }
 .btLogin {
   width: 120px;
@@ -177,7 +188,11 @@ input {
   color: #fff;
   min-height: 55px;
   font: bold 16px "Malgun Gothic", "맑은 고딕", verdana, dotum, "돋움",
+<<<<<<< HEAD
   sans-serif;
+=======
+    sans-serif;
+>>>>>>> chh
   letter-spacing: -1px;
 }
 
@@ -193,7 +208,11 @@ input {
   padding: 10px;
 
   font: bold 14px "Malgun Gothic", "맑은 고딕", verdana, dotum, "돋움",
+<<<<<<< HEAD
   sans-serif;
+=======
+    sans-serif;
+>>>>>>> chh
 }
 
 #footer {
@@ -201,4 +220,8 @@ input {
   margin: auto 10px;
   background: #fff;
   border-top: 1px solid #ddd;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> chh

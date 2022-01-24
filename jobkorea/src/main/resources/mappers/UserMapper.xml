@@ -31,7 +31,7 @@
   	
   	<insert id="insertCompUser" parameterType="com.springboot.jobkorea.domain.user.Company">
   		insert into
-  			comp_mst
+  			comp_dtl
   		values(
   			0,
   			#{comptype},
@@ -63,7 +63,7 @@
   		select
   			*
   		from
-  			comp_mst
+  			comp_dtl
   		where
   			username = #{username};
   	</select>
