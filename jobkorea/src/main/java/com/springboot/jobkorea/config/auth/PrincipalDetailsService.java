@@ -30,6 +30,7 @@ public class PrincipalDetailsService implements UserDetailsService{
 			if(userEntity == null){
 				return null;
 			}else{
+				
 				return new PrincipalDetail(userEntity);
 			}
 
