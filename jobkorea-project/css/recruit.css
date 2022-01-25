@@ -71,15 +71,17 @@ body{
 
 /* input */
 .input >input{
-    width: 100%;  
+    width: 100%; 
+    border: 1px solid #dbdbdb; 
+    height: 25px;
 }
 
 .inputShort{
-    width: 30%;
+    width: 50%;
 }
 
 .inputMiddle{
-    width: 50%;
+    width: 80%;
 }
 datalist{
     display: none;
@@ -131,7 +133,7 @@ datalist{
 .etcInput{ 
     width: 20%; 
     margin-top: 50px;
-    padding-left: 50px; 
+    padding-left: 30px; 
     border: 1px solid #dbdbdb; 
 }
 
@@ -142,7 +144,7 @@ datalist{
 }
 
 .etcInput .input{
-    margin-top: 10px;
+    margin-top: 10px; 
 }
 
 
