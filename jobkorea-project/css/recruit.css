@@ -1,0 +1,160 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font: 13px "맑은 고딕", Malgun Gothic, "돋움", Dotum, sans-serif;
+    display: block;
+    background-color: gainsboro;
+     
+}
+
+.main{
+    width: 1000px;
+    margin: 100px auto; 
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.top{}
+
+.row{
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    /* width: 500px; */ 
+    
+}
+
+.row div{
+    align-self: start;
+    margin: 10px;
+    padding: 2px;
+    width: 80px;
+      
+}
+
+.row div:last-child{
+    margin-right: 0px;
+    margin-bottom: 10px;
+}
+
+.row >.input{
+    width: 380px;
+    border: 1px solid #ccc;
+}
+.row >.input input{
+    box-sizing: border-box;
+    border: none;  
+}
+
+.content{
+    display: flex;
+}
+
+.info{
+    /* (왼쪽) 채용정보 적을거 */ 
+    margin-top: 10px;
+    padding: 20px;
+    width: 30%;
+    border-right: 1px solid #ccc;
+}
+
+.info h3 {
+    margin-top: 0px;
+}
+.info div:last-child{
+    padding-bottom: 10px; 
+    padding-top: 10px; 
+}
+
+/* input */
+.input >input{
+    width: 100%;  
+}
+
+.inputShort{
+    width: 30%;
+}
+
+.inputMiddle{
+    width: 50%;
+}
+datalist{
+    display: none;
+}
+
+/* 기업에서 사진올리는거 */
+.picture{
+    width: 60%; 
+    min-height: 400px;
+    margin-top: 30px;
+    margin-left: 30px; 
+    border: 1px solid #ccc;  
+}
+
+.picture img{
+    width: 100%;
+}
+
+.footer{
+    width: 100%; 
+}
+
+.textArea{
+ }
+
+
+.textArea >div { 
+    width: 100%;    
+    display: flex; 
+
+}
+ 
+
+.firstTxt{
+    margin-left: 20px; 
+    padding-right: 50px; 
+
+    width: 60%; 
+    
+}
+
+.firstTxt textarea{
+    width: 100%;
+    box-sizing: border-box;
+    /* resize: vertical; */
+    resize: none;
+}
+
+.etcInput{ 
+    width: 20%; 
+    margin-top: 50px;
+    padding-left: 50px; 
+    border: 1px solid #dbdbdb; 
+}
+
+.etcInput>div{
+    width: 100%; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.etcInput .input{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+.submit button{
+    cursor: pointer;
+    background-color: #85c2ff;
+    border: none;
+    color: white;
+    margin : 50px 450px;
+    padding: 10px 20px;
+}

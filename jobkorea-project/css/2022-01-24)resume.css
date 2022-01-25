@@ -144,7 +144,6 @@ div.sub{
     
 }
 
- 
 .edu >div{
     border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
@@ -159,19 +158,6 @@ div.sub{
 }
 
 .edu1 >div:last-child{
-    text-align: right;
-}
-
-.edu2{
-	margin-bottom: 10px;	
-}
-
-.edu2 > div{ 
-    width: 33%; 
-    font-weight : bold;
-}
-
-.edu2 >div:last-child{
     text-align: right;
 }
 
@@ -199,43 +185,24 @@ div.sub{
     align-items: center;
 }
 
-.car div:last-child{
- 	border : none;
- }
-
-
-div .car1{
-	margin-bottom: 10px;
-    border-bottom: 1px solid #000; 
-}
- 
- div .edu2 {
-	margin-bottom: 10px; 
-}
 
 .car1 > div{ 
     width: 33%; 
 }
 
+
 .car1 >div:last-child{
     text-align: right;
 }
 
-div .car2 {
-	margin-bottom: 10px;
+.car2{
+    border-bottom: 1px solid #000;
 }
-
-
 .car2 > div{ 
     width: 33%; 
-  	font-weight: bold;
+    font-weight: bold;
+    padding-top: 10px;
 }
-
-.car2 >div:last-child{
-    text-align: right;
-    
-}
-
 
 .introduce{
     width: 100%; 

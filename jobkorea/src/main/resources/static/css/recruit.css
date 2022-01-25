@@ -1,0 +1,107 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font: 13px "맑은 고딕", Malgun Gothic, "돋움", Dotum, sans-serif;
+    display: block;
+}
+
+.main{
+    width: 1000px;
+    margin: 100px auto; 
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.top{}
+
+.row{
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    /* width: 500px; */ 
+    
+}
+
+.row div{
+    align-self: start;
+    margin: 10px;
+    padding: 2px;
+    width: 80px;
+    background-color: aliceblue;
+      
+}
+
+.row div:last-child{
+    margin-right: 0px;
+    margin-bottom: 10px;
+}
+
+.row >.input{
+    width: 380px;
+    border: 1px solid #ccc;
+    
+}
+
+.content{
+    display: flex;
+}
+
+.info{
+    /* (왼쪽) 채용정보 적을거 */ 
+    margin-top: 30px;
+    padding: 20px;
+    width: 30%;
+    border-right: 1px solid #ccc;
+}
+
+.info div:last-child{
+    padding-bottom: 10px; 
+    padding-top: 10px; 
+}
+
+.input >input{
+    width: 100%; 
+    background-color: aliceblue;
+}
+
+.inputShort{
+    width: 30%;
+}
+
+
+/* 기업에서 사진올리는거 */
+.picture{
+    width: 50%;
+    height: 100%;
+    margin-top: 30px;
+    margin-left: 30px; 
+    border: 1px solid #ccc;
+    background-color: aliceblue;
+    
+}
+
+.footer{
+    width: 100%; 
+}
+
+
+.textArea >input {
+    width: 100%;
+    height: 200px; 
+    box-sizing: border-box;
+    background-color: aliceblue;
+    
+
+}
+
+.submit button{
+    cursor: pointer;
+    background-color: #85c2ff;
+    border: none;
+    color: white;
+    margin : 50px 450px;
+    padding: 10px 20px;
+}
