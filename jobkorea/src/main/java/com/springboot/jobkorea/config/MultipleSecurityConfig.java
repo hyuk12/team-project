@@ -33,7 +33,7 @@ public class MultipleSecurityConfig  {
 		protected void configure(HttpSecurity http) throws Exception {
 			http.csrf().disable();
 			http.authorizeRequests()
-				.antMatchers("/myIndex", "/", "/mypage/**")
+				.antMatchers("/myIndex", "/", "/mypage/**","/accounts/**")
 					.authenticated()
 				.anyRequest()
 				.permitAll()

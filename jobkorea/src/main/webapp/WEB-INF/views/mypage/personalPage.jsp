@@ -185,7 +185,7 @@
                             </div>
                             <div class="center-submn">
                                 <ul>
-                                    <a href="#"><li>회원정보 수정</li></a>
+                                    <a href="/accounts/info/change/personal"><li>회원정보 수정</li></a>
                                     <a href="/accounts/password/change/personal"><li>비밀번호 변경</li></a>
                                 </ul>
                             </div>

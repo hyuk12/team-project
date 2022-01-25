@@ -6,6 +6,8 @@ import org.springframework.stereotype.Service;
 import com.springboot.jobkorea.config.auth.PrincipalDetail;
 import com.springboot.jobkorea.domain.user.User;
 import com.springboot.jobkorea.domain.user.UserRepository;
+import com.springboot.jobkorea.web.dto.accounts.InfoReqDto;
+import com.springboot.jobkorea.web.dto.accounts.InfoRespDto;
 import com.springboot.jobkorea.web.dto.accounts.PasswordReqDto;
 import com.springboot.jobkorea.web.dto.accounts.PasswordRespDto;
 
@@ -49,6 +51,43 @@ public class AccountsServiceImpl implements AccountsService{
 		}
 		
 		return passwordRespDto;
+	}
+
+	@Override
+	public boolean updateInfo(PrincipalDetail principalDetail, InfoReqDto infoReqDto) {
+		int id = principalDetail.getUsers().getId();
+		
+		// 기존에 있는 username
+		String username = principalDetail.getUsers().getUsername();
+		String email = principalDetail.getUsers().getEmail();
+		String phone = principalDetail.getUsers().getPhone();
+		
+		// InfoRespDto infoRespDto = new InfoRespDto();
+		
+		User userEntity = infoReqDto.toEntity(id, username);
+		
+		int result = 0;
+		
+		result += userRepository.updateUserInfoById(userEntity);
+		
+		System.out.println(result);
+		
+		if (result == 1) {
+			System.out.println(userEntity);
+			
+			principalDetail.setUsers(userEntity);
+			
+			System.out.println("id: " + id);
+			System.out.println("username: " + username);
+			System.out.println("email: " + email);
+			System.out.println("phone: " + phone);
+
+			return true;
+		} else {
+			return false;
+		}
+		
+		
 	}
 
 }

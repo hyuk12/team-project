@@ -77,4 +77,16 @@
   		where
   			id = #{id};
   	</update>
+  	
+  	<update id="updateUserInfoById" parameterType="com.springboot.jobkorea.domain.user.User">
+  		UPDATE
+			user_mst
+		SET
+			username = #{username},
+			email = #{email},
+			phone = #{phone},
+			update_date = NOW()
+		WHERE
+			id = #{id};
+  	</update>
   </mapper>

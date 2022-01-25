@@ -48,6 +48,11 @@ public class PageController {
 	public String personalChPwForm() {
 		return "accounts/personal_ch_pw";
 	}
+
+	@GetMapping({"/accounts/info/change/personal"})
+	public String personalChInfoForm() {
+		return "accounts/personal_ch_info";
+	}
 	
 	
 }
