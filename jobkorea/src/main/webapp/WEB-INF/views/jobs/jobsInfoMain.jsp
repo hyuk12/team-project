@@ -55,17 +55,36 @@
                 <div class="btn-section">
                     <button type="button" class="apply-btn"><i class="fas fa-check"></i>즉시지원</button>
                 </div>
+                <div class="comp-img">
+                    <img src="/images/cupang.png" >
+                </div>
                 <div class="bottom-info">
                     <div class="bottom-info-title">
                         <h1>모집 분야 및 자격요건</h1>
                     </div>
                     <div class="bottom-main">
-                        
+                        <div class="aside">
+                            <span>모집분야</span>
+                            <div>신입.경력</div>
+                        </div>
+                        <div class="main-recruitment">
+                            <span>자격요건</span>
+                            <div>
+                                자격요건입니다.
+                            </div>
+                        </div>
+                        <div class="right-aside">
+                            <span>우대사항</span>
+                            <div>
+                                우대사항입니다.
+                            </div>
+                        </div>
                     </div>
+                    
+                    
                 </div>
             </div>
         </div>
     </section>
-    <script src="/js/job.js"></script>
 </body>
 </html>

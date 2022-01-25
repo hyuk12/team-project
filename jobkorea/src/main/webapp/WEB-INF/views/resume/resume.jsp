@@ -23,10 +23,13 @@
 <body>
     <div class="wrapper">
         <div class="resume">
-            <div class="left">
-                <img src="/image/${principal.resume.profile_img }" alt="증명사진 들어올 자리">
+            <div  class="left">
+            	<div  name="profile_img">
+            		<img id="personImg" src="/image/${principal.resume.profile_img }" >
+            	</div>
+                
 
-                <div class="name" name = "name">${principal.users.name }</div>
+                <div class="name" name ="name">${principal.users.name }</div>
 
                 <div class="address">
                     <h2>CONTACT</h2>

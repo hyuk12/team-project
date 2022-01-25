@@ -51,7 +51,7 @@ public class ResumeServiceImpl implements ResumeService{
 			
 			
 		}else {
-			String imageFileName = UUID.randomUUID().toString().replaceAll("-", "") + resumeReqDto.getFile().getOriginalFilename();
+			String imageFileName = UUID.randomUUID().toString().replaceAll("-", "") + "_" + resumeReqDto.getFile().getOriginalFilename();
 			Path imageFilePath = Paths.get(filePath, "profile_img\\" +imageFileName);
 			
 			File file = new File(filePath + "profile_img");

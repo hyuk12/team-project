@@ -26,7 +26,9 @@
         <div class="resumeContainer">
             <div class="formWrap">
                 <div class="formProfile">
+                	
                 <form enctype="multipart/form-data">
+                	
                 	<h2 class="header">인적사항</h2>
                     <div class="formProfileForm">
                         <div class="jool">
@@ -46,7 +48,6 @@
                                 			<option value="남성"/>
                                 			<option value="여성"/>
                                 		</datalist>
-                                	
                             	</div>
                                 	
                             </div>
@@ -56,16 +57,14 @@
                             </div>
                             <div class="picturePlus" >
                     			<div class="profile-img-add-btn">
-                    				<input type="file" id="file" name="profile_img">
                     				<div class="img-place">
-                    					<img id="profile-img"  src="/image/${principal.resume.profile_img }">
-                    				</div>
-                    
-                    				
-                    				
+                						<img id="profile-img"  class="personImg" src="/image/${principal.resume.profile_img }">
+                						<input type="file" id="file" name="file">
+                					</div>				
                     			</div>
                     		</div>
                         </div>
+                        
 
                         <div class="jool">
                             <div class="joolPhoneNum">
@@ -97,7 +96,7 @@
                         </div>
                         <div class="inputSchool">학교명
                             <span class="star">*</span>
-                            <input type="text" class="re-ip" name="schoolname" id=inputSchool" value="${principal.resume.schoolname }">
+                            <input type="text" class="re-ip" name="schoolname" value="${principal.resume.schoolname }">
                         </div>
                         <div class="ipHak">입학년월
                             <span class="star">*</span>

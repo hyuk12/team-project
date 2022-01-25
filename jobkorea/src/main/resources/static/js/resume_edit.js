@@ -50,13 +50,14 @@ function multipartSubmit(){
 		contentType: false,
 		success: function(data){
 			if(data == true){
-				const personImg = document.querySelector('.img-place');
+				const personImg = document.querySelector('.personImg');
 				personImg.src = profileImgFile;
+				location.replace('/');
 			}
 			
 		},
 		error: function(){
-			alret('비동기 처리 오류');
+			alert('비동기 처리 오류');
 		}
 	});
 }
@@ -93,7 +94,9 @@ function editSubmit(){
 		},
 		dataType: "text",
 		success: function(data){
-			alert('이력서 작성 완료');
+			if(data == 'true'){
+				alert('이력서 작성 완료');	
+			}
 		},
 		error: function(){
 			alert('비동기 처리 오류');
@@ -103,7 +106,9 @@ function editSubmit(){
 
 
 submitBtn.onclick = () => {
-	if(imgFileChangeFlag == 'true'){
+	alert(imgFileChangeFlag);
+	if(imgFileChangeFlag == true){
+		
 		multipartSubmit();
 	}else{
 		editSubmit();

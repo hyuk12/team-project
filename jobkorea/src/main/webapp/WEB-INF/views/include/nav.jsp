@@ -64,7 +64,7 @@
                 </ul>
                 <ul class="nav-user">
                     <li class="my-info">
-                        <a href="#" class="my-info-open">
+                        <a href="/mypage/personalPage" class="my-info-open">
                             <img src="/images/mypage-logo.png" >
                         </a>
                     </li>

@@ -18,7 +18,6 @@ public class ResumeReqDto {
 	private String gender; // 성별
 	private String email; // 이메일
 	private String address; // 주소
-	private String profile_img; //프로필이미지
 	private String education; //학력
 	private String schoolname; // 학교명
 	private String admissionyear; // 입학년월일
