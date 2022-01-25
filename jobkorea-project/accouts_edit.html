@@ -93,8 +93,79 @@
         </div>
     </div>
     <div class="main">
-        <h1>회원정보 수정</h1>
+        <div class="username-check">
+            
+            <div class="accounts-main">
+                <div class="left-aside">
+                    <div class="info-lb username-lb">아이디</div>
+                    <div class="info-lb name-lb">이름</div>
+                    <div class="info-lb phone-lb">휴대전화</div>
+                    <div class="info-lb email-lb">이메일</div>
+                </div>
+                <div class="main-info">
+                    <div class="info-ip">
+                        <div>
+                            <input type="text" class="username-ip" name="username" value="">
+                        </div>
+                    </div>
+                    <div class="info-ip">
+                        <div>
+                            <input type="text" class="name-ip" name="name" value="">
+                        </div>
+                    </div>
+                    <div class="info-ip">
+                        <div>
+                            <input type="text" class="phone-ip" name="phone" value="">
+                        </div>
+                    </div>
+                    <div class="info-ip">
+                        <div>
+                            <input type="text" class="email-ip" name="email" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-img">
+                    <img src="/images/cupang.png">
+                    <input id="file" type="file" name="file">
+                </div>
+            </div>
+            <div class="submit-area">
+                <button type="button">수정하기</button>
+            </div>
+        </div>
+        
+        <div class="password-check">
+            
+                <div class="accounts-main-pwd">
+                    <div class="left-aside-pwd">
+                        <div class="info-lb pre-password-lb">현재 비밀번호</div>
+                        <div class="info-lb new-password-lb">새로운 비밀번호</div>
+                        <div class="info-lb new-check-pwd-lb">새로운 비밀번호 확인</div>
+                    </div>
+                    <div class="main-info-pwd">
+                        <div class="info-ip">
+                            <div>
+                                <input type="password" class="pre-password-ip" name="prePassword">
+                            </div>
+                        </div>
+                        <div class="info-ip">
+                            <div>
+                                <input type="password" class="new-password-ip" name="newPassword">
+                            </div>
+                        </div>
+                        <div class="info-ip">
+                            <div>
+                                <input type="password" class="new-check-pwd-ip" name="newPwdCheck">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-area">
+                    <button type="button">수정하기</button>
+                </div>
+        </div>
+        
     </div>
-    
+    <script src="/js/accounts_edit.js"></script>
 </body>
 </html>

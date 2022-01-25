@@ -25,7 +25,7 @@
                 </div>
                 <div class="login-section">
                     <div class="my-login-info">
-                        <a href="#">${principal.users.name } 님 <i class="fas fa-angle-right"></i></a><button><span>로그아웃</span></button>
+                        <a href="/mypage/personalPage">${principal.users.name } 님 <i class="fas fa-angle-right"></i></a><button type="button" class="logoutbtn"><span>로그아웃</span></button>
                         <div class="my-info-resume"><a href="/resume/edit">이력서 관리</a></div>                    
                     </div>
                 </div>
@@ -239,5 +239,6 @@
             </main>
         </div>
     </section>
+    <script src="/js/myindex.js"></script>
 </body>
 </html>

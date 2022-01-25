@@ -76,8 +76,36 @@
   		where
   			id = #{id};
   	</select>
-  	
-  	
+  	<update id="updateUserById" parameterType="com.springboot.jobkorea.domain.user.User">
+  		update
+  			user_mst
+  		set
+  			username = #{username},
+  			name = #{name},
+  			phone = #{phone},
+  			email = #{email},
+  			update_date = now()
+  		where
+  			id = #{id}; 
+  	</update>
+  	 <update id="updateUserDtlById" parameterType="com.springboot.jobkorea.domain.resume.Resume">
+  		update
+  			user_dtl
+  		set
+  			profile_img = #{profile_img}
+  		where
+  			id = #{id}; 
+  	</update>
+  	<update id="updatePasswordById" parameterType="com.springboot.jobkorea.domain.user.User">
+		update
+			user_mst
+		set
+			password = #{password},
+			
+			update_date = now()
+		where
+			id = #{id};
+	</update>
   	
   	
   </mapper>

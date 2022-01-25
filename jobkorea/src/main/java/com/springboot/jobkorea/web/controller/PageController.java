@@ -64,8 +64,15 @@ public class PageController {
 		return "mypage/personalPage";
 	}
 	
-	@GetMapping({"/accounts/password/change/personal"})
-	public String personalChPwForm() {
-		return "accounts/personal_ch_pw";
+	@GetMapping({"/accounts/edit"})
+	public String personalEditForm(@AuthenticationPrincipal PrincipalDetail principalDetail ) {
+		return "accounts/accounts_edit";
 	}
+	
+	@GetMapping({"/accounts/password"})
+	public String personalPwdForm(@AuthenticationPrincipal PrincipalDetail principalDetail ) {
+		return "accounts/accounts_pwd";
+	}
+	
+	
 }
