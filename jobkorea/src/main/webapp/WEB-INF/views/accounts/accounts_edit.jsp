@@ -36,16 +36,15 @@
         	
             <form enctype="multipart/form-data">
             	<div class="accounts-main">
-                <div class="left-aside">
-                    <div class="info-lb username-lb">아이디</div>
-                    <div class="info-lb name-lb">이름</div>
-                    <div class="info-lb phone-lb">휴대전화</div>
-                    <div class="info-lb email-lb">이메일</div>
-                </div>
+                	<div class="left-aside">
+                    	<div class="info-lb username-lb">아이디</div>
+                    	<div class="info-lb name-lb">이름</div>
+                    	<div class="info-lb phone-lb">휴대전화</div>
+                    	<div class="info-lb email-lb">이메일</div>
+                	</div>
                 <div class="main-info">
                     <div class="info-ip">
                         <div>
-                        	
                             <input type="text" class="pr-ip username-ip" name="username" value="${principal.users.username }">
                         </div>
                     </div>
@@ -66,7 +65,6 @@
                     </div>
                 </div>
                 <div class="profile-img">
-                	
                     <img id="profile-img" src="/image/${principal.resume.profile_img }">
                     <input id="file" type="file" name="file">
                     <div class="profile-img-change-btn">
@@ -77,11 +75,13 @@
             <div class="submit-area">
                 <button type="button" class="edit-button">수정하기</button>
             </div>
-        </div>
-     		</form>
+     	</form>
+     </div>
+  </div>       	
+     	
             
         
-    </div>
+    
     <script src="/js/accounts_edit.js"></script>
 </body>
 </html>

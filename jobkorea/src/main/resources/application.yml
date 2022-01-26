@@ -55,7 +55,7 @@ mybatis:
   - /mappers/*.xml
   
 file :
-  path: C:\fileupload\
+  path: C:\Spring\workspace\jobkoreaImg
 
 test:
   filename: test_file.txt  
