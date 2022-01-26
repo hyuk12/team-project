@@ -70,7 +70,7 @@ public class ResumeServiceImpl implements ResumeService{
 		}
 			
 		resumeEntity = resumeReqDto.toResumeEntity(id, profile_img);
-		
+		System.out.println(resumeEntity);
 		result += resumeRepository.updateUserById(userEntity);
 		result += resumeRepository.updateResumeById(resumeEntity);
 			

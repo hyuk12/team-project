@@ -16,20 +16,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/resume.css">
     <link rel="stylesheet" href="/css/style.css">
-    
+    <script src="http://jquery.com"></script>
     <title>이력서</title>
 </head>
 
 <body>
     <div class="wrapper">
         <div class="resume">
-            <div  class="left">
-            	<div  name="profile_img">
-            		<img id="personImg" src="/image/${principal.resume.profile_img }" >
-            	</div>
-                
+            <div class="left">
+                <img src="/image/${principal.resume.profile_img }" >
 
-                <div class="name" name ="name">${principal.users.name }</div>
+                <div class="name" name= "name">${principal.users.name }</div>
 
                 <div class="address">
                     <h2>CONTACT</h2>
@@ -68,32 +65,52 @@
                 <div class="school">
                     <h2>EDUCATION</h2>
                     <div class="edu">
+                    	
+                        <div class="edu2">
+                            <div>입학년월</div>
+                            <div>학교명</div>
+                            <div>졸업유무</div>
+                        </div>
                         <div class="edu1">
                             <div>${principal.resume.admissionyear }</div>
                             <div> ${principal.resume.schoolname }</div>
                             <div>${principal.resume.graduationstatus }</div>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="career">
-                    <h2>CAREER</h2>
+                    <h2>EXPERIENCE CAREER</h2>
                     <div class="car">
+                    	<div class="car2">
+                            <div>회사명</div>
+                            <div>회사경력</div>
+                            <div>직책</div>
+                            
+                        </div>
                         <div class="car1">
-                            <div>회사명: ${principal.resume.compname }</div>
-                            <div>${principal.resume.joinyear}~${principal.resume.leaveyear }</div>
+                            <div>${principal.resume.compname }</div>
+                            <div>${principal.resume.joinyear } ~${principal.resume.leaveyear }</div>
                             <div>${principal.resume.position }</div>
                         </div>
+                        
+                        <div class="car2">
+                            <div>자격증명</div>
+                            <div>유효기간</div>
+                            <div>발급기관</div>
+                        </div>
                         <div class="car1">
-                            <div>자격증</div>
                             <div>${principal.resume.certificate }</div>
                             <div>${principal.resume.handlingmonth }</div>
+                            <div>${principal.resume.issuedby }</div>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="introduce">
                     <h2>INTRODUCE</h2>
-                    <textarea readonly name="selfintroduction" id="" cols="30" rows="30">
-							${principal.resume.selfintroduction }
+                    <textarea readonly name="" id="" cols="30" rows="30">
+							${principal.resume.selfintroduction}
                     </textarea>
                 </div>
             </div>	

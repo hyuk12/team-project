@@ -12,6 +12,10 @@
     display: flex;
     flex-direction:column;
 }
+
+#principal-username1{
+	display: 'none';
+}
 .accounts-change-btn{
     display: flex;
     justify-content: center;

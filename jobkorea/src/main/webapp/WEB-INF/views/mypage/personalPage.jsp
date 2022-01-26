@@ -79,7 +79,7 @@
                             <div class="center-submn">
                                 <ul>
                                     <a href="/resume/edit"><li>이력서 수정</li></a>
-                                    <a href="#"><li>이력서 등록</li></a>
+                                    <a href="/resume"><li>이력서 등록</li></a>
                                 </ul>
                             </div>
                         </div>
