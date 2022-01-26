@@ -129,24 +129,19 @@ input {
 }
 
 .com-name {
-  width: 400px;
+  width: 200px;
   height: 124px;
 
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
+  align-items: center;
 
   color: #fff;
 
   margin-left: 20px;
 }
-.com-name h2 {
-  font-size: 30px;
-}
 .com-name p {
-  color: rgba(238, 238, 238, 0.849);
-  margin-left: 5px;
+  font-size: 30px;
 }
 
 .main-center {

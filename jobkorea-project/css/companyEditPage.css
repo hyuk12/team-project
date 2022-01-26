@@ -115,6 +115,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
   background-color: #fff;
 
@@ -179,8 +180,16 @@ input {
   align-items: center;
 }
 .category-in a {
-  padding-left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-weight: 700;
+}
+.on {
+  height: 50px;
+  padding-top: 15px;
+
+  background-color: #3399ff;
+  color: #fff;
 }
 
 .com-img {
@@ -201,6 +210,8 @@ input {
   align-items: center;
 
   background-color: #fff;
+
+  cursor: pointer;
 }
 .dtl-img img {
   max-width: 220px;
@@ -236,7 +247,7 @@ input {
 }
 
 .title1 {
-  width: 80px;
+  width: 150px;
   height: 38px;
 
   display: flex;
