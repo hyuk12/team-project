@@ -17,7 +17,9 @@ body{
     border: 1px solid #ccc;
 }
 
-.top{}
+.top{
+    margin-top: 50px;
+}
 
 .row{
     margin: 0 20px;
