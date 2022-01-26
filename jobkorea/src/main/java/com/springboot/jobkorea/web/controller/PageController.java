@@ -53,9 +53,14 @@ public class PageController {
 		return "/jobs/jobsInfoMain";
 	}
 	
-	@GetMapping({"/resume"})
+	@GetMapping({"/resume/resume"})
 	public String resumeForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
 		return "/resume/resume";
+	}
+	
+	@GetMapping({"/recruit/recruit"})
+	public String recruitForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
+		return "/recruit/recruit";
 	}
 	
 	 

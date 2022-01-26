@@ -25,19 +25,19 @@
                 <div>공고 제목</div>
                 <div class="input"><input type="text" id=""></div>
                 <div>기업 규모</div>
-                <div class="input">${principal.comp.comptype }</div>
+                <div class="input">${principal.company.comptype}</div>
             </div>
             <div class="row">
                 <div>기업이름</div>
-                <div class="input">${principal.comp.compname }</div>
+                <div class="input">${principal.company.compname }</div>
                 <div>ceo 이름</div>
-                <div class="input">${principal.comp.ceoname }</div>
+                <div class="input">${principal.company.ceoname }</div>
             </div>
             <div class="row">
                 <div>연락처</div>
-                <div class="input">${principal.comp.phone }</div>
+                <div class="input">${principal.company.phone }</div>
                 <div>이메일</div>
-                <div class="input">${principal.comp.email }</div>
+                <div class="input">${principal.company.email }</div>
             </div>
         </div>
 
