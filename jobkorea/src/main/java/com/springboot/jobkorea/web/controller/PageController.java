@@ -57,4 +57,6 @@ public class PageController {
 	public String resumeForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
 		return "/resume/resume";
 	}
+	
+	 
 }
