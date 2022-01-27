@@ -256,8 +256,9 @@ ul {
     width: 100px;
     height: 40px;
     border: none;
-    border-radius: 10px;
-    background-color: rgb(253, 143, 104);
+    border-radius: 5px;
+    background-color: #ff7e00;
+    color: #fff;
     position: relative;
   }
 

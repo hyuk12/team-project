@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div class="btn-section">
-                    <button type="button" class="apply-btn"><i class="fas fa-check"></i>즉시지원</button>
+                    <a href="/resume/submission" class="apply-btn"><i class="fas fa-check"></i>즉시지원</a>
                 </div>
                 <div class="comp-img">
                     <img src="/images/cupang.png" >

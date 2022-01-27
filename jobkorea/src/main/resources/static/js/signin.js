@@ -49,7 +49,7 @@ tabli[1].onclick = () => {
 }
 
 cloginBtns.onclick = () => {
-    console.log(changeUsername2());
     changeUsername2();
     form.submit();
+    location.replace('/compIndex');
 }

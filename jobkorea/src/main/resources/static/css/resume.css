@@ -259,3 +259,17 @@ div .car2 {
 .introduce > textarea:focus{
 	outline : none;
 }
+
+button{
+	display: flex;
+	margin-left: 350px;
+	margin-top: 20px;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	border-radius: 5px;
+	width: 100px;
+	height: 35px;
+	background-color: #39f;
+	color: #fff;
+}

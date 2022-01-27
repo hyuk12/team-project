@@ -78,10 +78,10 @@
                         <div class="comp-item-list">
                             <div class="comp-item-first">
                                 <div class="comp-name">
-                                    <a href="#">(주) 주연테크</a>
+                                    <a href="/jobs/jobinfo">(주) 주연테크</a>
                                 </div>
                                 <div class="comp-info">
-                                    <a href="#">
+                                    <a href="/jobs/jobinfo">
                                         2022년 상반기 각 부문 신입 및 경력 모집
                                     </a>
                                     <span class="comp-info-item">
@@ -92,7 +92,7 @@
                                     </span>
                                 </div>
                                 <div class="comp-btn">
-                                   <a href="#"><span>지원하기</span></a>
+                                   <a href="/resume/submission"><span>지원하기</span></a>
                                    <p>등록일자</p>
                                    <p>2022-01-01</p>
                                 </div>
@@ -115,7 +115,7 @@
                                     </span>
                                 </div>
                                 <div class="comp-btn">
-                                   <a href="#"><span>지원하기</span></a>
+                                   <a href="/resume/submission"><span>지원하기</span></a>
                                    <p>등록일자</p>
                                    <p>2022-01-01</p>
                                 </div>
@@ -124,10 +124,10 @@
                         <div class="comp-item-list">
                             <div class="comp-item-first">
                                 <div class="comp-name">
-                                    <a href="#">(주) 주연테크</a>
+                                    <a href="/jobs/jobinfo">(주) 주연테크</a>
                                 </div>
                                 <div class="comp-info">
-                                    <a href="#">
+                                    <a href="/jobs/jobinfo">
                                         2022년 상반기 각 부문 신입 및 경력 모집
                                     </a>
                                     <span class="comp-info-item">
@@ -138,7 +138,7 @@
                                     </span>
                                 </div>
                                 <div class="comp-btn">
-                                   <a href="#"><span>지원하기</span></a>
+                                   <a href="/resume/submission"><span>지원하기</span></a>
                                    <p>등록일자</p>
                                    <p>2022-01-01</p>
                                 </div>
@@ -147,10 +147,10 @@
                         <div class="comp-item-list">
                             <div class="comp-item-first">
                                 <div class="comp-name">
-                                    <a href="#">(주) 주연테크</a>
+                                    <a href="/jobs/jobinfo">(주) 주연테크</a>
                                 </div>
                                 <div class="comp-info">
-                                    <a href="#">
+                                    <a href="/jobs/jobinfo">
                                         2022년 상반기 각 부문 신입 및 경력 모집
                                     </a>
                                     <span class="comp-info-item">
@@ -161,7 +161,7 @@
                                     </span>
                                 </div>
                                 <div class="comp-btn">
-                                   <a href="#"><span>지원하기</span></a>
+                                   <a href="/resume/submission"><span>지원하기</span></a>
                                    <p>등록일자</p>
                                    <p>2022-01-01</p>
                                 </div>
@@ -170,10 +170,10 @@
                         <div class="comp-item-list">
                             <div class="comp-item-first">
                                 <div class="comp-name">
-                                    <a href="#">(주) 주연테크</a>
+                                    <a href="/jobs/jobinfo">(주) 주연테크</a>
                                 </div>
                                 <div class="comp-info">
-                                    <a href="#">
+                                    <a href="/jobs/jobinfo">
                                         2022년 상반기 각 부문 신입 및 경력 모집
                                     </a>
                                     <span class="comp-info-item">
@@ -184,7 +184,7 @@
                                     </span>
                                 </div>
                                 <div class="comp-btn">
-                                   <a href="#"><span>지원하기</span></a>
+                                   <a href="/resume/submission"><span>지원하기</span></a>
                                    <p>등록일자</p>
                                    <p>2022-01-01</p>
                                 </div>
@@ -195,10 +195,10 @@
                         <div class="comp-item-list">
                             <div class="comp-item-first">
                                 <div class="comp-name">
-                                    <a href="#">(주) 주연테크</a>
+                                    <a href="/jobs/jobinfo">(주) 주연테크</a>
                                 </div>
                                 <div class="comp-info">
-                                    <a href="#">
+                                    <a href="/jobs/jobinfo">
                                         2021년 상반기 각 부문 신입 및 경력 모집
                                     </a>
                                     <span class="comp-info-item">
@@ -209,7 +209,7 @@
                                     </span>
                                 </div>
                                 <div class="comp-btn">
-                                   <a href="#"><span>지원하기</span></a>
+                                   <a href="/resume/submission"><span>지원하기</span></a>
                                    <p>등록일자</p>
                                    <p>2022-01-01</p>
                                 </div>
@@ -218,10 +218,10 @@
                         <div class="comp-item-list">
                             <div class="comp-item-first">
                                 <div class="comp-name">
-                                    <a href="#">(주) 주연테크</a>
+                                    <a href="/jobs/jobinfo">(주) 주연테크</a>
                                 </div>
                                 <div class="comp-info">
-                                    <a href="#">
+                                    <a href="/jobs/jobinfo">
                                         2022년 상반기 각 부문 신입 및 경력 모집
                                     </a>
                                     <span class="comp-info-item">
@@ -232,7 +232,7 @@
                                     </span>
                                 </div>
                                 <div class="comp-btn">
-                                   <a href="#"><span>지원하기</span></a>
+                                   <a href="/resume/submission"><span>지원하기</span></a>
                                    <p>등록일자</p>
                                    <p>2022-01-01</p>
                                 </div>
@@ -241,10 +241,10 @@
                         <div class="comp-item-list">
                             <div class="comp-item-first">
                                 <div class="comp-name">
-                                    <a href="#">(주) 주연테크</a>
+                                    <a href="/jobs/jobinfo">(주) 주연테크</a>
                                 </div>
                                 <div class="comp-info">
-                                    <a href="#">
+                                    <a href="/jobs/jobinfo">
                                         2022년 상반기 각 부문 신입 및 경력 모집
                                     </a>
                                     <span class="comp-info-item">
@@ -255,7 +255,7 @@
                                     </span>
                                 </div>
                                 <div class="comp-btn">
-                                   <a href="#"><span>지원하기</span></a>
+                                   <a href="/resume/submission"><span>지원하기</span></a>
                                    <p>등록일자</p>
                                    <p>2022-01-01</p>
                                 </div>
@@ -264,10 +264,10 @@
                         <div class="comp-item-list">
                             <div class="comp-item-first">
                                 <div class="comp-name">
-                                    <a href="#">(주) 주연테크</a>
+                                    <a href="/jobs/jobinfo">(주) 주연테크</a>
                                 </div>
                                 <div class="comp-info">
-                                    <a href="#">
+                                    <a href="/jobs/jobinfo">
                                         2022년 상반기 각 부문 신입 및 경력 모집
                                     </a>
                                     <span class="comp-info-item">
@@ -278,7 +278,7 @@
                                     </span>
                                 </div>
                                 <div class="comp-btn">
-                                   <a href="#"><span>지원하기</span></a>
+                                   <a href="/resume/submission"><span>지원하기</span></a>
                                    <p>등록일자</p>
                                    <p>2022-01-01</p>
                                 </div>
@@ -287,10 +287,10 @@
                         <div class="comp-item-list">
                             <div class="comp-item-first">
                                 <div class="comp-name">
-                                    <a href="#">(주) 주연테크</a>
+                                    <a href="/jobs/jobinfo">(주) 주연테크</a>
                                 </div>
                                 <div class="comp-info">
-                                    <a href="#">
+                                    <a href="/jobs/jobinfo">
                                         2022년 상반기 각 부문 신입 및 경력 모집
                                     </a>
                                     <span class="comp-info-item">
@@ -301,7 +301,7 @@
                                     </span>
                                 </div>
                                 <div class="comp-btn">
-                                   <a href="#"><span>지원하기</span></a>
+                                   <a href="/resume/submission"><span>지원하기</span></a>
                                    <p>등록일자</p>
                                    <p>2022-01-01</p>
                                 </div>
@@ -312,10 +312,10 @@
                         <div class="comp-item-list">
                             <div class="comp-item-first">
                                 <div class="comp-name">
-                                    <a href="#">(주) 주연테크</a>
+                                    <a href="/jobs/jobinfo">(주) 주연테크</a>
                                 </div>
                                 <div class="comp-info">
-                                    <a href="#">
+                                    <a href="/jobs/jobinfo">
                                         2020년 상반기 각 부문 신입 및 경력 모집
                                     </a>
                                     <span class="comp-info-item">
@@ -326,7 +326,7 @@
                                     </span>
                                 </div>
                                 <div class="comp-btn">
-                                   <a href="#"><span>지원하기</span></a>
+                                   <a href="/resume/submission"><span>지원하기</span></a>
                                    <p>등록일자</p>
                                    <p>2022-01-01</p>
                                 </div>
@@ -335,10 +335,10 @@
                         <div class="comp-item-list">
                             <div class="comp-item-first">
                                 <div class="comp-name">
-                                    <a href="#">(주) 주연테크</a>
+                                    <a href="/jobs/jobinfo">(주) 주연테크</a>
                                 </div>
                                 <div class="comp-info">
-                                    <a href="#">
+                                    <a href="/jobs/jobinfo">
                                         2022년 상반기 각 부문 신입 및 경력 모집
                                     </a>
                                     <span class="comp-info-item">
@@ -349,7 +349,7 @@
                                     </span>
                                 </div>
                                 <div class="comp-btn">
-                                   <a href="#"><span>지원하기</span></a>
+                                   <a href="/resume/submission"><span>지원하기</span></a>
                                    <p>등록일자</p>
                                    <p>2022-01-01</p>
                                 </div>
@@ -358,10 +358,10 @@
                         <div class="comp-item-list">
                             <div class="comp-item-first">
                                 <div class="comp-name">
-                                    <a href="#">(주) 주연테크</a>
+                                    <a href="/jobs/jobinfo">(주) 주연테크</a>
                                 </div>
                                 <div class="comp-info">
-                                    <a href="#">
+                                    <a href="/jobs/jobinfo">
                                         2022년 상반기 각 부문 신입 및 경력 모집
                                     </a>
                                     <span class="comp-info-item">
@@ -372,7 +372,7 @@
                                     </span>
                                 </div>
                                 <div class="comp-btn">
-                                   <a href="#"><span>지원하기</span></a>
+                                   <a href="/resume/submission"><span>지원하기</span></a>
                                    <p>등록일자</p>
                                    <p>2022-01-01</p>
                                 </div>
@@ -381,10 +381,10 @@
                         <div class="comp-item-list">
                             <div class="comp-item-first">
                                 <div class="comp-name">
-                                    <a href="#">(주) 주연테크</a>
+                                    <a href="/jobs/jobinfo">(주) 주연테크</a>
                                 </div>
                                 <div class="comp-info">
-                                    <a href="#">
+                                    <a href="/jobs/jobinfo">
                                         2022년 상반기 각 부문 신입 및 경력 모집
                                     </a>
                                     <span class="comp-info-item">
@@ -395,7 +395,7 @@
                                     </span>
                                 </div>
                                 <div class="comp-btn">
-                                   <a href="#"><span>지원하기</span></a>
+                                   <a href="/resume/submission"><span>지원하기</span></a>
                                    <p>등록일자</p>
                                    <p>2022-01-01</p>
                                 </div>
@@ -404,10 +404,10 @@
                         <div class="comp-item-list">
                             <div class="comp-item-first">
                                 <div class="comp-name">
-                                    <a href="#">(주) 주연테크</a>
+                                    <a href="/jobs/jobinfo">(주) 주연테크</a>
                                 </div>
                                 <div class="comp-info">
-                                    <a href="#">
+                                    <a href="/jobs/jobinfo">
                                         2022년 상반기 각 부문 신입 및 경력 모집
                                     </a>
                                     <span class="comp-info-item">
@@ -418,7 +418,7 @@
                                     </span>
                                 </div>
                                 <div class="comp-btn">
-                                   <a href="#"><span>지원하기</span></a>
+                                   <a href="/resume/submission"><span>지원하기</span></a>
                                    <p>등록일자</p>
                                    <p>2022-01-01</p>
                                 </div>
@@ -429,10 +429,10 @@
                         <div class="comp-item-list">
                             <div class="comp-item-first">
                                 <div class="comp-name">
-                                    <a href="#">(주) 주연테크</a>
+                                    <a href="/jobs/jobinfo">(주) 주연테크</a>
                                 </div>
                                 <div class="comp-info">
-                                    <a href="#">
+                                    <a href="/jobs/jobinfo">
                                         2019년 상반기 각 부문 신입 및 경력 모집
                                     </a>
                                     <span class="comp-info-item">
@@ -443,7 +443,7 @@
                                     </span>
                                 </div>
                                 <div class="comp-btn">
-                                   <a href="#"><span>지원하기</span></a>
+                                   <a href="/resume/submission"><span>지원하기</span></a>
                                    <p>등록일자</p>
                                    <p>2022-01-01</p>
                                 </div>
@@ -452,10 +452,10 @@
                         <div class="comp-item-list">
                             <div class="comp-item-first">
                                 <div class="comp-name">
-                                    <a href="#">(주) 주연테크</a>
+                                    <a href="/jobs/jobinfo">(주) 주연테크</a>
                                 </div>
                                 <div class="comp-info">
-                                    <a href="#">
+                                    <a href="/jobs/jobinfo">
                                         2022년 상반기 각 부문 신입 및 경력 모집
                                     </a>
                                     <span class="comp-info-item">
@@ -466,7 +466,7 @@
                                     </span>
                                 </div>
                                 <div class="comp-btn">
-                                   <a href="#"><span>지원하기</span></a>
+                                   <a href="/resume/submission"><span>지원하기</span></a>
                                    <p>등록일자</p>
                                    <p>2022-01-01</p>
                                 </div>
@@ -475,10 +475,10 @@
                         <div class="comp-item-list">
                             <div class="comp-item-first">
                                 <div class="comp-name">
-                                    <a href="#">(주) 주연테크</a>
+                                    <a href="/jobs/jobinfo">(주) 주연테크</a>
                                 </div>
                                 <div class="comp-info">
-                                    <a href="#">
+                                    <a href="/jobs/jobinfo">
                                         2022년 상반기 각 부문 신입 및 경력 모집
                                     </a>
                                     <span class="comp-info-item">
@@ -489,7 +489,7 @@
                                     </span>
                                 </div>
                                 <div class="comp-btn">
-                                   <a href="#"><span>지원하기</span></a>
+                                   <a href="/resume/submission"><span>지원하기</span></a>
                                    <p>등록일자</p>
                                    <p>2022-01-01</p>
                                 </div>
@@ -498,10 +498,10 @@
                         <div class="comp-item-list">
                             <div class="comp-item-first">
                                 <div class="comp-name">
-                                    <a href="#">(주) 주연테크</a>
+                                    <a href="/jobs/jobinfo">(주) 주연테크</a>
                                 </div>
                                 <div class="comp-info">
-                                    <a href="#">
+                                    <a href="/jobs/jobinfo">
                                         2022년 상반기 각 부문 신입 및 경력 모집
                                     </a>
                                     <span class="comp-info-item">
@@ -512,7 +512,7 @@
                                     </span>
                                 </div>
                                 <div class="comp-btn">
-                                   <a href="#"><span>지원하기</span></a>
+                                   <a href="/resume/submission"><span>지원하기</span></a>
                                    <p>등록일자</p>
                                    <p>2022-01-01</p>
                                 </div>
@@ -521,10 +521,10 @@
                         <div class="comp-item-list">
                             <div class="comp-item-first">
                                 <div class="comp-name">
-                                    <a href="#">(주) 주연테크</a>
+                                    <a href="/jobs/jobinfo">(주) 주연테크</a>
                                 </div>
                                 <div class="comp-info">
-                                    <a href="#">
+                                    <a href="/jobs/jobinfo">
                                         2022년 상반기 각 부문 신입 및 경력 모집
                                     </a>
                                     <span class="comp-info-item">
@@ -535,7 +535,7 @@
                                     </span>
                                 </div>
                                 <div class="comp-btn">
-                                   <a href="#"><span>지원하기</span></a>
+                                   <a href="/resume/submission"><span>지원하기</span></a>
                                    <p>등록일자</p>
                                    <p>2022-01-01</p>
                                 </div>

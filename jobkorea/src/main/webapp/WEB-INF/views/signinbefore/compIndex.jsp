@@ -1,86 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+
+<sec:authorize access="isAuthenticated()">
+	<sec:authentication property="principal" var="principal"/>
+</sec:authorize>
+
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/nav.css">
+
 	<link rel="stylesheet" href="/css/myindex.css">
 
-	<script src="https://kit.fontawesome.com/c3df4d7d1c.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <nav class="header">
-        <div class="nav-main">
-            <div class="nav-logo">
-                <a href="#">
-                    <img src="/images/nav-logo.png">
-                </a>
-            </div>
-
-            <div class="nav-search">
-                <div class="nav-search-border">
-                    <input type="text" class="nav-search-ip">
-                </div>
-                <div class="nav-search-borderBtn">
-                    <input type="submit" value="검색" class="nav-search-btn">
-                </div>
-            </div>
-            <div class="nav-items">
-                <div class="nav-item-search">
-                    <button type="button" class="joblist-btn">
-                        <span class="textjob">직무 찾기</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="nav-bar">
-            <div class="nav-inner">
-                <div class="category">
-                    <button type="button" class="category-btn">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-                <div class="nav-inner-service">
-                    <ul class="services">
-                        <li class="service-item">
-                            <a href="#">
-                                <span class="post-job-btn">
-                                    <span>채용정보</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="service-item">
-                            <a href="#">
-                                <span class="post-job-btn">
-                                    <span>이력서 등록</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="service-item">
-                            <a href="#">
-                                <span class="post-job-btn">
-                                    <span>채용공고</span>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="nav-user">
-                        <li class="my-info">
-                            <a href="#" class="my-info-open">
-                                <img src="/images/mypage-logo.png" alt="">
-                            </a>
-                        </li>
-                        <li class="service-item">
-                            <a href="#" class="company-open">
-                                <span class="post-job-btn">
-                                    <span>기업회원 홈</span>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <jsp:include page="../include/nav.jsp"></jsp:include>
     <section>
         <div class="main">
             <div class="section">
@@ -90,8 +26,8 @@
                 <div class="login-section">
                     <div class="my-login-info">
                         <div class="mypage-in">
-                            <a href="#">이름 님 </a>
-                            <a href="#">이력서 관리<i class="fas fa-angle-right"></i></a>
+                            <a href="#">${principal.company.compname } 님 </a>
+                            <a href="#">공고 등록<i class="fas fa-angle-right"></i></a>
                         </div>
                         <div class="my-info-resume">
                             <a href="/logout"><span>로그아웃</span></a>
@@ -122,7 +58,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>  
+                        </div>
                         <div class="board-item">
                             <div class="company-profile">
                                 <div class="company-info">
@@ -170,7 +106,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>     
+                        </div>
+                    </div>     
                     <div class="board-item-group">
                         <div class="board-item">
                             <div class="company-profile">
@@ -235,7 +172,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>     
+                        </div>
+                    </div>        
                     <div class="board-item-group">
                         <div class="board-item">
                             <div class="company-profile">
@@ -300,11 +238,12 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>     
+                        </div>
                     </div>
-                </div>            
+                </div> 
             </main>
-        </div>
+        </div>	
     </section>
+    <script src="/js/myindex.js"></script>
 </body>
 </html>

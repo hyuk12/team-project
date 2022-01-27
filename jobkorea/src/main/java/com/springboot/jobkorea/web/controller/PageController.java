@@ -38,7 +38,11 @@ public class PageController {
 	public String signinAfterForm(@AuthenticationPrincipal PrincipalDetail principalDetai) {
 		return "myIndex";
 	}
-
+	
+	@GetMapping({"/compIndex"})
+	public String compIndexForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
+		return "/signinbefore/compIndex";
+	}
 	@GetMapping({"/resume/edit"})
 	public String resumeEditForm(@AuthenticationPrincipal PrincipalDetail principalDetail){
 		return "/resume/resume_edit";
@@ -48,6 +52,11 @@ public class PageController {
 	public String resumeForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
 		return "/resume/resume";
 				
+	}
+	
+	@GetMapping({"/resume/submission"})
+	public String resumeSubForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
+		return "/resume/resumeSubmission";
 	}
 	@GetMapping({"/jobs/joblist"})
 	public String joblistForm() {
