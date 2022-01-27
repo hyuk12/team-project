@@ -18,7 +18,7 @@ public class ResumeController {
 	
 	//이력서 정보 변경
 	@PutMapping("/resume/edit")
-	public Object updateResume(@AuthenticationPrincipal PrincipalDetail principalDetail, ResumeReqDto resumeReqDto) {
+	public boolean updateResume(@AuthenticationPrincipal PrincipalDetail principalDetail, ResumeReqDto resumeReqDto) {
 		System.out.println(resumeReqDto);
 		return resumeService.updateResume(principalDetail, resumeReqDto);
 	}

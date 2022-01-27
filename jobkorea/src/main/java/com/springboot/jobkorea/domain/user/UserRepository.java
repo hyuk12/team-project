@@ -6,15 +6,15 @@ import com.springboot.jobkorea.domain.resume.Resume;
 
 @Mapper
 public interface UserRepository {
-	public int checkUsernameByUsername(String username);
-	public int insertUser(User user);
-	public int insertCompUser(Company company);
+	public int checkUsernameByUsername(String username); // UserMapper.xml 에서 사용
+	public int insertUser(User user); // UserMapper.xml 에서 사용
+	public int insertCompUser(Company company); // UserMapper.xml 에서 사용
 
-	public User getUserByUsername(String username);
-	public Company getCompanyByUsername(String username);
+	public User getUserByUsername(String username); // UserMapper.xml 에서 사용
+	public Company getCompanyByUsername(String username); // UserMapper.xml 에서 사용
 	
 	
-	public Resume getResumeById(int id);
+	public Resume getResumeById(int id); // UserMapper.xml 에서 사용
 
 	
 }

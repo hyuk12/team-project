@@ -27,7 +27,6 @@
   	<update id="updateResumeById" parameterType="com.springboot.jobkorea.domain.resume.Resume">
   		update
 			user_dtl
-
 		set	
 			birth = #{birth},
 			gender = #{gender},

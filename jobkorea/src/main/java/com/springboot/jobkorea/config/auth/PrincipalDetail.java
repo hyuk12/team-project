@@ -29,7 +29,7 @@ public class PrincipalDetail implements UserDetails{
 	private Company company;
 	private Resume resume;
 
-	private String username;
+	private String username; //id
 	private String password;
 	private String role;
 	

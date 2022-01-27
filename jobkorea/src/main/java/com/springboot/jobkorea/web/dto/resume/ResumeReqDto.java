@@ -9,8 +9,6 @@ import lombok.Data;
 
 @Data
 public class ResumeReqDto {
-
-	
 	
 	private String name; // 이름
 	private String birth; // 생년월일

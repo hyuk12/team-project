@@ -3,7 +3,10 @@
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
+  <!-- UserRepository에서 만든 것들을 사용한다-->
   <mapper namespace="com.springboot.jobkorea.domain.user.UserRepository">
+  	
+  	<!-- 여기에 id는 UserRepository에 설정되어있다.  -->
   	<select id="checkUsernameByUsername" resultType="Integer" parameterType="String">
   		select
   			count(username)
@@ -76,6 +79,7 @@
   		where
   			id = #{id};
   	</select>
+  	
   	
   	
   	

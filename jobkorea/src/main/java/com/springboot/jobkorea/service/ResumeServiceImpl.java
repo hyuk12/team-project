@@ -49,7 +49,6 @@ public class ResumeServiceImpl implements ResumeService{
 			profile_img = principalDetail.getResume().getProfile_img();
 			
 			
-			
 		}else {
 			String imageFileName = UUID.randomUUID().toString().replaceAll("-", "") + resumeReqDto.getFile().getOriginalFilename();
 			Path imageFilePath = Paths.get(filePath, "profile_img\\" +imageFileName);

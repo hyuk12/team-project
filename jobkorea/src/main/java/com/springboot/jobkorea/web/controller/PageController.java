@@ -35,7 +35,7 @@ public class PageController {
 
 	
 	@GetMapping({"/", "myIndex"})
-	public String signinAfterForm(@AuthenticationPrincipal PrincipalDetail principalDetai) {
+	public String signinAfterForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
 		return "myIndex";
 	}
 
@@ -57,6 +57,9 @@ public class PageController {
 	public String resumeForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
 		return "/resume/resume";
 	}
+	
+	
+	
 	
 	@GetMapping({"/recruit/recruit"})
 	public String recruitForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
