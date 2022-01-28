@@ -58,7 +58,7 @@ public class PrincipalDetail implements UserDetails, OAuth2User{
 		this.password = user.getPassword();
 		this.role = user.getRole();
 		this.attributes = attributes;
-		System.out.println(attributes);
+		
 	}
 	
 

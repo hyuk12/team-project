@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공고등록</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/anm.css">
+</head>
+<body>
+    <div class="container">
+        <div class="anm-title">
+            <h1>공고 등록 페이지</h1>
+        </div>
+        <div class="anm-form">
+            <div class="title">
+                <input type="text" class="title-ip">
+            </div>
+            <div class="anm-photo">
+                <img src="" alt="">
+                <input type="file">
+            </div>
+            <div class="condition">
+                <div class="candidate">
+                    <input type="text" list="career">
+                    <datalist id = career>
+                        <option value="신입"/>
+                        <option value="신입.경력"/>
+                        <option value="경력"/>
+                    </datalist>
+                    <input type="text" list="education">
+                    <datalist id="education">
+                        <option value="고등학교 졸업"/>
+                        <option value="대학교 2,3년제 졸업"/>
+                        <option value="대학교 4년제 졸업"/>
+                        <option value="대학원 졸업"/>
+                    </datalist>
+                </div>
+                <div class="work-condition">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <input type="date">
+                </div>
+                <div class="loyalty-points">
+                    <input type="text">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

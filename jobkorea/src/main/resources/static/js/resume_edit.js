@@ -52,7 +52,7 @@ function multipartSubmit(){
 			if(data == true){
 				const personImg = document.querySelector('.personImg');
 				personImg.src = profileImgFile;
-				location.replace('/');
+				location.replace('/jobs/joblist');
 			}
 			
 		},
@@ -96,7 +96,7 @@ function editSubmit(){
 		success: function(data){
 			if(data == 'true'){
 				alert('이력서 작성 완료');	
-				location.replace('/');
+				location.replace('/jobs/joblist');
 			}
 		},
 		error: function(){
@@ -107,7 +107,6 @@ function editSubmit(){
 
 
 submitBtn.onclick = () => {
-	alert(imgFileChangeFlag);
 	if(imgFileChangeFlag == true){
 		
 		multipartSubmit();

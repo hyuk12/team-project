@@ -72,12 +72,12 @@
             </div>
             <div class="social-login">
                 <div class="social-login-btn">
-                    <a href="#">
-                        <span class="facebook-logo">
-                            <img src="/images/login-facebook.png" alt="">
+                    <a href="/oauth2/authorization/google">
+                        <span class="google-logo">
+                            <img src="/images/google_login.jpg" alt="">
                         </span>
                         <span class="txtBar">|</span>
-                        <span>페이스북으로 로그인</span>
+                        <span>구글로 로그인</span>
                     </a>
                 </div>
                 <div class="social-login-btn">

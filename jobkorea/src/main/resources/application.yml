@@ -22,6 +22,12 @@ spring:
       oauth2:      
         client:        
           registration:
+            google:
+              client-id: 441276680824-6ebgmo4a9on3ds2o1u5qerogjqmksoh6.apps.googleusercontent.com
+              client-secret: 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
+              scope:            
+              - email
+              - profile   
             naver:
               client-id: 7WpbBtMDfQwKb4R6qt7x
               client-secret: ZDsjH6dpCa

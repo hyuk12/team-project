@@ -38,15 +38,18 @@ public class PageController {
 	@GetMapping({"/", "myIndex"})
 	public String signinAfterForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
 		
-		if(principalDetail.getUsername() == principalDetail.getUsers().getUsername()) {
-			return "/myIndex";
+		if(principalDetail.getUsername() != null) {
+			if(principalDetail.getUsername() == principalDetail.getUsers().getUsername()) {
+				return "/myIndex";
+			}else {
+				return "signinbefore/index";
+			}
 		}else {
-			return"/signinbefore/compIndex";
+			return "/compIndex";
 		}
-		
 	}
 	@GetMapping({"/compIndex"})
-	public String compIndexForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
+	public String compSiginForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
 		return "/signinbefore/compIndex";
 	}
 	@GetMapping({"/resume/edit"})

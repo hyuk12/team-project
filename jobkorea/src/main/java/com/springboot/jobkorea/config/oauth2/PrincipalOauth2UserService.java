@@ -36,7 +36,10 @@ public class PrincipalOauth2UserService extends DefaultOAuth2UserService {
 		if(provider.equals("naver")) {
 			oAuth2UserAttributes = (Map<String, Object>)oAuth2UserAttributes.get("response");
 			providerId = (String)oAuth2UserAttributes.get("id");
-		}else {
+		}else if(provider.equals("google")) {
+			providerId = (String)oAuth2UserAttributes.get("id");
+		}
+		else {
 			providerId = UUID.randomUUID().toString().replaceAll("-", "");
 		}
 		String oauth2_username = provider + "_" + providerId;

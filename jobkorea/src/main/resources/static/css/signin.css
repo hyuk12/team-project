@@ -68,6 +68,8 @@ input {
 
 .txtBar {
   padding: 0 5px;
+  width: 5px;
+  margin: 0px;
 }
 
 .hd {
@@ -187,14 +189,31 @@ input {
   flex-direction: row;
 }
 .social-login-btn {
+	display: flex;
+	flex-direction: column;
   width: 175px;
   border: 1px solid #d2d2d2;
-
+  justify-content: center;
+  align-items: center;
   margin: 5px;
   padding: 10px;
 
   font: bold 14px "Malgun Gothic", "맑은 고딕", verdana, dotum, "돋움",
   sans-serif;
+}
+
+.social-login-btn > a {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.google-logo > img{
+	display: flex;
+	justify-content: flex-start;
+	align-items: left;
+	width: 27px;
+	height: 27px;
 }
 
 #footer {
