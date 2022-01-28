@@ -51,5 +51,5 @@ tabli[1].onclick = () => {
 cloginBtns.onclick = () => {
     changeUsername2();
     form.submit();
-    location.replace('/compIndex');
+    location.replace("/compIndex")
 }

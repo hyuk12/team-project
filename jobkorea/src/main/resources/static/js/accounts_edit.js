@@ -79,7 +79,7 @@ function multipartSubmit() {
 		processData: false,
 		contentType: false,
 		success: function(data){
-			
+			alert('회원정보 수정완료');
 		},
 		error: function(){
 			alert('비동기 처리 오류.');

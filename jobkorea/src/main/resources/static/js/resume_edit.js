@@ -96,6 +96,7 @@ function editSubmit(){
 		success: function(data){
 			if(data == 'true'){
 				alert('이력서 작성 완료');	
+				location.replace('/');
 			}
 		},
 		error: function(){

@@ -26,7 +26,7 @@
                 <div class="login-section">
                     <div class="my-login-info">
                         <div class="mypage-in">
-                            <a href="/mypage/personalPage">${principal.users.name } 님 </a>
+                            <a href="/mypage/personalPage">${principal.users.name } ${principal.company.compname } 님 </a>
                             <a href="/resume/edit">이력서 관리<i class="fas fa-angle-right"></i></a>
                         </div>
                         <div class="my-info-resume">

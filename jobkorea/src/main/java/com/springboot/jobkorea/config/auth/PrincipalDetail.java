@@ -3,10 +3,11 @@ package com.springboot.jobkorea.config.auth;
 import java.util.ArrayList;
 
 import java.util.Collection;
-
+import java.util.Map;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.oauth2.core.user.OAuth2User;
 
 import com.springboot.jobkorea.domain.resume.Resume;
 import com.springboot.jobkorea.domain.user.Company;
@@ -19,7 +20,7 @@ import lombok.NoArgsConstructor;
 
 
 @Data
-public class PrincipalDetail implements UserDetails{
+public class PrincipalDetail implements UserDetails, OAuth2User{
 
 	
 	private static final long serialVersionUID = 1L;
@@ -33,6 +34,7 @@ public class PrincipalDetail implements UserDetails{
 	private String password;
 	private String role;
 	
+	private Map<String, Object> attributes;
 	
 	public PrincipalDetail(User user, Resume resume) {
 		this.users = user;
@@ -47,6 +49,16 @@ public class PrincipalDetail implements UserDetails{
 		this.username = company.getUsername();
 		this.password = company.getPassword();
 		this.role = company.getRole();
+	}
+	
+	public PrincipalDetail(User user, Resume resume , Map<String, Object> attributes) {
+		this.users = user;
+		this.resume = resume;
+		this.username = user.getUsername();
+		this.password = user.getPassword();
+		this.role = user.getRole();
+		this.attributes = attributes;
+		System.out.println(attributes);
 	}
 	
 
@@ -104,6 +116,19 @@ public class PrincipalDetail implements UserDetails{
 		// TODO Auto-generated method stub
 		return true;
 	}
+
+	@Override
+	public Map<String, Object> getAttributes() {
+		// TODO Auto-generated method stub
+		return attributes;
+	}
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return "test";
+	}
 	
+
 
 }

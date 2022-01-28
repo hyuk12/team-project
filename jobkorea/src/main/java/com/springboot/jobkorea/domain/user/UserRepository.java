@@ -11,9 +11,10 @@ public interface UserRepository {
 	public int insertCompUser(Company company);
 
 	public User getUserByUsername(String username);
+	public User getUserByOAuth2Username(String oauth2_username);
 	public Company getCompanyByUsername(String username);
 	
-	public Resume getResumeById(int id);
+	
 	//accounts
 	public int updateUserById(User user);
 	public int updateUserDtlById(Resume resume);

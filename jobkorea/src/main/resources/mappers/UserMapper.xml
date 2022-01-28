@@ -20,7 +20,9 @@
   			0,
   			#{name},
   			#{username},
+  			#{oauth2_username},
   			#{password},
+  			#{provider},
   			#{role},
   			#{email},
   			#{phone},
@@ -58,6 +60,16 @@
 		where
 			username = #{username};
   	</select>
+  	
+  	<select id="getUserByOAuth2Username" resultType="com.springboot.jobkorea.domain.user.User" parameterType="String">
+  		select
+			*
+		from
+			user_mst
+		where
+			oauth2_username = #{oauth2_username};
+  	</select>
+  	
   	
   	<select id="getCompanyByUsername" resultType="com.springboot.jobkorea.domain.user.Company" parameterType="String">
   		select

@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 public class Resume {
 	private int id;
 	
-	private String name; // 이름
+//	private String name; // 이름
 	private String birth; // 생년월일
 	private String phone; // 휴대폰번호
 	private String gender; // 성별

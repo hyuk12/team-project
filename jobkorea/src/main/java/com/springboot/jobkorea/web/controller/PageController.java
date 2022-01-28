@@ -1,6 +1,7 @@
 package com.springboot.jobkorea.web.controller;
 
 import com.springboot.jobkorea.config.auth.PrincipalDetail;
+import com.springboot.jobkorea.config.auth.PrincipalDetailsService;
 
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
@@ -35,10 +36,15 @@ public class PageController {
 
 	
 	@GetMapping({"/", "myIndex"})
-	public String signinAfterForm(@AuthenticationPrincipal PrincipalDetail principalDetai) {
-		return "myIndex";
+	public String signinAfterForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
+		
+		if(principalDetail.getUsername() == principalDetail.getUsers().getUsername()) {
+			return "/myIndex";
+		}else {
+			return"/signinbefore/compIndex";
+		}
+		
 	}
-	
 	@GetMapping({"/compIndex"})
 	public String compIndexForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
 		return "/signinbefore/compIndex";

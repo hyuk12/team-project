@@ -81,7 +81,7 @@
                     </a>
                 </div>
                 <div class="social-login-btn">
-                    <a href="#">
+                    <a href="/oauth2/authorization/naver">
                         <span class="naver-logo">
                             <img src="/images/login-naver.png" alt="">
                         </span>

@@ -78,7 +78,7 @@ function signupValidMsg(data){
 		);
 	}else if(signupDataObj.code == 001){
 		alert(signupDataObj.data);
-		location.replace('/auth/signinComp');
+		location.replace('/auth/signin');
 	
 	}
 }
@@ -103,7 +103,6 @@ function signup(){
 		dataType: "text",
 		success: function(data){
 			signupValidMsg(data);
-			location.replace('/compIndex');
 		},
 		error: function(){
 			alert('비동기 처리 오류');
