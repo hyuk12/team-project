@@ -1,14 +1,18 @@
-package com.springboot.jobkorea.domain.company;
+package com.springboot.jobkorea.domain.recruit;
+
+import java.time.LocalDateTime;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.NoArgsConstructor; 
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Builder
-class CompanyDetail {
-	
+public class RecruitDetail {
+//	companyDetail의 역할을 얘가 맡는다.
 	private int id;
 	
 //  학력
@@ -35,6 +39,9 @@ class CompanyDetail {
 	private String pay;
 //	모집분야
 	private String field;
+
+	private LocalDateTime create_date;
+	private LocalDateTime update_date;
 	
 	
 }

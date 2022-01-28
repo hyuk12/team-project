@@ -60,7 +60,7 @@ public class PageController {
 	
 	
 	
-	
+//	session에 principalDetails가 들어있고 여기서 
 	@GetMapping({"/recruit/recruit"})
 	public String recruitForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
 		return "/recruit/recruit";

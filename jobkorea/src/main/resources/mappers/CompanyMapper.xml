@@ -1,4 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper
-  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
-  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.springboot.jobkorea.domain.user.CompanyRepository">
+
+	
+
+
+<!-- company가 채용(recruit)를 하니까 id 값을 공유한다 그래서 그냥 comp_mst를 사용했는데 -->
+
+	<!-- <select id="getRecruitById" resultType="com.spring.jobkorea.domain.user.Company" parameterType="Integer">
+  			SELECT
+				*
+			FROM
+				comp_mst
+			WHERE
+				id = #{id};
+	
+  	</select> -->
+  	
+  	<!-- insert -->
+  	
+  	
+  	<!-- update -->
+  	<update id="updateCompany" parameterType="com.spring.jobkorea.domain.user.Company">
+  			update
+  				comp_mst
+  			SET
+  				comptype = #{comptype},
+  				compnum = #{compnum},
+  				compname = #{compname},
+  				ceoname = #{ceoname}
+  				
+  				username = #{username}, 
+  				password = #{password}, 
+  				role = #{role},
+  				name = #{name},
+  				phone = #{phone},  
+  				email = #{email},
+  				
+  				update_date = NOW()
+  			where
+  				 id = #{id};
+  				
+  	</update>
+ 
+	<update id="updateRecruitById"  parameterType="com.springboot.jobkorea.domain.recruit.RecruitDetail">
+		 
+			UPDATE
+				comp_dtl
+			SET
+				education = #{education},   <!-- 학력 -->
+				career = #{career}, <!-- 경력 -->
+				area = #{area},	   <!-- 지역 --> 
+				gender = #{gender},		<!-- 성별 -->
+				employment_type = #{employment_type},		<!-- 고용형태 -->
+				corp_img = #{corp_img},		<!-- 기업공고 이미지 -->
+				task = #{task},		<!-- 담당업무 -->
+				prefer_treatment = #{prefer_treatment},		<!-- 우대사항 -->
+				work_day = #{work_day},		<!-- 근무일수 -->
+				work_time = #{work_time},  <!--  근무시간 -->
+				pay = #{pay},		<!-- 급여 -->
+				field = #{field},		<!-- 모집분야 -->
+				
+				update_date = NOW()
+			WHERE
+				id = #{id};
+	
+	</update>
+ 
+</mapper>

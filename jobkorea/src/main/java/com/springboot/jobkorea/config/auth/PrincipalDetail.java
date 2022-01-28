@@ -1,72 +1,64 @@
 package com.springboot.jobkorea.config.auth;
 
 import java.util.ArrayList;
-
 import java.util.Collection;
-
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import com.springboot.jobkorea.domain.recruit.RecruitDetail;
 import com.springboot.jobkorea.domain.resume.Resume;
 import com.springboot.jobkorea.domain.user.Company;
 import com.springboot.jobkorea.domain.user.User;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-
 
 @Data
-public class PrincipalDetail implements UserDetails{
+public class PrincipalDetail implements UserDetails {
 
-	
 	private static final long serialVersionUID = 1L;
-
 
 	private User users;
 	private Company company;
 	private Resume resume;
+	private RecruitDetail recruitDetail;
 
-	private String username; //id
+	private String username; // id
 	private String password;
 	private String role;
-	
-	
-	public PrincipalDetail(User user, Resume resume) {
+
+	public PrincipalDetail(User user) {
 		this.users = user;
-		this.resume = resume;
 		this.username = user.getUsername();
 		this.password = user.getPassword();
 		this.role = user.getRole();
 	}
 
-	public PrincipalDetail(Company company) {
+	public PrincipalDetail(Company company, RecruitDetail recruitDetail) {
 		this.company = company;
+		this.recruitDetail = recruitDetail;
 		this.username = company.getUsername();
 		this.password = company.getPassword();
 		this.role = company.getRole();
 	}
-	
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
-		//getAuthorities >> 시큐리티가 권한을 가져다 쓸 때 쓰기
-		
-		Collection<GrantedAuthority>collection = new ArrayList<GrantedAuthority>();
+		// getAuthorities >> 시큐리티가 권한을 가져다 쓸 때 쓰기
+
+		Collection<GrantedAuthority> collection = new ArrayList<GrantedAuthority>();
 		collection.add(new GrantedAuthority() {
 			private static final long serialVersionUID = 1L;
+
 			@Override
 			public String getAuthority() {
-				
+
 				return role;
-				
+
 			}
 		});
 		return collection;
-		
-		
+
 	}
 
 	@Override
@@ -104,6 +96,5 @@ public class PrincipalDetail implements UserDetails{
 		// TODO Auto-generated method stub
 		return true;
 	}
-	
 
 }

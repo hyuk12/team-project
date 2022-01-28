@@ -16,10 +16,10 @@ public class WebMvcConfig implements WebMvcConfigurer {
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		WebMvcConfigurer.super.addResourceHandlers(registry);
-		registry.addResourceHandler("/image/**")
+		registry.addResourceHandler("/image/**") // /image/** 들어있는 요청은 이 밑을 실행
 		.addResourceLocations("file:///" + filePath)
-		.setCachePeriod(60*60)
-		.resourceChain(true)
+		.setCachePeriod(60*60)  // 캐시 유지시간 60*60 == 3600s
+		.resourceChain(true)  
 		.addResolver(new PathResourceResolver());
 	}
 }

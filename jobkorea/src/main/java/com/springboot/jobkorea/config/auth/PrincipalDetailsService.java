@@ -6,6 +6,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import com.springboot.jobkorea.domain.recruit.RecruitDetail;
 import com.springboot.jobkorea.domain.resume.Resume;
 import com.springboot.jobkorea.domain.resume.ResumeRepository;
 import com.springboot.jobkorea.domain.user.Company;
@@ -34,7 +35,7 @@ public class PrincipalDetailsService implements UserDetailsService{
 				return null;
 			}else{
 				Resume resumeEntity = resumeRepository.getResumeById(userEntity.getId());
-				return new PrincipalDetail(userEntity, resumeEntity);
+				return new PrincipalDetail(userEntity);
 			}
 
 		} else {
@@ -43,7 +44,8 @@ public class PrincipalDetailsService implements UserDetailsService{
 			if(compEntity == null){
 				return null;
 			}else{
-				return new PrincipalDetail(compEntity);
+				RecruitDetail companyDetail = null;
+				return new PrincipalDetail(compEntity, companyDetail);
 			}
 		}
 	}
