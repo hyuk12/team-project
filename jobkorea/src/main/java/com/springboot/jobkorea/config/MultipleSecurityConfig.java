@@ -34,7 +34,7 @@ public class MultipleSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		http.csrf().disable();
 		http.authorizeRequests()
-			.antMatchers("/myIndex","/","/resume/**", "/accounts/**", "/signinbefore/compindex")
+			.antMatchers("/myIndex","/","/resume/**", "/accounts/**", "/signinbefore/compindex", "/anm/**")
 			.authenticated()
 			.anyRequest()
 			.permitAll()

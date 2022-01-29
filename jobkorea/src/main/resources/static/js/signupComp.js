@@ -59,10 +59,10 @@ function signupValidMsg(data){
 		'유효성 검사 오류.\n' +
 		'오류 코드: ' + signupDataObj.code + '\n' +
 		'오류 내용\n' +
-		'\t' + 'compType :' + isEmpty(signupDataObj.data.comptype) + '\n' +
-		'\t' + 'compNum :'  + isEmpty(signupDataObj.data.compnum) + '\n' +
-		'\t' + 'compName :'  + isEmpty(signupDataObj.data.compname) + '\n' +
-		'\t' + 'ceoName :'  + isEmpty(signupDataObj.data.ceoname) + '\n' +
+		'\t' + 'comptype :' + isEmpty(signupDataObj.data.comptype) + '\n' +
+		'\t' + 'compnum :'  + isEmpty(signupDataObj.data.compnum) + '\n' +
+		'\t' + 'compname :'  + isEmpty(signupDataObj.data.compname) + '\n' +
+		'\t' + 'ceoname :'  + isEmpty(signupDataObj.data.ceoname) + '\n' +
 		'\t' + 'username :'  + isEmpty(signupDataObj.data.username) + '\n' +
 		'\t' + 'password :'  + isEmpty(signupDataObj.data.password) + '\n' +
 		'\t' + 'name :'  + isEmpty(signupDataObj.data.name) + '\n' +

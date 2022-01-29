@@ -9,6 +9,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 
+import com.springboot.jobkorea.domain.anm.Anm_edit;
 import com.springboot.jobkorea.domain.resume.Resume;
 import com.springboot.jobkorea.domain.user.Company;
 import com.springboot.jobkorea.domain.user.User;
@@ -29,6 +30,7 @@ public class PrincipalDetail implements UserDetails, OAuth2User{
 	private User users;
 	private Company company;
 	private Resume resume;
+	private Anm_edit anm_edit;
 
 	private String username;
 	private String password;
@@ -44,11 +46,13 @@ public class PrincipalDetail implements UserDetails, OAuth2User{
 		this.role = user.getRole();
 	}
 
-	public PrincipalDetail(Company company) {
+	public PrincipalDetail(Company company, Anm_edit anm_edit) {
 		this.company = company;
+		this.anm_edit = anm_edit;
 		this.username = company.getUsername();
 		this.password = company.getPassword();
 		this.role = company.getRole();
+		System.out.println(company);
 	}
 	
 	public PrincipalDetail(User user, Resume resume , Map<String, Object> attributes) {
@@ -126,7 +130,7 @@ public class PrincipalDetail implements UserDetails, OAuth2User{
 	@Override
 	public String getName() {
 		// TODO Auto-generated method stub
-		return "test";
+		return (String)attributes.get("name");
 	}
 	
 

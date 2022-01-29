@@ -1,11 +1,12 @@
 package com.springboot.jobkorea.web.controller;
 
-import com.springboot.jobkorea.config.auth.PrincipalDetail;
-import com.springboot.jobkorea.config.auth.PrincipalDetailsService;
-
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+
+import com.springboot.jobkorea.config.auth.PrincipalDetail;
+import com.springboot.jobkorea.domain.user.Company;
+import com.springboot.jobkorea.domain.user.User;
 
 import lombok.RequiredArgsConstructor;
 
@@ -13,10 +14,9 @@ import lombok.RequiredArgsConstructor;
 @Controller
 public class PageController {
 	
-	@GetMapping({"/signinbefore/index"})
-	public String indexForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
-		return "signinbefore/index";
-	}
+	
+	
+
 	
 	@GetMapping({"/auth/signup"})
 	public String signupForm() {
@@ -38,20 +38,19 @@ public class PageController {
 	@GetMapping({"/", "myIndex"})
 	public String signinAfterForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
 		
-		if(principalDetail.getUsername() != null) {
-			if(principalDetail.getUsername() == principalDetail.getUsers().getUsername()) {
+			if(principalDetail.getUsers().getUsername() == principalDetail.getUsername()) {
 				return "/myIndex";
 			}else {
-				return "signinbefore/index";
+				return "/auth/signin";
 			}
-		}else {
-			return "/compIndex";
-		}
 	}
+	
 	@GetMapping({"/compIndex"})
-	public String compSiginForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
+	public String compIndexForm() {
 		return "/signinbefore/compIndex";
 	}
+	
+	
 	@GetMapping({"/resume/edit"})
 	public String resumeEditForm(@AuthenticationPrincipal PrincipalDetail principalDetail){
 		return "/resume/resume_edit";
@@ -90,6 +89,11 @@ public class PageController {
 	@GetMapping({"/accounts/password"})
 	public String personalPwdForm(@AuthenticationPrincipal PrincipalDetail principalDetail ) {
 		return "accounts/accounts_pwd";
+	}
+	
+	@GetMapping({"/anm/anm_edit"})
+	public String anmEditForm() {
+		return "anm/anm_edit";
 	}
 	
 	

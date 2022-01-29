@@ -12,6 +12,15 @@
   		where
   			username = #{username};
   	</select>
+  	<select id="checkCompUsernameByCompUsername" resultType="Integer" parameterType="String">
+  		select
+  			count(username)
+  		from
+  			comp_mst
+  		where
+  			username = #{username};
+  	</select>
+  	
   
   	<insert id="insertUser" parameterType="com.springboot.jobkorea.domain.user.User">
   		insert into

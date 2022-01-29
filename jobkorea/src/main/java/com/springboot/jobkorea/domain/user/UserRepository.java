@@ -7,6 +7,7 @@ import com.springboot.jobkorea.domain.resume.Resume;
 @Mapper
 public interface UserRepository {
 	public int checkUsernameByUsername(String username);
+	public int checkCompUsernameByCompUsername(String username);
 	public int insertUser(User user);
 	public int insertCompUser(Company company);
 

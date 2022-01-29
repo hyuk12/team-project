@@ -67,7 +67,7 @@ public class AuthServiceImpl implements AuthService {
 			
 			return signupCompRespDto;
 		}else {
-			int checkUsernameResult = userRepository.checkUsernameByUsername(signupCompReqDto.getUsername());
+			int checkUsernameResult = userRepository.checkCompUsernameByCompUsername(signupCompReqDto.getUsername());
 			SignupCompRespDto<String> signupCompRespDto = new SignupCompRespDto<String>();
 			if(checkUsernameResult == 0) {
 				//회원가입성공
