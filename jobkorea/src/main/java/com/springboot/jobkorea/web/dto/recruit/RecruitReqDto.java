@@ -13,6 +13,7 @@ import lombok.Data;
 public class RecruitReqDto {
 
 	private int id;
+	private int comp_id;
 //	.comptype => 이 부분은 같은 클래스 내에서 선언해줘야하고
 //	() 안의 변수명 들은 Company 클래스에서 가져온다는 거란다.
 //	밑의 부분을 위해서 선언해줘야하는 부분
@@ -26,7 +27,7 @@ public class RecruitReqDto {
 	private String email;
 	
 	@NotBlank
-	private String title; // 공고 제목
+	private String anm_title; // 공고 제목
 	@NotBlank
 	private String education; // 학력
 	@NotBlank
@@ -36,7 +37,7 @@ public class RecruitReqDto {
 	@NotBlank
 	private String gender; // 성별
 	@NotBlank
-	private String employment_type; // 고용형태
+	private String employment; // 고용형태
 	@NotBlank
 	private String corp_img; //기업공고 이미지
 	@NotBlank
@@ -56,7 +57,7 @@ public class RecruitReqDto {
 	
 	public Company toCompEntity(int id) {
 		return Company.builder()
-				.id(id)
+				.comp_id(id)
 				.comptype(comptype)
 				.compname(compname)
 				.ceoname(ceoname)
@@ -74,7 +75,7 @@ public class RecruitReqDto {
 				.career(career)
 				.area(area)
 				.gender(gender)
-				.employment_type(employment_type)
+				.employment(employment)
 				.corp_img(corp_img)
 				.task(task)
 				.prefer_treatment(perfer_treatment)
@@ -83,7 +84,6 @@ public class RecruitReqDto {
 				.pay(pay)
 				.field(field)
 				.build();
-		
 	}
 	
 	

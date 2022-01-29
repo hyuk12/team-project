@@ -9,9 +9,12 @@ public interface CompanyRepository {
 //	company 가 채용을 할거니까???? comp_mst에서 id를 얻을거니까???
 //  채용은 recruit쪽에서 할거다. 여기는 company 정보를 등록하는 부분
 
-	public Company getRecruitById(int id);
 
-	public int updateCompany(Company company);
-
-//	public int updateRecruitById(RecruitDetail recruitDetail);
+//	comp_mst
+	public Company getCompany(int comp_id);
+//	기업이 공고를 update하니까
+	public int updateCompanyById(Company company);
+//	public int updateCompany(Company company);
+ 
+//	
 }

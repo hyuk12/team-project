@@ -30,10 +30,12 @@ public class PrincipalDetailsService implements UserDetailsService{
 		username = username.substring(0, tokenIndex);
 
 		if(userFlag.equals("p")){
+//			userEntity 는 username을 가지고 있다.
 			User userEntity = userRepository.getUserByUsername(username);
-			if(userEntity == null){
+			if(userEntity == null){  // username을 받아오지 못했다? 아이디가 존재하지 않는다??
 				return null;
 			}else{
+//				username이 존재한다. 이력서를 불러온다
 				Resume resumeEntity = resumeRepository.getResumeById(userEntity.getId());
 				return new PrincipalDetail(userEntity);
 			}
@@ -44,8 +46,8 @@ public class PrincipalDetailsService implements UserDetailsService{
 			if(compEntity == null){
 				return null;
 			}else{
-				RecruitDetail companyDetail = null;
-				return new PrincipalDetail(compEntity, companyDetail);
+				RecruitDetail recruitDetail = null;
+				return new PrincipalDetail(compEntity, recruitDetail);
 			}
 		}
 	}

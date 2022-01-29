@@ -12,8 +12,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 public class RecruitDetail {
-//	companyDetail의 역할을 얘가 맡는다.
+//	anm_mst의 역할을 얘가 맡는다.
 	private int id;
+//	회사 번호
+	private int comp_id;
+//	공고 제목
+	private String anm_title;
 	
 //  학력
 	private String education; 
@@ -24,7 +28,7 @@ public class RecruitDetail {
 //	성별
 	private String gender;
 //	고용형태
-	private String employment_type;
+	private String employment;
 //	기업공고 이미지
 	private String corp_img;
 //	담당업무

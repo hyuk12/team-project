@@ -17,7 +17,7 @@ import lombok.Data;
 public class PrincipalDetail implements UserDetails {
 
 	private static final long serialVersionUID = 1L;
-
+//	이 부분들은 domain 부분인듯
 	private User users;
 	private Company company;
 	private Resume resume;

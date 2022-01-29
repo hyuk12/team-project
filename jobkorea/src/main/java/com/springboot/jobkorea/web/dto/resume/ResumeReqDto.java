@@ -71,7 +71,6 @@ public class ResumeReqDto {
 				.certificate(certificate)
 				.issuedby(issuedby)
 				.handlingmonth(handlingmonth)
-				.selfintroduction(selfintroduction)
-				.build();
+				.selfintroduction(selfintroduction).build();
 	}
 }

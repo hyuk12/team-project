@@ -23,7 +23,7 @@
         <div class="top">
             <div class="row">
                 <div>공고 제목</div>
-                <div class="input"><input type="text" id=""></div>
+                <div class="input"><input type="text" id="">${principal.recruitDetail.anm_title}</div>
                 <div>기업 규모</div>
                 <div class="input">${principal.company.comptype}</div>
             </div>
@@ -240,6 +240,7 @@
             </div>
         </div>
     </div>
+    <script src="/js/recruit.js"></script>
 </body>
 
 </html>

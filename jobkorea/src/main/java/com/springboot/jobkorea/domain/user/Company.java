@@ -9,7 +9,7 @@ import lombok.Data;
 @Data
 public class Company {
 
-	private int id;
+	private int comp_id;
 
 //	기업 정보
 

@@ -12,9 +12,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
-@EnableWebSecurity
-@Configuration
-
+@EnableWebSecurity	// 해당파일로 시큐리티 활성화
+@Configuration  // IoC 컨테이너에 등록하는것
 public class MultipleSecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	

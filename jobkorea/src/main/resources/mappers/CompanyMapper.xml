@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.springboot.jobkorea.domain.user.CompanyRepository">
-
-	
+<!-- mapper에서 작성했으면 principalDetail가서 id 값으로  -->
 
 
 <!-- company가 채용(recruit)를 하니까 id 값을 공유한다 그래서 그냥 comp_mst를 사용했는데 -->
@@ -22,7 +23,7 @@
   	
   	
   	<!-- update -->
-  	<update id="updateCompany" parameterType="com.spring.jobkorea.domain.user.Company">
+<update id="updateCompany" parameterType="com.springboot.jobkorea.domain.user.Company">
   			update
   				comp_mst
   			SET
@@ -40,14 +41,14 @@
   				
   				update_date = NOW()
   			where
-  				 id = #{id};
+  				 comp_id = #{comp_id};
   				
   	</update>
  
 	<update id="updateRecruitById"  parameterType="com.springboot.jobkorea.domain.recruit.RecruitDetail">
 		 
 			UPDATE
-				comp_dtl
+				anm_mst
 			SET
 				education = #{education},   <!-- 학력 -->
 				career = #{career}, <!-- 경력 -->
@@ -64,7 +65,7 @@
 				
 				update_date = NOW()
 			WHERE
-				id = #{id};
+				comp_id = #{comp_id};
 	
 	</update>
  
