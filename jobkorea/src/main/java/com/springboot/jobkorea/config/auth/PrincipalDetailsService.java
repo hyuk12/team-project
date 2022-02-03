@@ -47,17 +47,15 @@ public class PrincipalDetailsService implements UserDetailsService{
 		}else {
 			
 			Company compEntity = userRepository.getCompanyByUsername(username);
+			Anm_edit anmEntity = anmRepository.getAnmById(compEntity.getComp_id());
+			CompanyDtl companyEntity = companyRepository.getCompanyById(compEntity.getComp_id());
 			
 			if(compEntity == null){
 				return null;
 			}else{
-				Anm_edit anmEntity = anmRepository.getAnmById(compEntity.getComp_id());
-				return new PrincipalDetail(compEntity, anmEntity);
-				CompanyDtl companyEntity = companyRepository.getCompanyById(compEntity.getId());
-				return new PrincipalDetail(compEntity, companyEntity);
+				return new PrincipalDetail(compEntity, companyEntity, anmEntity);
 			}
 		}
-	}
 	}
 }
 	

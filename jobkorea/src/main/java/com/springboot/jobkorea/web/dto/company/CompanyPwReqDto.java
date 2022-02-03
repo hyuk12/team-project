@@ -15,9 +15,9 @@ public class CompanyPwReqDto {
 	private String prePassword;
 	private String newPassword;
 	
-	public Company toCompanyPwEntity(int id) {
+	public Company toCompanyPwEntity(int comp_id) {
 		return Company.builder()
-						.id(id)
+						.comp_id(comp_id)
 						.password(new BCryptPasswordEncoder().encode(newPassword))
 						.build();
 	}

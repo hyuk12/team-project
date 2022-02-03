@@ -1,7 +1,6 @@
 package com.springboot.jobkorea.config.auth;
 
 import java.util.ArrayList;
-
 import java.util.Collection;
 import java.util.Map;
 
@@ -15,10 +14,7 @@ import com.springboot.jobkorea.domain.resume.Resume;
 import com.springboot.jobkorea.domain.user.Company;
 import com.springboot.jobkorea.domain.user.User;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 
 @Data
@@ -48,12 +44,10 @@ public class PrincipalDetail implements UserDetails, OAuth2User{
 		this.role = user.getRole();
 	}
 
-	public PrincipalDetail(Company company, Anm_edit anm_edit) {
-		this.company = company;
-		this.anm_edit = anm_edit;
-	public PrincipalDetail(Company company, CompanyDtl companyDtl) {
+	public PrincipalDetail(Company company, CompanyDtl companyDtl, Anm_edit anm_edit) {
 		this.company = company;
 		this.companyDtl = companyDtl;
+		this.anm_edit = anm_edit;
 		this.username = company.getUsername();
 		this.password = company.getPassword();
 		this.role = company.getRole();

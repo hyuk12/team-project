@@ -9,7 +9,6 @@ import com.springboot.jobkorea.config.auth.PrincipalDetail;
 
 import lombok.RequiredArgsConstructor;
 
-@RequiredArgsConstructor
 @Controller
 public class PageController {
 	
@@ -131,15 +130,16 @@ public class PageController {
 		}else {
 			return "/signinbefore/index";
 		}
+	}
+
 	@GetMapping({"/accounts/companyPassword"})
 	public String componyPwdForm(@AuthenticationPrincipal PrincipalDetail principalDetail ) {
 		return "accounts/company_pw";
 	}
-
+		
 	@GetMapping({"/accounts/applicant"})
 	public String companyPwdForm(@AuthenticationPrincipal PrincipalDetail principalDetail ) {
 		return "accounts/applicant_page";
 	}
-	
-	
 }
+	

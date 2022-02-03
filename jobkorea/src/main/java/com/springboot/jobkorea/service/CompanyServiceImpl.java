@@ -33,7 +33,7 @@ public class CompanyServiceImpl implements CompanyService{
 	
 	@Override
 	public boolean updateCompanyData(PrincipalDetail principalDetail, CompanyReqDto companyReqDto) {
-		int id = principalDetail.getCompany().getId();
+		int id = principalDetail.getCompany().getComp_id();
 		
 		Company companyEntity = companyReqDto.toCompanyEntity(id);
 		
@@ -71,7 +71,7 @@ public class CompanyServiceImpl implements CompanyService{
 			companyPwRespDto.setMessage("새 비밀번호와 이전 비밀번호가 같습니다.");
 			
 		} else {
-			Company Entity = companyPwReqDto.toCompanyPwEntity(principalDetail.getCompany().getId());
+			Company Entity = companyPwReqDto.toCompanyPwEntity(principalDetail.getCompany().getComp_id());
 			int result = companyRepository.updateCompanyPwById(Entity);
 			
 			if (result == 1) {

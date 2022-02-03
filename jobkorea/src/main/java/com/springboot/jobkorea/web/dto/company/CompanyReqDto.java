@@ -23,9 +23,9 @@ public class CompanyReqDto {
 	private String business;
 	private String address;
 	
-	public Company toCompanyEntity (int id) {
+	public Company toCompanyEntity (int comp_id) {
 		return Company.builder()
-					.id(id)
+					.comp_id(comp_id)
 					.comptype(compType)
 					.ceoname(ceoName)
 					.build();
