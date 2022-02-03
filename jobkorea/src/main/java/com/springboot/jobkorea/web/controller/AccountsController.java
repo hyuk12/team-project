@@ -31,8 +31,18 @@ public class AccountsController {
 		
 		return accountsService.usernameCheck(username);
 	}
+	
 	@PutMapping("/accounts/password")
 	public Object passwordChange(@AuthenticationPrincipal PrincipalDetail principalDetail, PasswordReqDto passwordReqDto) {
 		return accountsService.updatePassword(principalDetail, passwordReqDto);
 	}
+	
+	/*
+	// 회사계정 수정
+	@PutMapping("/accounts/CompanyEdit")
+	// @AuthenticationPrincipal -> 뭔가요
+	public boolean companyEdit(@AuthenticationPrincipal PrincipalDetail principalDetail, ProfileReqDto profileReqDto) {
+		return accountsService.updateCompany(principalDetail, profileReqDto);
+	}
+	*/
 }

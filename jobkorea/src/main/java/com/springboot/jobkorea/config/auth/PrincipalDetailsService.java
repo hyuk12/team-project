@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 
 import com.springboot.jobkorea.domain.anm.AnmRepository;
 import com.springboot.jobkorea.domain.anm.Anm_edit;
+import com.springboot.jobkorea.domain.company.CompanyDtl;
+import com.springboot.jobkorea.domain.company.CompanyRepository;
 import com.springboot.jobkorea.domain.resume.Resume;
 import com.springboot.jobkorea.domain.resume.ResumeRepository;
 import com.springboot.jobkorea.domain.user.Company;
@@ -24,6 +26,7 @@ public class PrincipalDetailsService implements UserDetailsService{
 	private final UserRepository userRepository;
 	private final ResumeRepository resumeRepository;
 	private final AnmRepository anmRepository;
+	private final CompanyRepository companyRepository;
 	
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -50,6 +53,9 @@ public class PrincipalDetailsService implements UserDetailsService{
 			}else{
 				Anm_edit anmEntity = anmRepository.getAnmById(compEntity.getComp_id());
 				return new PrincipalDetail(compEntity, anmEntity);
+				CompanyDtl companyEntity = companyRepository.getCompanyById(compEntity.getId());
+				return new PrincipalDetail(compEntity, companyEntity);
+			}
 		}
 	}
 	}

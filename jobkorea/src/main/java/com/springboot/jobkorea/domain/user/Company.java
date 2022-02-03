@@ -24,12 +24,11 @@ public class Company {
 	private String role;
 	
 //	기업 정보
-	
+//	mst
 	private String comptype;
 	private String compnum;
 	private String compname;
 	private String ceoname;
-	
 	
 	private LocalDateTime create_date;
 	private LocalDateTime update_date;

@@ -69,7 +69,7 @@
                         </a>
                     </li>
                     <li class="service-item">
-                        <a href="#" class="company-open">
+                        <a href="/mypage/companyPage" class="company-open">
                                 <span class="post-job-btn">
                                     <span>기업회원 홈</span>
                                 </span>

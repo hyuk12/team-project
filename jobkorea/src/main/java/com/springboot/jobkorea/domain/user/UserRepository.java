@@ -20,4 +20,5 @@ public interface UserRepository {
 	public int updateUserById(User user);
 	public int updateUserDtlById(Resume resume);
 	public int updatePasswordById(User user);
+	
 }

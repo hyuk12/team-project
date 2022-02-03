@@ -128,5 +128,16 @@
 			id = #{id};
 	</update>
   	
+  	<update id="updateCompanyById" parameterType="com.springboot.jobkorea.domain.user.Company">
+  		update
+  			company_mst
+  		set
+  			comptype = #{comptype},
+  			ceoname = #{ceoname},
+  			
+  			update_date = now()
+  		where
+  			id = #{id}; 
+  	</update>
   	
   </mapper>

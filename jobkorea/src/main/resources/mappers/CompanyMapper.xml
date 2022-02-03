@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.springboot.jobkorea.domain.company.CompanyRepository">
+  	<select id="getCompanyById" resultType="com.springboot.jobkorea.domain.company.CompanyDtl" parameterType="Integer">
+  		select
+  			*
+  		from
+  			comp_dtl
+  		where
+  			comp_id = #{id};
+  	</select>
+  	<select id="usernameCheckByUsername" resultType="Integer" parameterType="String">
+  		select
+  			count(username)
+  		from
+  			comp_mst
+  		where
+  			username = #{username};
+  	</select>
+
+  	<update id="updateCompanyById" parameterType="com.springboot.jobkorea.domain.user.Company">
+  		update
+  			comp_mst
+  		set
+  			comptype = #{comptype},
+  			ceoname = #{ceoname},
+  			
+  			update_date = now()
+  		where
+  			comp_id = #{id}; 
+  	</update>
+
+  	<update id="updateCompanyDtlById" parameterType="com.springboot.jobkorea.domain.company.CompanyDtl">
+  		update
+  			comp_dtl
+  		set
+  			industry = #{industry},
+  			homepage = #{homepage},
+  			establish = #{establish},
+  			sales = #{sales},
+  			business = #{business}
+  			
+  			update_date = now()
+  		where
+  			comp_id = #{id}; 
+  	</update>
+  	
+  	<update id="updateCompanyPwById" parameterType="com.springboot.jobkorea.domain.user.Company">
+  		update
+  			comp_mst
+  		set
+  			password = #{password},
+  			
+  			update_date = now()
+  		where
+  			comp_id = #{id}; 
+  	</update>
+  	
+  </mapper>
