@@ -1,6 +1,7 @@
 package com.springboot.jobkorea.web.controller;
 
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,9 +17,9 @@ public class AnmController {
 
 	private final AnmService anmService;
 	
-	
-	@PutMapping("/anm/anm_edit")
-	public boolean insertAnm(@AuthenticationPrincipal PrincipalDetail principalDetail, AnmEditReqDto anmEditReqDto) {
+	@PostMapping("/upload")
+	public boolean uploadInsert(@AuthenticationPrincipal PrincipalDetail principalDetail, AnmEditReqDto anmEditReqDto) {
+		System.out.println(anmEditReqDto);
 		return anmService.insertAnm(principalDetail, anmEditReqDto);
 	}
 }

@@ -1,12 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+    
+<sec:authorize access="isAuthenticated()">
+	<sec:authentication property="principal" var="principal"/>
+</sec:authorize>
+
 <!DOCTYPE html>
 <html>
 <head>
-	
 	<link rel="stylesheet" href="/css/jobposting.css">
-
-	
 </head>
 <body>
     <jsp:include page="../include/nav.jsp"></jsp:include>
@@ -52,7 +55,6 @@
                                 <a href="#" class="comp-item">
                                     <div>
                                         <span class="first-name">대기업</span>
-                                        
                                     </div>
                                 </a>
                             </li>

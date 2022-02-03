@@ -1,4 +1,4 @@
-package com.springboot.jobkorea.domain.anm;
+package com.springboot.jobkorea.domain.jobs;
 
 import java.time.LocalDateTime;
 
@@ -7,14 +7,17 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
 @Builder
 @AllArgsConstructor
+@NoArgsConstructor
 @Data
-public class Anm_edit {
-	
+public class JobsInfo {
+
 	private int comp_id;
-	
+	private String comptype;
+	private String compname;
+	private String ceoname;
+	private String email;
 	
 	private String anm_title;
 	private String education;
@@ -30,6 +33,5 @@ public class Anm_edit {
 	private String salary;
 	private String wanted;
 	
-	private LocalDateTime create_date;
 	private LocalDateTime update_date;
 }

@@ -52,7 +52,7 @@ public class PrincipalDetail implements UserDetails, OAuth2User{
 		this.username = company.getUsername();
 		this.password = company.getPassword();
 		this.role = company.getRole();
-		System.out.println(company);
+		
 	}
 	
 	public PrincipalDetail(User user, Resume resume , Map<String, Object> attributes) {
@@ -93,7 +93,7 @@ public class PrincipalDetail implements UserDetails, OAuth2User{
 
 	@Override
 	public String getUsername() {
-		// TODO Auto-generated method stub
+		System.out.println(username);
 		return username;
 	}
 

@@ -2,14 +2,19 @@ package com.springboot.jobkorea.domain.user;
 
 import java.time.LocalDateTime;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
+@AllArgsConstructor
 @Builder
 @Data
 public class Company {
 	
-	private int id;
+	
+	private int comp_id;
 	
 	private String name;
 	private String username;

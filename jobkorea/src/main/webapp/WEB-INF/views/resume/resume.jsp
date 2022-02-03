@@ -112,8 +112,12 @@
                     <textarea readonly name="" id="" cols="30" rows="30">
 							${principal.resume.selfintroduction}
                     </textarea>
+                    <div class="editBtn">
+                		<a href="/resume/edit">수정하기</a>
+            		</div>
                 </div>
-            </div>	
+                
+            </div>
         </div>
     </div>
     

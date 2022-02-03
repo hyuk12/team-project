@@ -21,13 +21,13 @@
         <div class="main">
             <div class="section">
                 <div class="add-section">
-                    <img src="https://apple.contentsfeed.com/RealMedia/ads/Creatives/jobkorea/220110_com2us_mb_s/220112_com2us_752x110.jpg" alt="">
+                    <img src="/images/add.png" alt="">
                 </div>
                 <div class="login-section">
                     <div class="my-login-info">
                         <div class="mypage-in">
                             <a href="/mypage/personalPage">${principal.users.name } 님 </a>
-                            <a href="/resume/edit">이력서 관리<i class="fas fa-angle-right"></i></a>
+                            <a href="/resume">이력서 관리<i class="fas fa-angle-right"></i></a>
                         </div>
                         <div class="my-info-resume">
                             <a href="/logout"><span>로그아웃</span></a>

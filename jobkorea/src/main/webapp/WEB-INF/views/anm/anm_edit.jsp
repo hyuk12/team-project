@@ -20,8 +20,9 @@
 </head>
 
 <body>
-	<form enctype="multipart/form-data">
+	
 		<div class="main">
+		<form enctype="multipart/form-data">
         <div class="top">
             <div class="row">
                 <div>공고 제목</div>
@@ -143,7 +144,7 @@
             <!-- 사진올리는 부분 -->
             <div class="picture">
                 <img src="" id="anm_picture" class="img">
-                <input type="file" id="file" name="file">
+                <input type="file" id="file" name="file" style="display: none;">
             </div>
         </div>
 
@@ -241,9 +242,10 @@
             <div class="submit">
                 <button type="button" class="submit-btn">공고등록</button>
             </div>
+            </form>
         </div>
-    </div>
-	</form>
+   
+		
     
     <script src="/js/anm_edit.js"></script>
 </body>

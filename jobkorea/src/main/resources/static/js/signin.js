@@ -24,7 +24,7 @@ function changeUsername() {
 function changeUsername2() {
     usernameObjs.value = inputId[1].value + '_c';
     passwordObjs.value = inputPw[1].value;
-    alert(usernameObjs.value);
+    
 }
 
 tabli[0].onclick = () => {
@@ -50,7 +50,7 @@ tabli[1].onclick = () => {
 }
 
 cloginBtns.onclick = () => {
-	alert(changeUsername2());
+	
     changeUsername2();
     form.submit();
     

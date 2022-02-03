@@ -29,28 +29,28 @@
   			comp_id = #{comp_id}
   	</update>	
   			
-  	<update id="updateAnmById" parameterType="com.springboot.jobkorea.domain.anm.Anm_edit">
-  		update
+  	<update id="insertAnm" parameterType="com.springboot.jobkorea.domain.anm.Anm_edit">
+  		insert into
   			anm_mst
-  		set
-  			anm_title = #{anm_title},
-  			education = #{education},
-  			ceoname = #{ceoname},
-  			career = #{career},
-  			area = #{area},
-  			gender = #{gender},
-  			form_employ = #{form_employ},
-  			anm_picture = #{anm_picture},
-  			assign_task = #{assign_task},
-  			loyalty_point = #{loyalty_point},
-  			working_days = #{working_days},
-  			hours_duty = #{hours_duty},
-  			salary = #{salary},
-  			wanted = #{wanted},
-  			
-  			
-  			update_date = now()
-  		where
-  			comp_id = #{comp_id}			
+  		values(
+  			0,
+  			#{comp_id},
+  			#{anm_title},
+  			#{education},
+  			#{career},
+  			#{area},
+  			#{gender},
+  			#{form_employ},
+  			#{anm_picture},
+  			#{assign_task},
+  			#{loyalty_point},
+  			#{working_days},
+  			#{hours_duty},
+  			#{salary},
+  			#{wanted},
+  			now(),
+  			now()
+  		);
   	</update>
+  
   </mapper>

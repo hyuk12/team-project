@@ -33,6 +33,7 @@ public class PrincipalDetailsService implements UserDetailsService{
 
 		if(userFlag.equals("p")){
 			User userEntity = userRepository.getUserByUsername(username);
+			
 			if(userEntity == null){
 				return null;
 			}else{
@@ -40,19 +41,17 @@ public class PrincipalDetailsService implements UserDetailsService{
 				return new PrincipalDetail(userEntity, resumeEntity);
 			}
 			
-		} 
-		
-		if(userFlag.equals("c")) {
-			System.out.println(username);
+		}else {
+			
 			Company compEntity = userRepository.getCompanyByUsername(username);
+			
 			if(compEntity == null){
 				return null;
 			}else{
-				Anm_edit anmEntity = anmRepository.getAnmById(compEntity.getId());
+				Anm_edit anmEntity = anmRepository.getAnmById(compEntity.getComp_id());
 				return new PrincipalDetail(compEntity, anmEntity);
 		}
 	}
-		return null;
 	}
-	}
+}
 	

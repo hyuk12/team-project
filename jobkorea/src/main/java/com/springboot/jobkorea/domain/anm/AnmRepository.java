@@ -8,6 +8,6 @@ import com.springboot.jobkorea.domain.user.Company;
 public interface AnmRepository {
 	public Anm_edit getAnmById(int id);
 	
-	public int updateAnmById(Anm_edit anm_edit);
+	public int insertAnm(Anm_edit anm_edit);
 	public int updateCompById(Company company);
 }

@@ -1,12 +1,15 @@
 package com.springboot.jobkorea.web.controller;
 
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import com.springboot.jobkorea.config.auth.PrincipalDetail;
+import com.springboot.jobkorea.domain.anm.AnmRepository;
 import com.springboot.jobkorea.domain.user.Company;
 import com.springboot.jobkorea.domain.user.User;
+import com.springboot.jobkorea.domain.user.UserRepository;
 
 import lombok.RequiredArgsConstructor;
 
@@ -14,8 +17,10 @@ import lombok.RequiredArgsConstructor;
 @Controller
 public class PageController {
 	
-	
-	
+	@GetMapping({"/index"})
+	public String indexForm() {
+		return "/signinbefore/index";
+	}
 
 	
 	@GetMapping({"/auth/signup"})
@@ -33,38 +38,56 @@ public class PageController {
 		return "auth/signin";
 	} 
 	
-
+	
+	
+	
 	
 	@GetMapping({"/", "myIndex"})
-	public String signinAfterForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
+	public String signinAfterForm(String username, @AuthenticationPrincipal PrincipalDetail principalDetail) {
 		
-			if(principalDetail.getUsers().getUsername() == principalDetail.getUsername()) {
-				return "/myIndex";
-			}else {
-				return "/auth/signin";
-			}
-	}
 	
-	@GetMapping({"/compIndex"})
-	public String compIndexForm() {
-		return "/signinbefore/compIndex";
+		if(principalDetail.getCompany() == null && principalDetail.getUsers() != null){
+			return "/myIndex";
+		}else if(principalDetail.getCompany() != null  && principalDetail.getUsers() == null) {
+			return "/signinbefore/compIndex";
+		}else {
+			return "/signinbefore/index";
+		}
 	}
-	
 	
 	@GetMapping({"/resume/edit"})
 	public String resumeEditForm(@AuthenticationPrincipal PrincipalDetail principalDetail){
-		return "/resume/resume_edit";
+		if(principalDetail.getCompany() == null && principalDetail.getUsers() != null){
+			return "/resume/resume_edit";
+		}else if(principalDetail.getCompany() != null  && principalDetail.getUsers() == null) {
+			return "/signinbefore/compIndex";
+		}else {
+			return "/signinbefore/index";
+		}
 	}
 	
 	@GetMapping({"/resume"})
 	public String resumeForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
-		return "/resume/resume";
+		if(principalDetail.getCompany() == null && principalDetail.getUsers() != null){
+			return "/resume/resume";
+		}else if(principalDetail.getCompany() != null  && principalDetail.getUsers() == null) {
+			return "/signinbefore/compIndex";
+		}else {
+			return "/signinbefore/index";
+		}
 				
 	}
 	
 	@GetMapping({"/resume/submission"})
 	public String resumeSubForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
-		return "/resume/resumeSubmission";
+		if(principalDetail.getCompany() == null && principalDetail.getUsers() != null){
+			return "/resume/resumeSubmission";
+		}else if(principalDetail.getCompany() != null  && principalDetail.getUsers() == null) {
+			return "";
+		}else {
+			return "/signinbefore/index";
+		}
+		
 	}
 	@GetMapping({"/jobs/joblist"})
 	public String joblistForm() {
@@ -92,8 +115,15 @@ public class PageController {
 	}
 	
 	@GetMapping({"/anm/anm_edit"})
-	public String anmEditForm() {
-		return "anm/anm_edit";
+	public String anmEditForm(@AuthenticationPrincipal PrincipalDetail principalDetail ) {
+		
+		if(principalDetail.getCompany() == null && principalDetail.getUsers() != null){
+			return "/myIndex";
+		}else if(principalDetail.getCompany() != null  && principalDetail.getUsers() == null) {
+			return "/anm/anm_edit";
+		}else {
+			return "/signinbefore/index";
+		}
 	}
 	
 	
