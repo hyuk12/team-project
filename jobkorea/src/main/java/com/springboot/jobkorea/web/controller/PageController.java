@@ -1,15 +1,10 @@
 package com.springboot.jobkorea.web.controller;
 
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import com.springboot.jobkorea.config.auth.PrincipalDetail;
-import com.springboot.jobkorea.domain.anm.AnmRepository;
-import com.springboot.jobkorea.domain.user.Company;
-import com.springboot.jobkorea.domain.user.User;
-import com.springboot.jobkorea.domain.user.UserRepository;
 
 import lombok.RequiredArgsConstructor;
 
@@ -43,7 +38,7 @@ public class PageController {
 	
 	
 	@GetMapping({"/", "myIndex"})
-	public String signinAfterForm(String username, @AuthenticationPrincipal PrincipalDetail principalDetail) {
+	public String signinAfterForm(@AuthenticationPrincipal PrincipalDetail principalDetail) {
 		
 	
 		if(principalDetail.getCompany() == null && principalDetail.getUsers() != null){
