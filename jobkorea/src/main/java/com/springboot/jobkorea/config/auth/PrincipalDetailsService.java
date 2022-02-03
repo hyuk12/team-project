@@ -6,6 +6,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import com.springboot.jobkorea.domain.company.CompanyDtl;
+import com.springboot.jobkorea.domain.company.CompanyRepository;
 import com.springboot.jobkorea.domain.resume.Resume;
 import com.springboot.jobkorea.domain.resume.ResumeRepository;
 import com.springboot.jobkorea.domain.user.Company;
@@ -21,6 +23,7 @@ public class PrincipalDetailsService implements UserDetailsService{
 
 	private final UserRepository userRepository;
 	private final ResumeRepository resumeRepository;
+	private final CompanyRepository companyRepository;
 	
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -38,12 +41,13 @@ public class PrincipalDetailsService implements UserDetailsService{
 			}
 
 		} else {
-			System.out.println(username);
+			System.out.println("principalDetailService에서 실행: " + username);
 			Company compEntity = userRepository.getCompanyByUsername(username);
 			if(compEntity == null){
 				return null;
 			}else{
-				return new PrincipalDetail(compEntity);
+				CompanyDtl companyEntity = companyRepository.getCompanyById(compEntity.getId());
+				return new PrincipalDetail(compEntity, companyEntity);
 			}
 		}
 	}

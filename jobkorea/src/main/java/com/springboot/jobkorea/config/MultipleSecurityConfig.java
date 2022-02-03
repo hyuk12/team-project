@@ -30,7 +30,7 @@ public class MultipleSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		http.csrf().disable();
 		http.authorizeRequests()
-			.antMatchers("/myIndex","/","/resume/**", "/accounts/**")
+			.antMatchers("/myIndex","/","/resume/**", "/accounts/**", "/mypage/**")
 			.authenticated()
 			.anyRequest()
 			.permitAll()

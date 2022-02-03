@@ -14,8 +14,10 @@ public interface UserRepository {
 	public Company getCompanyByUsername(String username);
 	
 	public Resume getResumeById(int id);
+	
 	//accounts
 	public int updateUserById(User user);
 	public int updateUserDtlById(Resume resume);
 	public int updatePasswordById(User user);
+	
 }

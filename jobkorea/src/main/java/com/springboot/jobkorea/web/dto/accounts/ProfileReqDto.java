@@ -3,6 +3,7 @@ package com.springboot.jobkorea.web.dto.accounts;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.springboot.jobkorea.domain.resume.Resume;
+import com.springboot.jobkorea.domain.user.Company;
 import com.springboot.jobkorea.domain.user.User;
 
 import lombok.Data;
@@ -15,6 +16,11 @@ public class ProfileReqDto {
 	private String email;
 	
 	private MultipartFile file;
+	
+	private String comptype;
+	private String compnum;
+	private String compname;
+	private String ceoname;
 	
 	public User toUserEntity(int id, String password) {
 		return User.builder()
@@ -34,4 +40,5 @@ public class ProfileReqDto {
 				.build();
 				
 	}
+	
 }

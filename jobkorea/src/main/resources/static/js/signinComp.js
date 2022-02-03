@@ -16,4 +16,5 @@ function changeUsername() {
 loginBtn.onclick = () => {
     changeUsername();
     form.submit();
+    // location.replace('/compIndex');
 }

@@ -8,6 +8,7 @@ import java.util.Collection;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import com.springboot.jobkorea.domain.company.CompanyDtl;
 import com.springboot.jobkorea.domain.resume.Resume;
 import com.springboot.jobkorea.domain.user.Company;
 import com.springboot.jobkorea.domain.user.User;
@@ -28,6 +29,7 @@ public class PrincipalDetail implements UserDetails{
 	private User users;
 	private Company company;
 	private Resume resume;
+	private CompanyDtl companyDtl;
 
 	private String username;
 	private String password;
@@ -42,8 +44,9 @@ public class PrincipalDetail implements UserDetails{
 		this.role = user.getRole();
 	}
 
-	public PrincipalDetail(Company company) {
+	public PrincipalDetail(Company company, CompanyDtl companyDtl) {
 		this.company = company;
+		this.companyDtl = companyDtl;
 		this.username = company.getUsername();
 		this.password = company.getPassword();
 		this.role = company.getRole();

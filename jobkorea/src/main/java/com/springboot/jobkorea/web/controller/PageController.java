@@ -4,6 +4,7 @@ import com.springboot.jobkorea.config.auth.PrincipalDetail;
 
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import lombok.RequiredArgsConstructor;
@@ -63,15 +64,36 @@ public class PageController {
 	public String personalForm() {
 		return "mypage/personalPage";
 	}
+
+	@GetMapping({"/mypage/companyPage"})
+	public String companyForm() {
+		return "mypage/companyPage";
+	}
 	
 	@GetMapping({"/accounts/edit"})
 	public String personalEditForm(@AuthenticationPrincipal PrincipalDetail principalDetail ) {
 		return "accounts/accounts_edit";
 	}
+
+	@GetMapping({"/accounts/companyEdit"})
+	public String CompanyEditForm(Model model, @AuthenticationPrincipal PrincipalDetail principalDetail ) {
+		//model.addAttribute("test", )
+		return "accounts/company_edit";
+	}
 	
 	@GetMapping({"/accounts/password"})
 	public String personalPwdForm(@AuthenticationPrincipal PrincipalDetail principalDetail ) {
 		return "accounts/accounts_pwd";
+	}
+	
+	@GetMapping({"/accounts/companyPassword"})
+	public String componyPwdForm(@AuthenticationPrincipal PrincipalDetail principalDetail ) {
+		return "accounts/company_pw";
+	}
+
+	@GetMapping({"/accounts/applicant"})
+	public String companyPwdForm(@AuthenticationPrincipal PrincipalDetail principalDetail ) {
+		return "accounts/applicant_page";
 	}
 	
 	
