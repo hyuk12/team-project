@@ -154,13 +154,14 @@
 }
 
 
-.board-item-group {
+.board-C-group {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 30px;
     width: 1260px;
 }
+
 
 .board-item {
     position: relative;

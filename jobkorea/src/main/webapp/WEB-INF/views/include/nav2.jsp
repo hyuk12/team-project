@@ -3,11 +3,12 @@
 <html>
 <head>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/nav2.css">
     <script src="https://kit.fontawesome.com/c3df4d7d1c.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <nav class="header">
+
     <div class="nav-main">
         <div class="nav-logo">
             <a href="/">

@@ -1,19 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/nav.css">
-    <script src="./js/sub_mn.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/nav.css">
     <script src="https://kit.fontawesome.com/c3df4d7d1c.js" crossorigin="anonymous"></script>
+    <script src="js/jQuery.js"></script>
 </head>
+<script>
+    // 왼쪽 버튼은 클릭으로 창이 나타나도록 하는거
+    $(document).ready(function () {
+        $(".nav-menu").hide();
+        $(".category-btn").click(function () {
+            $(".nav-menu").slideToggle(500);
+        });
+
+
+    });
+
+    // 채용정보, 이력서등록, 채용공고 부분은 hover하면 창이 내려오고
+    // 자신은 색깔이 반전이 되도록
+
+</script>
 
 <body>
     <nav class="header">
+
         <div class="nav-main">
             <div class="nav-logo">
-                <a href="#">
-                    <img src="./images/nav-logo.png">
+                <a href="/">
+                    <img src="/images/nav-logo.png">
                 </a>
             </div>
 
@@ -36,21 +52,31 @@
         <div class="nav-bar">
             <div class="nav-inner">
                 <div class="category">
+                    <!-- 이 버튼을 누르면 창이 나타나도록 -->
                     <button type="button" class="category-btn">
                         <i class="fas fa-bars"></i>
                     </button>
                 </div>
+                <div class="nav-menu"
+                    style="position: absolute; top: 100px; left: 100px; background-color: aqua; width: 100%; height: 500px;">
+
+                </div>
+
+                <!-- 얘들은 hover 하고 200? 정도 있다가 창이 나타나도록? 
+                    위에꺼랑 크기가 좀 다르네...
+                -->
+
                 <div class="nav-inner-service">
                     <ul class="services">
                         <li class="service-item">
-                            <a href="#">
+                            <a href="/jobs/joblist">
                                 <span class="post-job-btn">
                                     <span>채용정보</span>
                                 </span>
                             </a>
                         </li>
                         <li class="service-item">
-                            <a href="#">
+                            <a href="/resume/edit">
                                 <span class="post-job-btn">
                                     <span>이력서 등록</span>
                                 </span>
@@ -66,12 +92,12 @@
                     </ul>
                     <ul class="nav-user">
                         <li class="my-info">
-                            <a href="#" class="my-info-open">
-                                <img src="/images/mypage-logo.png" alt="">
+                            <a href="/mypage/personalPage" class="my-info-open">
+                                <img src="/images/mypage-logo.png">
                             </a>
                         </li>
                         <li class="service-item">
-                            <a href="#" class="company-open">
+                            <a href="/mypage/companyPage" class="company-open">
                                 <span class="post-job-btn">
                                     <span>기업회원 홈</span>
                                 </span>
@@ -82,7 +108,6 @@
             </div>
         </div>
     </nav>
-
 </body>
 
 </html>

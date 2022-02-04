@@ -37,10 +37,11 @@
                 </div>
             </div>
             <main>
+            
                 <div class="board-menu">
-                    <div class="board-menu-item">
-                        <h1>First VVIP 채용관</h1>
-                    </div>
+	            	<div class="board-menu-item">
+	                	<h1>First VVIP 채용관</h1>
+	            	</div>
                 </div>
                 <div class="container">
                     <div class="board-item-group">
@@ -242,8 +243,11 @@
                         </div>
                     </div>
                 </div> 
+           
             </main>
-        </div>	
+                 </div> 
+                
+        
     </section>
     <script src="/js/myindex.js"></script>
 </body>
