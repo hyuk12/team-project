@@ -30,15 +30,29 @@
 }
 
 .add-section {
+	position:relative;
+	
 	margin-top:30px;
     width: 950px;
     height: 150px;
+    
+	display:flex;
+	overflow:hidden;
+	
 }
 
 .add-section img {
+	position:absolute;
+	top:0;
+	left:0;
     width: 100%;
     height: 100%;
+    
 }
+
+.add-section img:nth-child(1){left: 0%;}
+.add-section img:nth-child(2){left: 100%;}
+.add-section img:nth-child(3){left: 200%;}
 
 .login-section{
     display: flex;

@@ -19,7 +19,6 @@
     font: 12px "맑은고딕", Malgun Gothic, "굴림", Gulim, sans-serif;
 	 
 }
-
 .nav-logo {
     position: relative;
     width: 180px;
@@ -31,7 +30,6 @@
     font-weight: normal;
     font-size: 100%;
 }
-
 .nav-logo img{
     display: block;
     position: absolute;
@@ -200,6 +198,87 @@ button {
     background-color: #fff;
    
 }
+
+/* nav-menu */
+
+.nav-menu {
+  position: absolute; 
+  top: 50px;   
+  width: 1000px;
+  border: 1px solid #dbdbdb;
+}
+
+.nav-menu-wrapper {  
+  width: 100%; 
+}
+/* .nav-menu-wrapper-first */
+.nav-menu-wrapper-first{ 
+  position: relative; 
+  width: 75%; 
+  display: flex;
+}
+
+.nav-menu-wrapper-first >div{
+  padding-top: 20px;
+  width: 25%;
+  
+  border: 1px solid #dbdbdb;
+}
+
+.recruit-name {
+  padding-left: 0px; 
+  text-align: left; 
+  background-color:#fff;
+}
+
+.recruit-name > div:first-child{
+  font-weight: 800;
+  margin-left: 20px;
+}
+
+.recruit-info ul{
+  margin-left: 20px;
+  text-align: left;
+  font-weight: 200;
+}
+
+.recruit-info ul li{
+  margin-top: 10px;
+
+}
+
+/* .nav-menu-wrapper-second */
+.nav-menu-wrapper-second{
+  position: relative; 
+  width: 75%; 
+  display: flex; 
+  background-color:#fff;
+  box-sizing:border-box;
+}
+
+.nav-menu-wrapper-second >div{ 
+  padding-top: 20px;
+  width: 25%; 
+  border: 1px solid #dbdbdb;
+}
+
+.recruit-name {
+  padding-left: 0px; 
+  text-align: left; 
+}
+
+.recruit-name > div:first-child{
+  font-weight: 800;
+}
+
+.recruit-info ul{
+  padding-left: 0px;
+  text-align: left;
+}
+
+
+
+
 
 .nav-inner-service {
     margin: -1px 0 0 -1px;
