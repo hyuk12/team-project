@@ -11,13 +11,16 @@
 
 .nav-main {
   position: relative;
-  padding-top: 31px;
-  margin: 0px 210px;
+  padding-top: 31px; 
+  padding-left: 120px;
+  margin: 0px auto;
   width: 1260px;
   min-width: 1260px;
   height: 102px;
   color: #494949;
   font: 12px "맑은고딕", Malgun Gothic, "굴림", Gulim, sans-serif;
+  
+  /* background-color: pink; */
 }
 
 .nav-logo {

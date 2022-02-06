@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <jsp:include page="include/nav.jsp"></jsp:include>
+    <jsp:include page="include/navPerson.jsp"></jsp:include>
     <section>
         <div class="main">
             <div class="section">
@@ -267,7 +267,7 @@
                 move(n);
                 $(".add-section").removeClass("on");
                 $(".add-section").eq(i).addClass("on");
-            }, 4000);
+            }, 1000);
         }
 
         function move(n) {

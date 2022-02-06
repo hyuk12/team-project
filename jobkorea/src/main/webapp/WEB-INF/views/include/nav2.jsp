@@ -72,7 +72,7 @@
                     <li class="service-item">
                         <a href="#" class="company-open">
                                 <span class="post-job-btn">
-                                    <span>기업회원 홈</span>
+                                    <span>로그인 필요</span>
                                 </span>
                         </a>
                     </li>
