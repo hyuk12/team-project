@@ -38,7 +38,7 @@
                 <p>가입하신 정보를 이용하여 아이디를 찾을 수 있습니다.</p>
             </div>
         
-            <form action="">
+            <form>
                 <div class="info-edit">
                     <table>
                         <tr class="nav-tr">
@@ -49,7 +49,7 @@
                                 <p>일반회원</p>
                             </td>
                             <td class="input-td">
-                                <input type="radio" class="member-id company-id" name="member" value="1">
+                                <input type="radio" class="member-id company-id" name="member" value="2">
                             </td>
                             <td class="p-td">
                                 <p>기업회원</p>

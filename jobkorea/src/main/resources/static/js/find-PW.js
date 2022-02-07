@@ -16,7 +16,7 @@ function findPersValue() {
 	$.ajax({
 		type: 'post',
 		// controller에서의 주소
-		url: '/find/pw',
+		url: '/auth/find/pw',
 		data: {
 			// reqDto와 이름이 같아야함
 			"member": personal.value, 
@@ -45,7 +45,7 @@ function findCompValue() {
 	$.ajax({
 		type: 'post',
 		// controller에서의 주소
-		url: '/find/pw',
+		url: '/auth/find/pw',
 		data: {
 			// reqDto와 이름이 같아야함
 			"member": company.value,
@@ -74,10 +74,8 @@ findBtn.onclick = () => {
 	for(var i = 0; i <= member.length; i++ ) {
 		if(member[i].checked) {
 			if(member[i].value == '1') {
-				alert('개인');
 				return findPersValue();
 			} else {
-				alert('기업');
 				return findCompValue()
 			}
 			

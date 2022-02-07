@@ -66,7 +66,7 @@
                     </table>
                 </div>
             </form>
-            <div>
+            <div class="info-edit-btn">
                 <button type="button" class="confirm">비밀번호찾기</button>
             </div>
        </div>
