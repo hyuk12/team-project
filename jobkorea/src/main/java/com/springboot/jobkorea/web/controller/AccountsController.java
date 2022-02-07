@@ -37,6 +37,7 @@ public class AccountsController {
 		return accountsService.updatePassword(principalDetail, passwordReqDto);
 	}
 	
+	
 	/*
 	// 회사계정 수정
 	@PutMapping("/accounts/CompanyEdit")
