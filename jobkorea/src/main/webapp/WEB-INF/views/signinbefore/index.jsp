@@ -193,7 +193,7 @@
                 move(n);
                 $(".add-section").removeClass("on");
                 $(".add-section").eq(i).addClass("on");
-            }, 1000);
+            }, 2000);
         }
 
         function move(n) {
