@@ -4,10 +4,10 @@
 <html lang="ko">
 
 <head>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/nav.css">
     <script src="https://kit.fontawesome.com/c3df4d7d1c.js" crossorigin="anonymous"></script>
-    <script src="js/jQuery.js"></script>
+    <script src="/js/jQuery.js"></script>
 </head>
 <script>
     // 왼쪽 버튼은 클릭으로 창이 나타나도록 하는거

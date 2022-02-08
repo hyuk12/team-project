@@ -1,15 +1,20 @@
+
+section{
+	width: 100%;
+	
+    background-color: #e8ecef;
+	/* margin-left: 300px; */
+}
 /* main */
 
 .main {
     display: flex;
-    
-    width: 100%;
+    width: 1250px;
     height: auto;
-    margin-bottom: 44px;
-    background-color: #e8ecef;
+    margin: 0 auto 44px;   
     z-index: 200;
     text-align: left;
-    position: relative;
+    position: relative;  
     
 }
 
