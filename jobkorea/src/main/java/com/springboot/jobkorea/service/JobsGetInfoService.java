@@ -1,5 +1,5 @@
 package com.springboot.jobkorea.service;
 
-public interface JobsGetInfo {
+public interface JobsGetInfoService {
 	public boolean getJobsInfobyCompId();
 }
