@@ -147,9 +147,8 @@
   		where
   			comp_id = #{comp_id}	
   	
-<<<<<<< HEAD
   	</select>
-=======
+
   	<!--  -->
   	<!-- 아이디 찾기 -->
   	<select id="findPersonalIdByNameAndEmail" resultType="Integer" parameterType="String">
@@ -235,8 +234,5 @@
   		where
   			username = #{username}; 
   	</update>
-  	
-  	
-  	
->>>>>>> 01623b534f3a6a753b05911bfc704fb09a7ada50
+ 
   </mapper>
