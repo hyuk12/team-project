@@ -139,5 +139,13 @@
   		where
   			id = #{id}; 
   	</update>
+  	<select id="getCompById" resultType="com.springboot.jobkorea.domain.user.Company" parameterType="Integer">
+  		select
+  			*
+  		from
+  			comp_mst
+  		where
+  			comp_id = #{comp_id}	
   	
+  	</select>
   </mapper>

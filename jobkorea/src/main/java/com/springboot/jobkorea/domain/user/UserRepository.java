@@ -14,7 +14,7 @@ public interface UserRepository {
 	public User getUserByUsername(String username);
 	public User getUserByOAuth2Username(String oauth2_username);
 	public Company getCompanyByUsername(String username);
-	
+	public Company getCompById(int comp_id);
 	
 	//accounts
 	public int updateUserById(User user);
