@@ -3,6 +3,7 @@ package com.springboot.jobkorea.service;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
@@ -91,7 +92,8 @@ public class AuthServiceImpl implements AuthService {
 	@Override
 	public FindPwRespDto<?> passwordCheck(FindPwReqDto findPwReqDto) {
 		String memberResult = findPwReqDto.getMember();
-		System.out.println(memberResult);
+		String hiddenPw = new BCryptPasswordEncoder().encode(findPwReqDto.getHiddenPw());
+		System.out.println(hiddenPw);
 		FindPwRespDto<String> findPwRespDto = new FindPwRespDto<String>();
 
 		if (memberResult.equals("1")) {
@@ -103,8 +105,8 @@ public class AuthServiceImpl implements AuthService {
 				findPwRespDto.setCode(414);
 				findPwRespDto.setData("존재하지않는 회원정보입니다.");
 			} else {
-				// User userEntity = findPwReqDto.toEntity();
-				userRepository.replacePersonalPwByUsername(findPwReqDto.getUsername());
+				// User userEntity = findPwReqDto.toPersonalEntity();
+				userRepository.replacePersonalPwByUsername(hiddenPw,findPwReqDto.getUsername());
 				findPwRespDto.setCode(415);
 				findPwRespDto.setData("임시비밀번호로 변경되었습니다.");
 			}
@@ -119,7 +121,7 @@ public class AuthServiceImpl implements AuthService {
 				findPwRespDto.setData("존재하지않는 회원정보입니다.");
 			} else {
 				// User userEntity = findPwReqDto.toEntity();
-				userRepository.replaceCompanyPwByUsername(findPwReqDto.getUsername());
+				userRepository.replaceCompanyPwByUsername(hiddenPw, findPwReqDto.getUsername());
 				findPwRespDto.setCode(415);
 				findPwRespDto.setData("임시비밀번호로 변경되었습니다.");
 			}
