@@ -29,7 +29,7 @@
 </script>
 
 <body>
-<!--  기업회원-->
+<!-- 개인회원 -->
     <nav class="header">
 
         <div class="nav-main">
@@ -187,7 +187,7 @@
                             </a>
                         </li>
                         <li class="service-item">
-                            <a href="/mypage/companyPage" class="company-open">
+                            <a href="/mypage/personalPage" class="company-open">
                                 <span class="post-job-btn">
                                     <span>개인회원 홈</span>
                                 </span>

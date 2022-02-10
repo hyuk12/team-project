@@ -1,13 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%> 
 <!DOCTYPE html>
 <html lang="ko">
 
 <head>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
     <script src="https://kit.fontawesome.com/c3df4d7d1c.js" crossorigin="anonymous"></script>
-    <script src="/js/jQuery.js"></script>
+    <script src="js/jQuery.js"></script>
 </head>
 <script>
     // 왼쪽 버튼은 클릭으로 창이 나타나도록 하는거
@@ -24,12 +22,14 @@
         if (!$(e.target).is(".category-btn" || ".fas fa-bars" || ".fa-bars:before" || ".fa-bars")) {
             $(".nav-menu").css("display", "none")
         }
-    }) 
-    
+    })
+    // 채용정보, 이력서등록, 채용공고 부분은 hover하면 창이 내려오고
+    // 자신은 색깔이 반전이 되도록
+
+
 </script>
 
 <body>
-<!--  기업회원-->
     <nav class="header">
 
         <div class="nav-main">
@@ -134,11 +134,11 @@
                                 <div>취업 성공 툴 <span style="color: gray;">></span></div>
                                 <div class="recruit-info">
                                     <ul>
-                                        <li><a href="">자소서 작성</a></li>
-                                        <li><a href="">맞춤법 검사</a></li>
-                                        <li><a href="">글자수 세기</a></li>
-                                        <li><a href="">학점계산기</a></li>
-                                        <li><a href="">어학점수 변환</a></li>
+                                        <li><a href-"">자소서 작성</a></li>
+                                        <li><a href-"">맞춤법 검사</a></li>
+                                        <li><a href-"">글자수 세기</a></li>
+                                        <li><a href-"">학점계산기</a></li>
+                                        <li><a href-"">어학점수 변환</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -189,7 +189,7 @@
                         <li class="service-item">
                             <a href="/mypage/companyPage" class="company-open">
                                 <span class="post-job-btn">
-                                    <span>개인회원 홈</span>
+                                    <span>기업회원 홈</span>
                                 </span>
                             </a>
                         </li>
