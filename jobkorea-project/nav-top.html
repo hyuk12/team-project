@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>잡코리아 마이페이지 | 잡코리아 - 좋은 일이 생긴다
+        jobkorea.co.kr
+    </title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/company_edit.css">
+    <link rel="stylesheet" href="/css/mypage.css">
+</head>
+<style>
+    /* header */
+    .header {
+        position: relative;
+        zoom: 1;
+        width: 100%;
+        z-index: 2000;
+
+        background-color: #fff;
+        border-bottom: 1px solid #3399ff;
+    }
+
+    .nav-main {
+        position: relative;
+        padding-top: 31px;
+        margin: 0px auto;
+        width: 1260px;
+        min-width: 1260px;
+        height: 102px;
+        color: #494949;
+        font: 12px "맑은고딕", Malgun Gothic, "굴림", Gulim, sans-serif;
+        background-color: #3399ff;
+    }
+
+    .nav-logo {
+        position: relative;
+        width: 180px;
+        height: 42px;
+        overflow: visible;
+        margin: 0px 0px 0px 13px;
+        float: left;
+        cursor: pointer;
+        font-weight: normal;
+        font-size: 100%;
+    }
+
+    .nav-logo img {
+        display: block;
+        position: absolute;
+        top: -8px;
+        width: 160px;
+        height: 60px;
+        font-size: 0;
+    }
+
+    .nav-search {
+        display: flex;
+        float: left;
+        box-sizing: border-box;
+        width: 410px;
+        height: 42px;
+        border: 2px solid #39f;
+        margin-left: 0px;
+    }
+
+    input {
+        vertical-align: middle;
+    }
+
+    .nav-search-ip {
+        background: none;
+        border: 0;
+        width: 366px;
+        padding: 0 10px 3px 12px;
+        height: 38px;
+        font: 12px "맑은고딕", Malgun Gothic, "굴림", Gulim, sans-serif;
+        letter-spacing: -1px;
+        outline: none;
+    }
+
+    .nav-search-borderBtn {
+        width: 406px;
+        height: 0;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        /* z-index: 1000;
+    /* display: block;
+    text-align: left; */
+    }
+
+    .nav-search-borderBtn>.nav-search-btn {
+        overflow: hidden;
+        float: left;
+        width: 44px;
+        height: 38px;
+        background-color: #3399ff;
+        background-position: -146px 9px;
+        border: none;
+        cursor: pointer;
+        text-indent: -9999em;
+        position: absolute;
+        right: 0;
+        /* top: 0; */
+        background: url(/images/search.png) 0 0 no-repeat;
+    }
+
+    .main-top {
+        width: 100%;
+        height: 200px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-container {
+        width: 1000px;
+        height: 200px;
+
+        display: flex;
+
+        align-items: center;
+    }
+
+    .com-logo {
+        width: 124px;
+        height: 124px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #fff;
+
+        border-radius: 20%;
+
+        overflow: hidden;
+
+        margin-left: 40px;
+    }
+
+    .com-logo img {
+        max-width: 120px;
+    }
+
+    .com-name {
+        width: 400px;
+        height: 124px;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+
+        color: #fff;
+
+        margin-left: 20px;
+    }
+
+    .com-name h2 {
+        font-size: 30px;
+    }
+
+    .com-name p {
+        color: rgba(238, 238, 238, 0.849);
+        margin-left: 5px;
+    }
+
+    .main-center {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        background-color: rgba(238, 238, 238, 0.849);
+    }
+
+    .category {
+        width: 100%;
+        height: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #fff;
+    }
+
+    .category-in {
+        width: 1000px;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .category-in a {
+        padding-left: 20px;
+        font-weight: 700;
+    }
+
+    .on {
+        height: 50px;
+        padding-top: 15px;
+
+        background-color: #3399ff;
+        color: #fff;
+    }
+
+    .com-img {
+        width: 1000px;
+        height: 250px;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .dtl-img {
+        width: 230px;
+        height: 230px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #fff;
+    }
+
+    .dtl-img img {
+        max-width: 220px;
+    }
+
+    .com-info {
+        width: 1000px;
+        height: 50px;
+
+        display: flex;
+        align-items: center;
+
+        margin-top: 10px;
+    }
+
+    .com-info h2 {
+        margin-left: 25px;
+        font-size: 20px;
+    }
+
+    .dtl-info {
+        width: 950px;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        background-color: #fff;
+    }
+
+    .dtl-info:last-child {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .title1 {
+        width: 80px;
+        height: 38px;
+
+        display: flex;
+        align-items: center;
+        float: left;
+
+        font-weight: 700;
+    }
+
+    .title1-1 {
+        width: 350px;
+        height: 38px;
+
+        display: flex;
+        align-items: center;
+        float: left;
+    }
+
+    .title2 {
+        width: 80px;
+        height: 38px;
+
+        display: flex;
+        align-items: center;
+        float: left;
+
+        font-weight: 700;
+    }
+
+    .title2-1 {
+        width: 350px;
+        height: 38px;
+
+        display: flex;
+        align-items: center;
+        float: left;
+    }
+
+    .post-job {
+        width: 100%;
+        height: 38px;
+
+        padding-left: 20px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    #footer {
+        width: 100%;
+        height: 50px;
+        padding-top: 10px;
+        background: #fff;
+        border-top: 1px solid #ddd;
+    }
+</style>
+
+<body>
+    <nav class="header">
+        <div class="nav-main">
+            <div class="nav-logo">
+                <a href="/myIndex">
+                    <img src="/images/nav-logo.png">
+                </a>
+            </div>
+
+            <div class="nav-search">
+                <div class="nav-search-border">
+                    <input type="text" class="nav-search-ip">
+                </div>
+                <div class="nav-search-borderBtn">
+                    <input type="submit" value="검색" class="nav-search-btn">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="main-top" style="background: url(/images/bg-header.png);">
+            <div class="top-container">
+                <div class="com-logo">
+                    <img src="/images/nav-logo.png" alt="">
+                </div>
+                <div class="com-name">
+                    <h2>${principal.company.compname }</h2>
+                    <p>it컴퓨터, 소프트웨어</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-center">
+            <div class="category">
+                <div class="category-in">
+                    <a href="/mypage/companyPage" class="on">마이페이지</a>
+                    <a href="#">공고등록</a>
+                    <a href="/accounts/applicant">지원자확인</a>
+                    <a href="/accounts/companyEdit">기업정보수정</a>
+                    <a href="/accounts/companyPassword">비밀번호수정</a>
+                </div>
+            </div>
+            <div class="com-img">
+                <div class="dtl-img">
+                    <img src="/images/nav-logo.png" alt="">
+                </div>
+                <div class="dtl-img">
+                    <img src="/images/nav-logo.png" alt="">
+                </div>
+                <div class="dtl-img">
+                    <img src="/images/nav-logo.png" alt="">
+                </div>
+                <div class="dtl-img">
+                    <img src="/images/nav-logo.png" alt="">
+                </div>
+            </div>
+            <div class="com-info">
+                <h2>| 기업정보</h2>
+            </div>
+            <div class="dtl-info">
+                <table>
+                    <tr>
+                        <td class="title1">산업</td>
+                        <td class="title1-1">${principal.companyDtl.industry }</td>
+                        <td class="title2">설립일</td>
+                        <td class="title2-1">${principal.companyDtl.establish }</td>
+                    </tr>
+                    <tr>
+                        <td class="title1">기업구분</td>
+                        <td class="title1-1">${principal.company.comptype }</td>
+                        <td class="title2">매출액</td>
+                        <td class="title2-1">${principal.companyDtl.sales }</td>
+                    </tr>
+                    <tr>
+                        <td class="title1">대표자</td>
+                        <td class="title1-1">${principal.company.ceoname }</td>
+                        <td class="title2">주요사업</td>
+                        <td class="title2-1">${principal.companyDtl.business }</td>
+                    </tr>
+                    <tr>
+                        <td class="title1">홈페이지</td>
+                        <td class="title1-1">${principal.companyDtl.homepage }</td>
+                        <td class="title2">주소</td>
+                        <td class="title2-1">${principal.companyDtl.address }</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="com-info">
+                <h2>| 고용현황</h2>
+            </div>
+            <div class="dtl-info">
+                <div class="post-job">
+                    <h2>채용공고</h2>
+                </div>
+                <div class="post-job"><a href="#">안전관리자, 보건관리자 채용</a></div>
+                <div class="post-job"><a href="#">인턴 채용</a></div>
+            </div>
+        </div>
+    </main>
+    <div id="footer">
+        <p id="copyright">
+            <img src="https://i.jobkorea.kr/content/images/login/ver_1/copyright.png?220104" alt="">
+        </p>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jQuery.js"></script>
+    <link rel="stylesheet" href="./css/myindex.css">
+</head>
+<script>
+    $(document).ready(function () {
+
+        var current = 0;
+        var setIntervalId;
+
+        timer();
+        function timer() {
+            // - setInterval 함수 : 일정한 시간 간격으로 작업을 수행하기 위해서 사용합니다.
+            // clearInterval 함수를 사용하여 중지할 수 있습니다. 
+            // 주의할 점은 일정한 시간 간격으로 실행되는 작업이 
+            //  그 시간 간격보다 오래걸릴 경우 문제가 발생할 수 있습니다.
+
+            setIntervalId = setInterval(() => {
+                var n = current + 1;
+                if (n == 2) {
+                    n = 0;
+                }
+                movie(n);
+            }, 500);
+        }
+
+        function movie(n) {  //eq 는 차례대로 할 때 차례를 의미
+            var currentEl = $(".add-section-list > li").eq(current);
+            var nextEl = $(".add-section-list > li").eq(n);
+            currentEl.css({ left: '0%' }).animate({ left: '-100%' });
+            nextEl.css({ left: '100%' }).animate({ left: '0%' });
+
+            current = n;
+        }
+    });
+</script>
+
+<body>
+    <jsp:include page="include/nav.jsp"></jsp:include>
+    <section>
+        <div class="main">
+            <div class="section">
+                <div class="add-section">
+                    <ul class="add-slide-list">
+                        <li><img src="images/bg-header.png" alt=""></li>
+                        <li><img src="images/20220113_213037.png" alt=""></li>
+                        <li><img src="images/bg-header.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="login-section">
+                    <div class="my-login-info">
+                        <div class="mypage-in">
+                            <a href="/mypage/personalPage">${principal.users.name } 님 </a>
+                            <a href="/resume">이력서 관리<i class="fas fa-angle-right"></i></a>
+                        </div>
+                        <div class="my-info-resume">
+                            <a href="/logout"><span>로그아웃</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

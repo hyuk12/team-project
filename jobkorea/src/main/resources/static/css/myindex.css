@@ -2,21 +2,25 @@
 
 .main {
     
-    width: 100%;
+    width: 100%; 
     height: auto;
     padding: 10px 0;
     margin-bottom: 44px;
     background-color: #e8ecef;
     z-index: 200;
     text-align: left;
-    position: relative;
+    position: relative; 
+     
 }
+ 
+
 .container {
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    max-width:1300px;
 }
 
 .section {
@@ -26,25 +30,42 @@
 }
 
 .add-section {
-    width: 700px;
-    height: 100px;
+	position:relative;
+	
+	margin-top:30px;
+    width: 950px;
+    height: 150px;
+    
+	display:flex;
+	overflow:hidden;
+	
 }
 
 .add-section img {
+	position:absolute;
+	top:0;
+	left:0;
     width: 100%;
     height: 100%;
+    
 }
+
+.add-section img:nth-child(1){left: 0%;}
+.add-section img:nth-child(2){left: 100%;}
+.add-section img:nth-child(3){left: 200%;}
 
 .login-section{
     display: flex;
     
     justify-content: center;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 20px;
+    margin-right : 20px;
     width: 300px;
     height: 150px;
     border: 1px solid #e8ecef ;
     border-radius: 10px;
+    
 }
 
 .my-login-info{
@@ -96,21 +117,22 @@
 }
 
 .board-menu {
-    width: 1680px;
-    margin-top: 30px;
+    width: 1680px; 
+    margin: 30px auto 0px;
+    padding-left:50px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+ 	max-width:1400px; 
 }
 
 .board-menu-item {
-    display: flex;
-    justify-content: space-between;
+    display: flex; 
+    /* justify-content: center; */  
     align-items: center;
     margin-top: -1px;
     width: 1260px;
-    height: 53px;
-    margin-left: 100px;
+    height: 53px;  
    
 }
 
@@ -125,7 +147,7 @@
     /* justify-content: space-between; */
     margin-bottom: 10px;
     margin-right: 10px;
-    width: 1380px;
+    width: 1380px; 
 }
 
 .board-item {

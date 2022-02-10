@@ -1,21 +1,16 @@
-package com.springboot.jobkorea.domain.jobs;
+package com.springboot.jobkorea.web.dto.board;
 
 import java.time.LocalDateTime;
 
-import com.springboot.jobkorea.web.dto.jobs.JobsInfoRespDto;
+import org.springframework.web.multipart.MultipartFile;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
+import com.springboot.jobkorea.domain.anm.Anm_edit;
+import com.springboot.jobkorea.domain.user.Company;
+
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
 @Data
-public class JobsInfo {
-
-	private int comp_id;
+public class JobsInfoReqDto {
 	private String comptype;
 	private String compname;
 	private String ceoname;
@@ -37,13 +32,20 @@ public class JobsInfo {
 	
 	private LocalDateTime update_date;
 	
-	public JobsInfoRespDto toJobEntity() {
-		return JobsInfoRespDto.builder()
+	private MultipartFile file;
+	
+	public Company toCompEntity(int comp_id) {
+		return Company.builder()
 				.comp_id(comp_id)
 				.comptype(comptype)
 				.compname(compname)
 				.ceoname(ceoname)
 				.email(email)
+				.build();
+	}
+	
+	public Anm_edit toAnmEntity(int comp_id , String anm_picture) {
+		return Anm_edit.builder()
 				.anm_title(anm_title)
 				.education(education)
 				.career(career)

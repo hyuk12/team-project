@@ -65,9 +65,9 @@
                 <p>
                 	<a href="/auth/signup">회원가입</a>
                     <span class="txtBar">|</span>
-                    <a href="#">아이디 찾기</a>
+                    <a href="/find/id">아이디 찾기</a>
                     <span class="txtBar">|</span>
-                    <a href="#">비밀번호 찾기</a>
+                    <a href="/find/pw">비밀번호 찾기</a>
                 </p>
             </div>
             <div class="social-login">

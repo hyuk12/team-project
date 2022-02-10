@@ -32,6 +32,18 @@ public class PageController {
 	public String signinForm() {
 		return "auth/signin";
 	} 
+
+	@GetMapping({"/find/id"})
+	public String findIDForm() {
+		// 폴더 안에 있는 jsp파일이름
+		return "find/find-ID";
+	} 
+
+	@GetMapping({"/find/pw"})
+	public String findPWForm() {
+		// 폴더 안에 있는 jsp파일이름
+		return "find/find-PW";
+	} 
 	
 	
 	
