@@ -1,0 +1,191 @@
+/*header*/
+.header {
+  position: relative;
+  zoom: 1;
+  width: 100%;
+  z-index: 2000;
+
+  background-color: #fff;
+}
+
+.nav-main {
+  position: relative;
+  padding-top: 31px;
+  margin: 0px 210px;
+  width: 1260px;
+  min-width: 1260px;
+  height: 102px;
+  color: #494949;
+  font: 12px "맑은고딕", Malgun Gothic, "굴림", Gulim, sans-serif;
+}
+
+.nav-logo {
+  position: relative;
+  width: 180px;
+  height: 42px;
+  overflow: visible;
+  margin: 0px 0px 0px 13px;
+  float: left;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+.nav-logo img {
+  display: block;
+  position: absolute;
+  top: 8px;
+  width: 260px;
+  height: 30px;
+  font-size: 0;
+}
+
+h2 {
+  font-size: 17px;
+  color: #333;
+}
+
+.find-nav {
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  justify-content: center;
+
+  border-top: 3px solid #000;
+
+  background-color: #3399ff;
+}
+
+.nav-in {
+  height: 100%;
+  width: 960px;
+
+  display: flex;
+  align-items: center;
+}
+
+.go-find-ID {
+  color: #f9f9f9;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.go-find-PW {
+  color: #f9f9f99d;
+  font-size: 20px;
+
+  margin-right: 20px;
+}
+
+.ch-pw-wrap {
+  width: 100%;
+  height: 450px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.user-info {
+  width: 960px;
+  height: 400px;
+
+  margin-top: 30px;
+}
+
+.info-top {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.info-top2 {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 10px;
+  padding-left: 10px;
+
+  font: 12px verdana, gulim, "굴림", dotum, "돋움", "Apple SD Gothic Neo",
+    sans-serif;
+}
+
+.info-edit {
+  border-top: 3px solid #000;
+  box-sizing: border-box;
+}
+
+.info-edit tr {
+  display: block;
+
+  width: 960px;
+  height: 40px;
+
+  border-bottom: 1px solid rgb(168, 168, 168);
+
+  overflow: hidden;
+}
+
+.nav-tr td {
+  padding-top: 10px;
+}
+.input-td {
+  padding-left: 12px;
+}
+.p-td {
+  padding-right: 10px;
+}
+
+.title {
+  width: 180px;
+  height: 40px;
+
+  background-color: #f9f9f9;
+  color: #000;
+
+  font: 13px verdana, gulim, "굴림", dotum, "돋움", "Apple SD Gothic Neo",
+    sans-serif;
+}
+.require {
+  color: orangered;
+}
+
+.ip-info {
+  padding-left: 15px;
+}
+.ip-info input {
+  width: 205px;
+  height: 30px;
+}
+
+.info-edit-btn {
+  width: 960px;
+  height: 50px;
+
+  margin-top: 10px;
+}
+.confirm {
+  width: 100px;
+  height: 50px;
+
+  border-radius: 5px;
+
+  color: #fff;
+  background-color: #39f;
+
+  font-size: 13px;
+}
+.cancel {
+  width: 100px;
+  height: 50px;
+
+  border-radius: 5px;
+
+  color: #fff;
+  background-color: rgb(59, 59, 59);
+
+  font-size: 13px;
+}
