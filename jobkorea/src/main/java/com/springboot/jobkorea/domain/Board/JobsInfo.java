@@ -1,4 +1,4 @@
-package com.springboot.jobkorea.domain.jobs;
+package com.springboot.jobkorea.domain.Board;
 
 import java.time.LocalDateTime;
 
