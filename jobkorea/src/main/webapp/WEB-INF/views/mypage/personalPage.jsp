@@ -15,12 +15,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>잡코리아 마이페이지 | 잡코리아 - 좋은 일이 생긴다
-        jobkorea.co,kr
+        jobkorea.co.kr
     </title>
     <link rel="stylesheet" href="/css/mypage.css">
 </head>
 <body>
-    <jsp:include page="../include/nav.jsp"></jsp:include>
+    <jsp:include page="../include/navPerson.jsp"></jsp:include>
     
     <main>
         <div>

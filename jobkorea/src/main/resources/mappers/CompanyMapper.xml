@@ -10,7 +10,7 @@
   		from
   			comp_dtl
   		where
-  			comp_id = #{id};
+  			comp_id = #{comp_id};
   	</select>
   	<select id="usernameCheckByUsername" resultType="Integer" parameterType="String">
   		select
@@ -30,7 +30,7 @@
   			
   			update_date = now()
   		where
-  			comp_id = #{id}; 
+  			comp_id = #{comp_id}; 
   	</update>
 
   	<update id="updateCompanyDtlById" parameterType="com.springboot.jobkorea.domain.company.CompanyDtl">
@@ -45,7 +45,7 @@
   			
   			update_date = now()
   		where
-  			comp_id = #{id}; 
+  			comp_id = #{comp_id}; 
   	</update>
   	
   	<update id="updateCompanyPwById" parameterType="com.springboot.jobkorea.domain.user.Company">
@@ -56,7 +56,7 @@
   			
   			update_date = now()
   		where
-  			comp_id = #{id}; 
+  			comp_id = #{comp_id}; 
   	</update>
   	
   </mapper>

@@ -7,12 +7,13 @@
 </sec:authorize>
 
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="ko">
+<head> 
 	<link rel="stylesheet" href="/css/jobposting.css">
+	 
 </head>
 <body>
-    <jsp:include page="../include/nav.jsp"></jsp:include>
+    <jsp:include page="../include/navPerson.jsp"></jsp:include>
     <section>
         <div class="main">
             <div class="sidebar">
@@ -44,10 +45,9 @@
                         <ul class="company-list-menu">
                             <li>
                                 <a href="#" class="comp-item on">
-                                    <div >
+                                    <div>
                                         <span class="first-name">전체</span>
-                                        
-                                            
+                                         
                                     </div>
                                 </a>
                             </li>
