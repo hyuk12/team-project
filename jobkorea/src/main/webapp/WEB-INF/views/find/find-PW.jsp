@@ -62,6 +62,7 @@
                         <tr>
                             <td class="title">아이디<span class="require"> *</span></td>
                             <td class="ip-info"><input type="text" class="input-username"></td>
+                            <td class="ip-info"><input type="hidden" class="input-hidden" value="12345678"></td>
                         </tr>
                     </table>
                 </div>
