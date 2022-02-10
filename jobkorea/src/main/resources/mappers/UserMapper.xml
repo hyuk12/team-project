@@ -140,4 +140,92 @@
   			id = #{id}; 
   	</update>
   	
+  	<!--  -->
+  	<!-- 아이디 찾기 -->
+  	<select id="findPersonalIdByNameAndEmail" resultType="Integer" parameterType="String">
+  		SELECT
+			count(username)
+		FROM
+			user_mst
+		WHERE
+			name = #{name} AND
+			email = #{email};
+  	</select>
+  	
+  	<select id="findCompanyIdByNameAndEmail" resultType="Integer" parameterType="String">
+  		SELECT
+			count(username)
+		FROM
+			comp_mst
+		WHERE
+			name = #{name} AND
+			email = #{email};
+  	</select>
+
+  	<select id="getPersonalIdByNameAndEmail" resultType="String" parameterType="String">
+  		SELECT
+			username
+		FROM
+			comp_mst
+		WHERE
+			name = #{name} AND
+			email = #{email};
+  	</select>
+
+  	<select id="getCompanyIdByNameAndEmail" resultType="String" parameterType="String">
+  		SELECT
+			username
+		FROM
+			comp_mst
+		WHERE
+			name = #{name} AND
+			email = #{email};
+  	</select>
+  	
+  	
+  	<!-- 비밀번호 찾기 -->
+  	<select id="findPersonalPwByNameAndUsername" resultType="Integer" parameterType="String">
+  		SELECT
+			count(username)
+		FROM
+			user_mst
+		WHERE
+			name = #{name} AND
+			username = #{username};
+  	</select>
+
+  	<update id="replacePersonalPwByUsername"  parameterType="String" >
+  		update
+  			user_mst
+  		set
+  			password = "12345",
+  			
+  			update_date = now()
+  		where
+  			username = #{username}; 
+  	</update>
+
+  	<select id="findCompanyPwByNameAndUsername" resultType="Integer" parameterType="String">
+  		SELECT
+			count(username)
+		FROM
+			comp_mst
+		WHERE
+			name = #{name} AND
+			username = #{username};
+  	</select>
+
+  	<update id="replaceCompanyPwByUsername"  parameterType="String" >
+  		update
+  			comp_mst
+  		set
+  			password = "12345",
+  			
+  			update_date = now()
+  		where
+  			username = #{username}; 
+  	</update>
+  	
+  	
+  	
   </mapper>
