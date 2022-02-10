@@ -32,7 +32,7 @@ function boardLoad(){
 			indexBoardTotalCount = parseInt(boardListObj.indexBoardTotalCount);
 		},
 		error: function(){
-			alert('비동기 처리 오류');
+			
 		}
 	});
 }

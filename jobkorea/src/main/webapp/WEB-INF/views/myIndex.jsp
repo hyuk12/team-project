@@ -48,10 +48,7 @@
                 </div>
                 <div class="container">
                     <div class="board-item-group">
-<<<<<<< HEAD
-                        </div>    
-                </div> 
-=======
+
                         <div class="board-item">
                             <div class="company-profile">
                                 <div class="company-info">
@@ -250,7 +247,6 @@
                         </div>
                     </div>
                 </div>  
->>>>>>> 01623b534f3a6a753b05911bfc704fb09a7ada50
             </main>
           </div> 
     </section>

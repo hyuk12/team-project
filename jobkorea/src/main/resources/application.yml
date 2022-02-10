@@ -46,17 +46,18 @@ spring:
               user-name-attribute: response #회원정보를 json으로 전달할 때 response라는 KEY값으로 데이터를 전달.  datasource:    driver-class-name: org.mariadb.jdbc.Driver
     datasource:
       driver-class-name: org.mariadb.jdbc.Driver
-      url: jdbc:mariadb://database-study.cs41knlyokk5.ap-northeast-2.rds.amazonaws.com:3306/project_20220113_04?useUnicode=true
-      username: hyuko
-      password: Thkfkdgo3
+#      url: jdbc:mariadb://database-study.cs41knlyokk5.ap-northeast-2.rds.amazonaws.com:3306/project_20220113_04?useUnicode=true
+      url: jdbc:mariadb://121.175.150.249:3306/project_20220113_04?useUnicode=true
+      username: tp220113_04
+      password: 3637
     
 mybatis:  
   mapper-locations:  
   - /mappers/*.xml
   
 file :
-  #path: C:\Spring\workspace\jobkoreaImg\
-  path: /home/ubuntu/Spring/workspace/jobkoreaImg/
+  path: C:\Spring\workspace\jobkoreaImg\
+#  path: /home/ubuntu/Spring/workspace/jobkoreaImg/
 
 test:
   filename: test_file.txt  

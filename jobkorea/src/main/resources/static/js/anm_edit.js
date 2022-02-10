@@ -113,7 +113,7 @@ function uploadSubmit(){
 		contentType: false,
 		success: function(data){
 			if(data == 'true'){
-				alert('작서완료');
+				alert('작성완료');
 				location.replace('/jobs/joblist');
 			}
 
