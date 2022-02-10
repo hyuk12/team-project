@@ -8,7 +8,7 @@
 </head>
 <body>
 <nav class="header">
-
+<!-- 기본형??? -->
     <div class="nav-main">
         <div class="nav-logo">
             <a href="/">

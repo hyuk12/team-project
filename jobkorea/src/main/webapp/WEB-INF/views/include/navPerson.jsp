@@ -29,6 +29,7 @@
 </script>
 
 <body>
+<!-- 개인회원 -->
     <nav class="header">
 
         <div class="nav-main">

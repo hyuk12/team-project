@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/nav.css">
     <script src="https://kit.fontawesome.com/c3df4d7d1c.js" crossorigin="anonymous"></script>
-    <script src="js/jQuery.js"></script>
+    <script src="/js/jQuery.js"></script>
 </head>
 <script>
     // 왼쪽 버튼은 클릭으로 창이 나타나도록 하는거
@@ -29,6 +29,7 @@
 </script>
 
 <body>
+<!--  기업회원-->
     <nav class="header">
 
         <div class="nav-main">
@@ -188,7 +189,7 @@
                         <li class="service-item">
                             <a href="/mypage/companyPage" class="company-open">
                                 <span class="post-job-btn">
-                                    <span>기업회원 홈</span>
+                                    <span>개인회원 홈</span>
                                 </span>
                             </a>
                         </li>
