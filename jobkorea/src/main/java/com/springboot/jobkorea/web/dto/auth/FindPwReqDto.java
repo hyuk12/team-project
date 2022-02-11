@@ -1,5 +1,7 @@
 package com.springboot.jobkorea.web.dto.auth;
 
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
 import com.springboot.jobkorea.domain.user.Company;
 import com.springboot.jobkorea.domain.user.User;
 
@@ -13,6 +15,8 @@ public class FindPwReqDto {
 	
 	private String name;
 	private String username;
+	
+	private String hiddenPw; 
 
 //	private String companyName;
 //	private String companyUsername;
@@ -21,6 +25,7 @@ public class FindPwReqDto {
 		return User.builder()
 					.name(name)
 					.username(username)
+					.password(new BCryptPasswordEncoder().encode(hiddenPw))
 					.build();
 	}
 
@@ -28,6 +33,7 @@ public class FindPwReqDto {
 		return Company.builder()
 				.name(name)
 				.username(username)
+				.password(new BCryptPasswordEncoder().encode(hiddenPw))
 				.build();
 	}
 }

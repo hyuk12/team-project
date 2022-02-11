@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/company_edit.css">
     <link rel="stylesheet" href="/css/mypage.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
 </head>
 <body>
     <nav class="header">
@@ -102,7 +104,7 @@
                             </tr>
                             <tr>
                                 <td class="title1">홈페이지</td>
-                                <td class="title1-1">${principal.companyDtl.homepage }</td>
+                                <td class="title1-1"><a href="http://${principal.companyDtl.homepage }">${principal.companyDtl.homepage }</a> </td>
                                 <td class="title2">주소</td>
                                 <td class="title2-1">${principal.companyDtl.address }</td>
                             </tr>

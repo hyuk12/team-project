@@ -198,7 +198,7 @@
   		update
   			user_mst
   		set
-  			password = "12345",
+  			password = #{password},
   			
   			update_date = now()
   		where
@@ -219,7 +219,7 @@
   		update
   			comp_mst
   		set
-  			password = "12345",
+  			password = #{password},
   			
   			update_date = now()
   		where
