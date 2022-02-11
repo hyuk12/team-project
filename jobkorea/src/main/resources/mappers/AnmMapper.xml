@@ -52,5 +52,84 @@
   			now()
   		);
   	</update>
-  
+  	<select id="getBoardById" resultType="com.springboot.jobkorea.domain.anm.Anm_edit" parameterType="Integer">
+  		select
+  			*
+  		from
+  			anm_mst
+  		where
+  			id=#{board_id};
+  	</select>
+  	<select id="getIndexBoardListByCompname" resultType="com.springboot.jobkorea.domain.anm.IndexBoard" parameterType="String">
+  		
+  		SELECT
+  			sm.user_id AS user_id,
+  			cm.compname,
+  			am.id AS board_id,
+  			am.anm_picture,
+			am.anm_title,
+			am.education,
+			am.career,
+			am.area,
+			am.gender,
+			am.form_employ,
+			am.assign_task,
+			am.loyalty_point,
+			am.working_days,
+			am.hours_duty,
+			am.salary,
+			am.wanted,
+			cd.industry,
+			cd.homepage,
+			cd.establish,
+			cd.business,
+			cd.address,
+			am.update_date
+  		
+  		FROM
+  			subscribe_mst sm
+  			LEFT OUTER JOIN comp_mst cm on(cm.comp_id = sm.comp_id)
+  			LEFT OUTER JOIN comp_dtl cd on(cd.comp_id = cm.comp_id)
+  			inner JOIN anm_mst am on (am.comp_id = sm.user_id)	
+  		WHERE
+  			cm.compname = #{compname}
+  		
+  		UNION
+  		
+  		SELECT
+			am.comp_id,
+			cm.compname,
+			am.id AS board_id,
+			am.anm_picture,
+			am.anm_title,
+			am.education,
+			am.career,
+			am.area,
+			am.gender,
+			am.form_employ,
+			am.assign_task,
+			am.loyalty_point,
+			am.working_days,
+			am.hours_duty,
+			am.salary,
+			am.wanted,
+			cd.industry,
+			cd.homepage,
+			cd.establish,
+			cd.business,
+			cd.address,
+			am.update_date
+		FROM
+			anm_mst am
+			
+			LEFT OUTER JOIN comp_mst cm ON(cm.comp_id = am.comp_id)
+			LEFT OUTER JOIN comp_dtl cd ON(cd.comp_id = cm.comp_id)
+		WHERE
+			cm.compname = #{compname} 
+		ORDER BY
+			update_date DESC,
+			board_id DESC;
+  	
+  	</select>
+  		
   </mapper>

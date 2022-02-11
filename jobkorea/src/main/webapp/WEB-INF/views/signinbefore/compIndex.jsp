@@ -30,7 +30,7 @@
                 <div class="login-section">
                     <div class="my-login-info">
                         <div class="mypage-in">
-                            <a href="#">${principal.company.name } 님 </a>
+                            <a href="#">${principal.company.compname } 님 </a>
                             <a href="/anm/anm_edit">공고 등록<i class="fas fa-angle-right"></i></a>
                         </div>
                         <div class="my-info-resume">

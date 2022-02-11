@@ -1,23 +1,14 @@
-package com.springboot.jobkorea.domain.Board;
+package com.springboot.jobkorea.web.dto.anm;
 
 import java.time.LocalDateTime;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Builder
-@AllArgsConstructor
-@NoArgsConstructor
 @Data
-public class JobsInfo {
-
-	private int comp_id;
-	private String comptype;
-	private String compname;
-	private String ceoname;
-	private String email;
+public class AnmRespDto {
+	private int boardId;
 	
 	private String anm_title;
 	private String education;
@@ -33,7 +24,14 @@ public class JobsInfo {
 	private String salary;
 	private String wanted;
 	
+	private int comp_id;
+	private String compname;
+	private String industry;
+	private String homepage;
+	private String establish;
+	private String business;
+	private String address;
+	
+	private LocalDateTime create_date;
 	private LocalDateTime update_date;
-	
-	
 }

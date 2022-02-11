@@ -1,14 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+
+<sec:authorize access="isAuthenticated()">
+	<sec:authentication property="principal" var="principal"/>
+</sec:authorize>
 <!DOCTYPE html>
 <html>
 <head>
 	
 	<link rel="stylesheet" href="/css/jobmain.css">
-
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
-    <jsp:include page="../include/nav.jsp"></jsp:include>
+    <jsp:include page="../include/nav2.jsp"></jsp:include>
     <section>
         <div class="container">
             <div class="jobsInfo">
@@ -19,10 +24,10 @@
                     <div class="comp-name-info">
                         <div class="comp-name">
                             <div class="company">
-                                (주) 주연테크 <a href="follow-btn"><i class="far fa-heart"></i>관심기업</a>
+                                ${indexboardRespDto.compname } <a href="follow-btn"><i class="far fa-heart"></i>관심기업</a>
                             </div>
                             <div class="company-title">
-                                <h1>2022년 상반기 각 부문 신입 및 경력 모집</h1>
+                                <h1>${indexboardRespDto.anm_title }</h1>
                             </div>
                         </div>
                         <div class="name-info">

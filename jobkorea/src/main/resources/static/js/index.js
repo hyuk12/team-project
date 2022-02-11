@@ -2,7 +2,7 @@
  * 
  */
  
- const logoutBtn = document.querySelector('.logoutbtn');
+ 
  const boardGroup = document.querySelector('.board-item-group');
  
  var page = 0;
@@ -17,7 +17,7 @@
 		boardLoad();
 	}
 }
- boardLoad();
+boardLoad();
  
  function boardLoad(){
 	$.ajax({
@@ -25,10 +25,11 @@
 		url: `/index/board?page=${page}`,
 		dataType: "text",
 		success: function(data){
-			let boardListObj = Json.parse(data);
+			let boardListObj = JSON.parse(data);
 			boardItem += getBoard(boardListObj.indexBoardList);
 			boardGroup.innerHTML = boardItem;
-			indexBoardTotalCount = parsInt(boardListObj.indexBoardTotalCount);
+			indexBoardTotalCount = parseInt(boardListObj.indexBoardTotalCount);
+			alert(data);
 		},
 		error: function(){
 			alert('비동기 처리 오류');
@@ -57,6 +58,4 @@ function getBoard(boardList){
 	return boardHtml;
 }
  
- logoutBtn.onclick = () => {
-	location.replace = ('/logout');
-}
+ 

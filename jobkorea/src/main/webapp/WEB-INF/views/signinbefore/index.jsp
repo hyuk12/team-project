@@ -4,8 +4,8 @@
 <html>
 <head>
 	<link rel="stylesheet" href="/css/main.css">
-	<script type="text/javascript"  src="js/jquery.js"></script> 
-	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
     <jsp:include page="../include/nav2.jsp"></jsp:include>
@@ -38,8 +38,8 @@
             	</div>
            </div>
             
-            <main>
-                <div class="board-menu">
+           <main>
+           	<div class="board-menu">
                     <div class="board-menu-item">
                         <h1>First VVIP 채용관</h1>
                     </div>
@@ -48,12 +48,11 @@
                     <div class="board-item-group">
                        
                     </div>
-                </div>
-              </div>            
+                </div>  
            </main>
         </div>
     </section>
-     <script src="js/myindex.js"></script>
+     <script src="js/index.js"></script>
     <script>
     $(document).ready(function () {
     	 
@@ -71,7 +70,7 @@
                 }
                 move(n);
                 $(".add-section").removeClass("on");
-                $(".add-section").eq(i).addClass("on");
+                $(".add-section").eq(n).addClass("on");
             }, 2000);
         }
 

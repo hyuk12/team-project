@@ -12,4 +12,7 @@ public interface AnmRepository {
 	public Anm_edit getAnmById(int id);
 	public int insertAnm(Anm_edit anm_edit);
 	public int updateCompById(Company company);
+	
+	public Anm_edit getBoardById(int board_id);
+	public List<IndexBoard>getIndexBoardListByCompname(String compname);
 }
