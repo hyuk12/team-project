@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/c3df4d7d1c.js" crossorigin="anonymous"></script>
     <script src="/js/jQuery.js"></script>
 </head>
- <script>
+<script>
     // 왼쪽 버튼은 클릭으로 창이 나타나도록 하는거
     // .category-btn을 눌렀을 때에 작동해야한다.
     $(document).ready(function () {
@@ -182,14 +182,14 @@
                     </ul>
                     <ul class="nav-user">
                         <li class="my-info">
-                            <a href="/mypage/companyPage" class="my-info-open">
+                            <a href="/mypage/personalPage" class="my-info-open">
                                 <img src="/images/mypage-logo.png">
                             </a>
                         </li>
                         <li class="service-item">
                             <a href="/mypage/companyPage" class="company-open">
                                 <span class="post-job-btn">
-                                    <span>기업회원 홈</span>
+                                    <span>개인회원 홈</span>
                                 </span>
                             </a>
                         </li>
@@ -198,7 +198,6 @@
             </div>
         </div>
     </nav>
-   
 </body>
 
 </html>

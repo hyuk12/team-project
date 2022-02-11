@@ -13,7 +13,7 @@
 	 
 </head>
 <body>
-    <jsp:include page="../include/nav2.jsp"></jsp:include>
+    <jsp:include page="../include/navPerson.jsp"></jsp:include>
     <section>
         <div class="main">
             <div class="sidebar">

@@ -2,7 +2,7 @@
  * 
  */
  
-
+ const logoutBtn = document.querySelector('.logoutbtn');
  
  const boardGroup = document.querySelector('.board-item-group');
  
@@ -23,14 +23,13 @@ boardLoad();
 function boardLoad(){
 	$.ajax({
 		type: "get",
-		url: `/index/board?page=${page}`,
+		url: `/myIndex/board?page=${page}`,
 		dataType: "text",
 		success: function(data){
 			let boardListObj = JSON.parse(data);
-			boardItem += getBoard(boardListObj.indexBoardList);
+			boardItem += getBoard(boardListObj.indexBoarList);
 			boardGroup.innerHTML = boardItem;
 			indexBoardTotalCount = parseInt(boardListObj.indexBoardTotalCount);
-			alert(data);
 		},
 		error: function(){
 			
@@ -53,7 +52,7 @@ function getBoard(boardList){
                                     <h3>${board.compname}</h3>
                                 </div>
                                 <div class="profile-info">
-                                    <h1>${board.anm_title}</h1>
+                                    <h1>전국 물류센터 계약직 대규모 모집</h1>
                                     <div class="follow-btn">
                                         <i class="far fa-star"></i>
                                     </div>
@@ -63,13 +62,13 @@ function getBoard(boardList){
                         <div class="board-item">
                             <div class="company-profile">
                                 <div class="company-info">
-                                    <img src="/image/${board.anm_picture}" alt="">
+                                    <img src="/images/nav-logo.png" alt="">
                                 </div>
                                 <div class="profile-name">
-                                    <h3>${board.compname}</h3>
+                                    <h3>cupang</h3>
                                 </div>
                                 <div class="profile-info">
-                                    <h1>${board.anm_title}</h1>
+                                    <h1>전국 물류센터 계약직 대규모 모집</h1>
                                     <div class="follow-btn">
                                         <i class="far fa-star"></i>
                                     </div>
@@ -79,13 +78,13 @@ function getBoard(boardList){
                         <div class="board-item">
                             <div class="company-profile">
                                 <div class="company-info">
-                                    <img src="/image/${board.anm_picture}" alt="">
+                                    <img src="/images/nav-logo.png" alt="">
                                 </div>
                                 <div class="profile-name">
-                                    <h3>${board.compname}</h3>
+                                    <h3>cupang</h3>
                                 </div>
                                 <div class="profile-info">
-                                    <h1>${board.anm_title}</h1>
+                                    <h1>전국 물류센터 계약직 대규모 모집</h1>
                                     <div class="follow-btn">
                                         <i class="far fa-star"></i>
                                     </div>
@@ -95,13 +94,13 @@ function getBoard(boardList){
                         <div class="board-item">
                             <div class="company-profile">
                                 <div class="company-info">
-                                    <img src="/image/${board.anm_picture}" alt="">
+                                    <img src="/images/nav-logo.png" alt="">
                                 </div>
                                 <div class="profile-name">
-                                    <h3>${board.compname}</h3>
+                                    <h3>cupang</h3>
                                 </div>
                                 <div class="profile-info">
-                                    <h1>${board.anm_title}</h1>
+                                    <h1>전국 물류센터 계약직 대규모 모집</h1>
                                     <div class="follow-btn">
                                         <i class="far fa-star"></i>
                                     </div>
@@ -114,9 +113,11 @@ function getBoard(boardList){
 	return boardHtml;
 }
  
+ logoutBtn.onclick = () => {
+	location.replace = ('/logout');
+}
 
-
-/* 제이쿼리
+/* 제이쿼리*/
 $(document).ready(function () {
  
 	var current = 0;
@@ -146,4 +147,3 @@ $(document).ready(function () {
         current = n;
     }
 });
-*/

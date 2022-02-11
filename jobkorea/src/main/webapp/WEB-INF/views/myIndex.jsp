@@ -7,18 +7,18 @@
 <!-- property: princopal 객체를 principal이라는 이름으로 넣음 -->
 <sec:authentication property="principal" var="principal"/>
 </sec:authorize>
-
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 <!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" href="/css/myindex.css">
-	
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript"  src="js/jquery.js"></script> 
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 </head>
 
 <body>
-    <jsp:include page="./include/navPerson.jsp"></jsp:include>
+    <jsp:include page="include/navPerson.jsp"></jsp:include>
     <section>
         <div class="main">
             <div class="section">
@@ -49,13 +49,209 @@
                 <div class="container">
                     <div class="board-item-group">
 
+                        <div class="board-item">
+                            <div class="company-profile">
+                                <div class="company-info">
+                                    <img src="/images/nav-logo.png" alt="">
+                                </div>
+                                <div class="profile-name">
+                                    <h3>cupang</h3>
+                                </div>
+                                <div class="profile-info">
+                                    <h1>전국 물류센터 계약직 대규모 모집</h1>
+                                    <div class="follow-btn">
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="board-item">
+                            <div class="company-profile">
+                                <div class="company-info">
+                                    <img src="/images/nav-logo.png" alt="">
+                                </div>
+                                <div class="profile-name">
+                                    <h3>cupang</h3>
+                                </div>
+                                <div class="profile-info">
+                                    <h1>전국 물류센터 계약직 대규모 모집</h1>
+                                    <div class="follow-btn">
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>     
+                        <div class="board-item">
+                            <div class="company-profile">
+                                <div class="company-info">
+                                    <img src="/images/nav-logo.png" alt="">
+                                </div>
+                                <div class="profile-name">
+                                    <h3>cupang</h3>
+                                </div>
+                                <div class="profile-info">
+                                    <h1>전국 물류센터 계약직 대규모 모집</h1>
+                                    <div class="follow-btn">
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>     
+                        <div class="board-item">
+                            <div class="company-profile">
+                                <div class="company-info">
+                                    <img src="/images/nav-logo.png" alt="">
+                                </div>
+                                <div class="profile-name">
+                                    <h3>cupang</h3>
+                                </div>
+                                <div class="profile-info">
+                                    <h1>전국 물류센터 계약직 대규모 모집</h1>
+                                    <div class="follow-btn">
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                    <div class="board-item-group">
+                        <div class="board-item">
+                            <div class="company-profile">
+                                <div class="company-info">
+                                    <img src="/images/nav-logo.png" alt="">
+                                </div>
+                                <div class="profile-name">
+                                    <h3>cupang</h3>
+                                </div>
+                                <div class="profile-info">
+                                    <h1>전국 물류센터 계약직 대규모 모집</h1>
+                                    <div class="follow-btn">
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>     
+                        <div class="board-item">
+                            <div class="company-profile">
+                                <div class="company-info">
+                                    <img src="/images/nav-logo.png" alt="">
+                                </div>
+                                <div class="profile-name">
+                                    <h3>cupang</h3>
+                                </div>
+                                <div class="profile-info">
+                                    <h1>전국 물류센터 계약직 대규모 모집</h1>
+                                    <div class="follow-btn">
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>     
+                        <div class="board-item">
+                            <div class="company-profile">
+                                <div class="company-info">
+                                    <img src="/images/nav-logo.png" alt="">
+                                </div>
+                                <div class="profile-name">
+                                    <h3>cupang</h3>
+                                </div>
+                                <div class="profile-info">
+                                    <h1>전국 물류센터 계약직 대규모 모집</h1>
+                                    <div class="follow-btn">
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>     
+                        <div class="board-item">
+                            <div class="company-profile">
+                                <div class="company-info">
+                                    <img src="/images/nav-logo.png" alt="">
+                                </div>
+                                <div class="profile-name">
+                                    <h3>cupang</h3>
+                                </div>
+                                <div class="profile-info">
+                                    <h1>전국 물류센터 계약직 대규모 모집</h1>
+                                    <div class="follow-btn">
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                    <div class="board-item-group">
+                        <div class="board-item">
+                            <div class="company-profile">
+                                <div class="company-info">
+                                    <img src="/images/nav-logo.png" alt="">
+                                </div>
+                                <div class="profile-name">
+                                    <h3>cupang</h3>
+                                </div>
+                                <div class="profile-info">
+                                    <h1>전국 물류센터 계약직 대규모 모집</h1>
+                                    <div class="follow-btn">
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>     
+                        <div class="board-item">
+                            <div class="company-profile">
+                                <div class="company-info">
+                                    <img src="/images/nav-logo.png" alt="">
+                                </div>
+                                <div class="profile-name">
+                                    <h3>cupang</h3>
+                                </div>
+                                <div class="profile-info">
+                                    <h1>전국 물류센터 계약직 대규모 모집</h1>
+                                    <div class="follow-btn">
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>     
+                        <div class="board-item">
+                            <div class="company-profile">
+                                <div class="company-info">
+                                    <img src="/images/nav-logo.png" alt="">
+                                </div>
+                                <div class="profile-name">
+                                    <h3>cupang</h3>
+                                </div>
+                                <div class="profile-info">
+                                    <h1>전국 물류센터 계약직 대규모 모집</h1>
+                                    <div class="follow-btn">
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>     
+                        <div class="board-item">
+                            <div class="company-profile">
+                                <div class="company-info">
+                                    <img src="/images/nav-logo.png" alt="">
+                                </div>
+                                <div class="profile-name">
+                                    <h3>cupang</h3>
+                                </div>
+                                <div class="profile-info">
+                                    <h1>전국 물류센터 계약직 대규모 모집</h1>
+                                    <div class="follow-btn">
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>  
             </main>
           </div> 
     </section>
     <script src="js/myindex.js"></script>
-   	 <script>
+    <script>
     $(document).ready(function () {
     	 
     	var current = 0;
@@ -72,8 +268,8 @@
                 }
                 move(n);
                 $(".add-section").removeClass("on");
-                $(".add-section").eq(n).addClass("on");
-            }, 2000);
+                $(".add-section").eq(i).addClass("on");
+            }, 3000);
         }
 
         function move(n) {
@@ -86,6 +282,5 @@
         }
     });
     </script>
-    
 </body>
 </html>

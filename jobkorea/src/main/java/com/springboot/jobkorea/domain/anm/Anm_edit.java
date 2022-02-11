@@ -2,8 +2,6 @@ package com.springboot.jobkorea.domain.anm;
 
 import java.time.LocalDateTime;
 
-import com.springboot.jobkorea.web.dto.anm.AnmRespDto;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -15,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Data
 public class Anm_edit {
 	
-	private int id;
+	private int comp_id;
 	
 	
 	private String anm_title;
@@ -32,29 +30,6 @@ public class Anm_edit {
 	private String salary;
 	private String wanted;
 	
-	private int comp_id;
 	private LocalDateTime create_date;
 	private LocalDateTime update_date;
-	
-	public AnmRespDto toAnmRespDto() {
-		return AnmRespDto.builder()
-				.boardId(id)
-				.anm_title(anm_title)
-				.education(education)
-				.career(career)
-				.area(area)
-				.gender(gender)
-				.form_employ(form_employ)
-				.anm_picture(anm_picture)
-				.assign_task(assign_task)
-				.loyalty_point(loyalty_point)
-				.working_days(working_days)
-				.hours_duty(hours_duty)
-				.salary(salary)
-				.wanted(wanted)
-				.comp_id(comp_id)
-				.create_date(create_date)
-				.update_date(update_date)
-				.build();
-	}
 }
