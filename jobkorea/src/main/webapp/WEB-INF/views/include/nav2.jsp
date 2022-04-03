@@ -1,10 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
-<html>
+         <!DOCTYPE html>
+<html lang="ko">
+ 
 <head>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/nav2.css">
     <script src="https://kit.fontawesome.com/c3df4d7d1c.js" crossorigin="anonymous"></script>
+	<script src="/js/jQuery.js"></script>
 </head>
 <body>
 <nav class="header">
@@ -81,6 +84,7 @@
         </div>
     </div>
 </nav>
-</body>
+</body> 
+
 </html>
 

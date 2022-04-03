@@ -8,26 +8,7 @@
     <link rel="stylesheet" href="/css/nav.css">
     <script src="https://kit.fontawesome.com/c3df4d7d1c.js" crossorigin="anonymous"></script>
     <script src="/js/jQuery.js"></script>
-</head>
-<script>
-    // 왼쪽 버튼은 클릭으로 창이 나타나도록 하는거
-    // .category-btn을 눌렀을 때에 작동해야한다.
-    $(document).ready(function () {
-        $(".nav-menu").hide();
-
-        $(".category-btn").click(function () {
-            $(".nav-menu").slideToggle(0);
-        });
-    });
-
-    $(document).click(function (e) {
-        if (!$(e.target).is(".category-btn" || ".fas fa-bars" || ".fa-bars:before" || ".fa-bars")) {
-            $(".nav-menu").css("display", "none")
-        }
-    }) 
-    
-</script>
-
+</head> 
 <body>
 <!--  기업회원-->
     <nav class="header">
@@ -189,7 +170,7 @@
                         <li class="service-item">
                             <a href="/mypage/companyPage" class="company-open">
                                 <span class="post-job-btn">
-                                    <span>개인회원 홈</span>
+                                    <span>기업회원 홈</span>
                                 </span>
                             </a>
                         </li>
@@ -199,5 +180,5 @@
         </div>
     </nav>
 </body>
-
-</html>
+<script src="/js/top_mn.js"></script>
+</html> 

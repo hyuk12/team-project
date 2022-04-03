@@ -19,7 +19,7 @@
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
-    <jsp:include page="../include/nav.jsp"></jsp:include>
+    <jsp:include page="../include/navPerson.jsp"></jsp:include>
     <div class="wrap">
         <div class="accounts-change-btn">
             <a href="/accounts/edit">회원정보 수정</a>
