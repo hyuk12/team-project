@@ -5,10 +5,15 @@ import org.springframework.web.multipart.MultipartFile;
 import com.springboot.jobkorea.domain.anm.Anm_edit;
 import com.springboot.jobkorea.domain.user.Company;
 
+import lombok.Builder;
 import lombok.Data;
 
+@Builder
 @Data
 public class AnmEditReqDto {
+	
+	
+	
 	private String comptype;
 	private String compname;
 	private String ceoname;
@@ -60,4 +65,6 @@ public class AnmEditReqDto {
 				.wanted(wanted)
 				.build();
 	}
+
+	
 }

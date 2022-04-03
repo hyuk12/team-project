@@ -7,6 +7,7 @@
 <!-- property: princopal 객체를 principal이라는 이름으로 넣음 -->
 <sec:authentication property="principal" var="principal"/>
 </sec:authorize>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 <!DOCTYPE html>
 <html>
@@ -47,6 +48,7 @@
                 </div>
                 <div class="container">
                     <div class="board-item-group">
+
                         <div class="board-item">
                             <div class="company-profile">
                                 <div class="company-info">

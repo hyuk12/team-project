@@ -139,7 +139,16 @@
   		where
   			id = #{id}; 
   	</update>
+  	<select id="getCompById" resultType="com.springboot.jobkorea.domain.user.Company" parameterType="Integer">
+  		select
+  			*
+  		from
+  			comp_mst
+  		where
+  			comp_id = #{comp_id}	
   	
+  	</select>
+
   	<!--  -->
   	<!-- 아이디 찾기 -->
   	<select id="findPersonalIdByNameAndEmail" resultType="Integer" parameterType="String">
@@ -198,7 +207,7 @@
   		update
   			user_mst
   		set
-  			password = "12345",
+  			password = #{password},
   			
   			update_date = now()
   		where
@@ -219,13 +228,11 @@
   		update
   			comp_mst
   		set
-  			password = "12345",
+  			password = #{password},
   			
   			update_date = now()
   		where
   			username = #{username}; 
   	</update>
-  	
-  	
-  	
+ 
   </mapper>

@@ -242,8 +242,9 @@
             <div class="submit">
                 <button type="button" class="submit-btn">공고등록</button>
             </div>
-            </form>
+           </div> 
         </div>
+        
    
 		
     

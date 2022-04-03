@@ -14,7 +14,7 @@ public interface UserRepository {
 	public User getUserByUsername(String username);
 	public User getUserByOAuth2Username(String oauth2_username);
 	public Company getCompanyByUsername(String username);
-	
+	public Company getCompById(int comp_id);
 	
 	//accounts
 	public int updateUserById(User user);
@@ -32,9 +32,9 @@ public interface UserRepository {
 	
 	// 비밀번호 찾기
 	public int findPersonalPwByNameAndUsername(String name, String username);
-	public int replacePersonalPwByUsername(String username);
+	public int replacePersonalPwByUsername(String password, String username);
 	
 	public int findCompanyPwByNameAndUsername(String name, String username);
-	public int replaceCompanyPwByUsername(String username);
+	public int replaceCompanyPwByUsername(String password, String username);
 	
 }

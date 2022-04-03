@@ -1,4 +1,4 @@
-package com.springboot.jobkorea.domain.jobs;
+package com.springboot.jobkorea.domain.Board;
 
 import java.time.LocalDateTime;
 
@@ -34,4 +34,6 @@ public class JobsInfo {
 	private String wanted;
 	
 	private LocalDateTime update_date;
+	
+	
 }

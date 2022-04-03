@@ -49,7 +49,7 @@
                         </div>
                         <div class="com-name">
                             <h2>${principal.company.compname }</h2>
-                            <p>it컴퓨터, 소프트웨어</p>
+                            <p>${principal.companyDtl.industry }</p>
                         </div>
                    </div>
                 </div>
